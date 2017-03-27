@@ -1,0 +1,24 @@
+<section class="more-spls">
+    <!--<div class="graphics"></div>-->
+
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large">More Events</h2>
+        <div id="home-carousel-2">
+          {% assign events = site.data._models.events | sort : 'sort_order' %}
+          {% for e in events %}
+          <div class="item">
+            <div class="home-specials-item2"> <img src="{{e.large_image.url}}" alt=""/>
+              <div class="car-content">
+                <h3>{{e.name}}</h3>
+                <p>{{e.short_description | truncate :80}}</p>
+              </div>
+              <a href="/location/events/{{e.url}}" class="button-common btn-top">View Event</a> </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="stamp-blue"><img src="../../../images/specials/special-details/stamp-blue.png" alt=""/></div>
+        <div class="btn-holder-with-padding"><a href="/location/events/" class="button-common btn-blue">View all Events<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>

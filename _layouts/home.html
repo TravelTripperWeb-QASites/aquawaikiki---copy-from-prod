@@ -1,0 +1,202 @@
+---
+layout: default
+
+---
+
+<section>
+  <div class="home-banner-wrap">
+    <div id="homeCarousel" class="carousel slide">
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#homeCarousel" data-slide-to="1"></li>
+        <li data-target="#homeCarousel" data-slide-to="2"></li>
+        <li data-target="#homeCarousel" data-slide-to="3"></li>
+        <li data-target="#homeCarousel" data-slide-to="4"></li>
+      </ol>
+
+
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
+
+            {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
+            {% for slilderimages in slilder_images %}
+            {% if forloop.first == true %}
+            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            {% else %}
+            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            {% endif %}
+            <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
+          <div class="carousel-caption transparent-bg">
+            <div class="caption-inner">
+               {{ slilderimages.carousel_caption }}
+            </div>
+          </div>
+
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
+          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
+                <div class="boxes">
+                  <div class="tonight-rate ">
+                  <p>Best Price Available</p>
+                  <h4>Tonight's Rate <a href="#" class="homeTonightRate" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  </div>
+                  <div class="ota-list" >
+                    <ul>
+                    <li ng-repeat = "(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+ {% endfor %}
+
+
+
+
+      </div>
+    </div>
+    <!--<div class="theme-left-panel">
+      <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
+    </div>-->
+    <div class="theme-right-panel">
+      <div class="social-right"><!-- <a href="#"><i class="fa fa-instagram"></i></a> --><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid blue-bg mo">
+    <div class="about-wrap">
+      {% region 24north-hotelkey-west %}
+
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid no-padding two-col-wrap">
+    <div class="col-sm-6 no-padding v-center">
+      <div class="two-col-content">
+        {% region paradise-found %}
+        <div class="logo-icon">{% region logo24-image %}</div>
+      </div>
+    </div>
+    <div class="col-sm-6 no-padding v-center">{% region paradisefound-image %}</div>
+  </div>
+</section>
+<section class="about-home">
+  <div class="container-fluid no-padding two-col-wrap">
+    <div class="col-sm-6 no-padding v-center">{% region abouthotel-image %}</div>
+    <div class="col-sm-6 no-padding v-center">
+      <div class="two-col-content">
+        {% region about-hotel-text %}
+        <!--<div class="btn-holder"><a href="#" class="button-common btn-blue">View this suite<i class="fa fa-play"></i></a></div>-->
+      </div>
+    </div>
+  </div>
+  <div class="graphic">{% region curve2-image %}</div>
+</section>
+
+<section>
+  <div class="container-fluid no-padding home-rooms-wrap">
+    <div class="home-rooms">
+      <div class="container">
+
+
+          <div class="home-rooms-holder">
+          <div class="home-rooms-holder-inner">
+          <data-owl-carousel  class="owl-carousel" data-options="{navigation : false,
+                                                                                      slideSpeed : 500,
+                                                                                      paginationSpeed : 400,
+                                                                                      singleItem:true,
+                                                                            		  paginationNumbers: false,
+                                                                            		  autoPlay: false,
+                                                                            		  pagination: false,
+                                                                            		  navigation: true,
+                                                                            		  navigationText : false}">
+            <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList">
+            <div>
+              <h2>Rooms & Suites</h2>
+              <h3><span class="block-element">[[room.name]]</span></h3>
+              <p></p>
+              <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue">View Rooms<i class="fa fa-play"></i></a></div>
+            </div>
+			       </div>
+          </data-owl-carousel >
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section rt3-special-rates= "offers">
+	<div class="container-fluid no-padding home-specials-wrap">
+    	<div class="container">
+       	  {% region special-offer-head %}
+          {%  include special-offers.html %}
+          <div class="graphic">{% region stamp2-image %}</div>
+
+          <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
+
+
+        </div>
+    </div>
+</section>
+
+<section class="bt">
+	<div class="container-fluid no-padding">
+    <div class="border-texture"><img src="/images/floating/border-textrure.png" alt=""/></div>
+    	<div class="cta-theme">
+        	<div class="pf-wrap">
+        	{% region paradisefound %}
+            <div><a href="/gallery/" class="button-common btn-white">View Gallery<i class="fa fa-play"></i></a></div>
+        	</div>
+        </div>
+    </div>
+</section>
+
+{% include grid.html %}
+
+
+
+<section class="hlw">
+	<div class="hlw-inner">
+	<div class="container">
+
+   	  <div class="home-location-wrap">
+
+      {% include location.html %}
+
+           <div><a href="/location/" class="button-common btn-blue">Explore location<i class="fa fa-play"></i></a></div>
+
+           <div class="graphic">{% region stamp3-image %}</div>
+
+
+
+      </div>
+    </div>
+    </div>
+    <div class="cuba">{% region cuba-image %}</div>
+</section>
+
+
+<section>
+	<div class="container-fluid show-case">
+    	<div class="row">
+    	<div class="col-sm-4 no-padding">{% region showcase-img-1 %}</div>
+        <div class="col-sm-4 no-padding">{% region showcase-img-2 %}</div>
+        <div class="col-sm-4 no-padding">{% region showcase-img-3 %}</div>
+        </div>
+    </div>
+</section>
+
+<section>
+	<div class="new-map">
+    {% region new-map-image %} </div>
+</section>

@@ -1,0 +1,83 @@
+---
+layout: default
+pagename: blog
+title: News & Events in Key West Florida | Events at 24 North Hotel
+excerpt: There's always plenty of activities taking place in Key West Florida, take a look at some of the events happening near our accommodationa & find things to do.
+---
+
+
+<section>
+  <div class="container no-padding">
+    <div class="page-banner blog-banner">
+      {% region blog-banner %}
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="blog-list">
+      <div class="col-md-12 no-padding">
+        <div>
+        {% for post in data_paginator.posts %}
+          <div class="blog-item">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="post-image-holder"> <a href="{{ post.id | permalink: model_dir: 'blog' }}"><img src="{{post.blogimage.url}}" alt="{{post.title}}"/></a> 
+                {% if post.Image_caption != "" %}
+                		{{post.Image_caption}}
+                {% endif %}
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <h2><a href="{{ post.id | permalink: model_dir: 'blog' }}">{{post.title}}</a></h2>
+                <span class="post-details">
+					{% assign d = post.date | date: "%-d" %}
+					{{ post.date | date: "%B" }} 
+					{% case d %}{% when "1" or "21" or "31" %}{{ d }}st{% when "2" or "22" %}{{ d }}nd{% when "3" or "23" %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
+					{{ post.date | date: "%Y" }}
+                </span>
+               		 {% if post.short_description != "" %}
+               				{{post.short_description}}
+               		  {% endif %}
+                <div class="blog-btn"><a href="{{ post.id | permalink: model_dir: 'blog' }}" class="button-common btn-blue">Read More<i class="fa fa-play"></i></a></div>
+              </div>
+            </div>
+          </div>
+          {% if forloop.last != true %}
+          <hr>
+          {% endif %}
+        {% endfor %} 
+
+        </div>
+      </div>
+      <!--<div class="col-md-4 no-padding"> 
+        <div class="recent-wrap">
+    <div class="recent-title">Recent Posts</div>
+  </div> 
+      </div>--> 
+    </div>
+  </div>
+
+
+
+      <div class="pagination-wrapper">
+<div class="pagination"> 
+ <p><span class="page_number ">Page: {{ data_paginator.page }} of {{ data_paginator.total_pages }}</span></p>
+<ul class="pagination">
+
+  {% if data_paginator.previous_page %}
+    <li><a href="{{ data_paginator.previous_page_path }}" class="previous">Previous</a></li>
+  {% else %}
+    <li><span class="previous">Previous</span></li>
+  {% endif %}
+   
+  {% if data_paginator.next_page %}
+    <li><a href="{{ data_paginator.next_page_path }}" class="next">Next</a></li>
+  {% else %}
+    <li><span class="next ">Next</span></li>
+  {% endif %}
+  </ul>
+
+</div>
+</div>
+</section>

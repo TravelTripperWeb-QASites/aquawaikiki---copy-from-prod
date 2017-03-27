@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<section>
+  <div class="container">
+    <div class="blog-list blog-detail attractions-details">
+      <div class="col-md-8 no-padding">
+        <div class="blog-list-holder">
+          <div class="blog-item">
+            {% assign list = site.data._models.attractions  %}
+            {% for a in list %}
+            {% if (a.name == 'Key West Golf Club' ) %}
+            {% assign att = a %}
+            {% endif %}
+            {% endfor %}
+            <h1>{{att.name}}</h1>
+            <span class="post-details">{{att.other_info}}</span>
+            <div class="post-image-holder"><img src="{{att.detail_image.url}}" alt=""/>
+              <!--<h6>Andy Newman/Florida Keys News Bureau</h6>-->
+            </div>
+            {{att.about}}
+          </div>
+        </div>
+        <div class="btn-holder text-left">
+           <a href="/specials/"  class="button-common btn-blue">VIEW SPECIAL OFFERS</a>
+        </div>
+      </div>
+      <div class="col-md-4 blog-item att-item">
+      	<div class="others">
+            <h2>Other Attractions</h2>
+            <ul class="other-attractions">
+              {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
+              {% for a in attractions %}
+              {% unless a.name == att.name %}
+            	<li><a href="{{a.url}}">{{a.name}}</a></li>
+              {% endunless %}
+              {% endfor %}
+
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 no-padding">
+      <!--<div class="recent-wrap">
+          <div class="recent-title">Recent Posts</div>
+        </div>-->
+    </div>
+  </div>
+</section>

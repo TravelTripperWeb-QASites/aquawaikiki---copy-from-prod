@@ -1,0 +1,65 @@
+<footer>
+	<div class="footer-wrapper four-coloumn">
+    	<div class="container">
+        
+       
+        	<div class="col-md-3 col-sm-6 no-padding v-top">
+            	<div class="footer-grid no-padding-left">
+                	<h2>Contact Us</h2>
+                    <p><span class="block-element">3820 North Roosevelt Blvd</span>
+						<span class="block-element">Key West, FL 33040</span>
+						<span class="block-element">(305) 320-0940</span>
+						<span class="block-element"><a href="mailto:reservations@hotel24north.com">reservations@hotel24north.com</a></span>
+                    </p>
+	 <br><p><strong>General Manager:</strong><br><a href="mailto:esimons@24northhotel.com">Eugenia Simons</a></p>
+         <br><p><strong>Director of Sales &amp; Marketing:</strong><br><a href="mailto:lsheehan@thekeyscollection.com">Lee Sheehan</a></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 no-padding v-top">
+            	<div class="footer-grid">
+                	<h2>Links</h2>
+                    <ul>
+                    	 {% for items in site.data.navigation.footernav %}
+        				<li><a href="{{ items.url }}">{{ items.title }}</a></li>
+       						{% endfor %}                       
+                    </ul>
+                    
+        
+                </div>
+            </div>
+            
+           
+            <div class="col-md-4 col-xs-12 no-padding v-top">
+            	<div class="footer-grid">
+                	<h2>Newsletter</h2>
+                   
+                      <form class="jotform-form" action="https://submit.jotform.me/submit/60613449898469/" method="post" name="form_60613449898469" id="60613449898469" accept-charset="utf-8">
+  <input type="hidden" name="formID" value="60613449898469" />
+                    	<div class="form-holder">
+                    	 <input type="email" class=" form-textbox validate[required] input-text" data-type="input-textbox" id="input_3" name="q3_email" size="21" value="" placeholder="Enter Your Email..." required="required" /> 
+                         <button id="input_2" type="submit" class="form-submit-button form-btn">Send</button>
+                        </div>
+                        
+  <input type="hidden" id="simple_spc" name="simple_spc" value="60613449898469" />
+  <script type="text/javascript"> document.getElementById("si" + "mple" + "_spc").value = "60613449898469-60613449898469"; </script>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-12 no-padding v-top foot-v-center no-border">
+            <div class="footer-grid no-padding-right">
+            	<a href="/"><img src="/images/logo-footer.png" alt=""/></a><br><br>
+                <a href="http://www.highgate.com/" target="_blank"><img src="/images/highgate-logo.png" alt=""/></a>
+                </div>
+            </div>
+            
+        
+        </div>
+    </div>
+    <div class="container">
+    	<div class="footer-bottom-wrapper">
+    	<div class="col-sm-4 no-padding"><div class="footer-copyright">24NORTHHOTEL &copy; 2017</div></div>
+        <div class="col-sm-4 no-padding"><!--<div class="footer-languages"><a href="#" class="active">English</a> - <a href="#">Español</a> - <a href="#">Deutsch</a></div>--></div>
+        <div class="col-sm-4 no-padding"><div class="footer-social"><a href="https://www.instagram.com/24northhotel" target="_blank"><i class="fa fa-instagram"></i></a><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a>--></div></div>
+    </div>
+    </div>
+</footer>

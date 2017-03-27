@@ -1,9 +1,5 @@
-.sass-cache/*
+_site
+.sass-cache
+.jekyll-metadata
 .DS_Store
-feed.xml
-
 sitemap.json
-media.json
-old_media.json
-models.json
-_site/*

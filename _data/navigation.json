@@ -1,0 +1,146 @@
+{
+	 'mainnav':[ 
+		
+		{
+			'title':'Rooms',
+			'name': 'rooms',
+			'url': '/rooms/',
+			'submenu': 'false'
+		},
+		{
+			'title':'Specials',
+			'name': 'specials',
+			'url': '/specials/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Attractions',
+			'name': 'attractions',
+			'url': '/attractions/',
+			'submenu': 'flase' 
+			
+		},
+		{
+			'title':'Groups',
+			'name': 'meetings-and-events-key-west',
+			'url': '/meetings-and-events-key-west/',
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Request for Proposal','name': 'events','url': '/meetings-and-events-key-west/request-for-proposal/'}
+			] 
+		}, 
+		{
+			'title':'Gallery',
+			'name': 'gallery',
+			'url': '/gallery/' ,
+			'submenu': 'false'
+		},
+		{
+			'title':'Blog',
+			'name': 'blog',
+			'url': '/blog/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Partners',
+			'name': 'partners',
+			'url': '/partners/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Location',
+			'name': 'location',
+			'url': '/location/',
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Events','name': 'events','url': '/location/events/'},
+				{'title':'Shuttle','name': 'location','url': '/location/shuttle/'},
+				{'title':'Starbucks','name': 'location','url': '/location/starbucks/'}
+			] 
+		}
+		
+		 
+	],
+	'footernav':[
+		{
+			'title':'Rooms',
+			'name': 'rooms',
+			'url': '/rooms/',
+			'submenu': 'false'
+		},
+		{
+			'title':'Specials',
+			'name': 'specials',
+			'url': '/specials/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Attractions',
+			'name': 'attractions',
+			'url': '/attractions/',
+			'submenu': 'flase' 
+			
+		},
+		{
+			'title':'Groups',
+			'name': 'meetings-and-events-key-west',
+			'url': '/meetings-and-events-key-west/',
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Request for Proposal','name': 'events','url': '/meetings-and-events-key-west/request-for-proposal/'}
+			] 
+		}, 
+		{
+			'title':'Gallery',
+			'name': 'gallery',
+			'url': '/gallery/' ,
+			'submenu': 'false'
+		},
+		{
+			'title':'Blog',
+			'name': 'blog',
+			'url': '/blog/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Partners',
+			'name': 'partners',
+			'url': '/partners/',
+			'submenu': 'false' 
+		},
+		{
+			'title':'Location',
+			'name': 'location',
+			'url': '/location/',
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Events','name': 'events','url': '/location/events/'},
+				{'title':'Shuttle','name': 'location','url': '/location/shuttle/'},
+				{'title':'Starbucks','name': 'location','url': '/location/starbucks/'}
+			] 
+		},
+		{
+			'title':'Charities',
+			'name': 'charities',
+			'url': '/save-the-children/',
+			'submenu': 'false' 
+		} 
+	],
+	'social':[
+		{
+			'title':'Linkedin',
+			'url':'https://www.linkedin.com/company/travel-trippe',
+			'class':'fa-linkedin'
+		},
+		{
+			'title':'Facebook',
+			'url':'https://www.facebook.com/traveltripper',
+			'class':'fa-facebook-square'
+		},
+		{
+			'title':'Twitter',
+			'url':'https://twitter.com/Travel_Tripper',
+			"class":"fa-twitter"
+		},
+	]
+}

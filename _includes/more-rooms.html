@@ -1,0 +1,22 @@
+<section>
+  <div class="container-fluid no-padding home-specials-wrap">
+    <div class="container">
+      <h2 class="heading-large">More Rooms</h2>
+
+      <div  class="owl-carousel" id="room-carousel-1" >
+
+        <div class="item"  ng-repeat="room in browser.roomsList" >
+          <div class="home-specials-item2" > <img ng-src="[[room.photos[0].yankee_large]]" alt=""/>
+            <div class="car-content">
+              <h3><a ng-href="/room/#[[room.name | formatNameForLink]]" >[[room.name]]</a></h3>
+              <p>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
+            </div>
+            <a ng-href="/room/#[[room.name | formatNameForLink]]" class="button-common btn-top">View Room</a> </div>
+        </div>
+
+      </div>
+      <div class="graphic"><img src="/images/floating/stamp-2.png" alt=""/></div>
+      <div class="btn-holder-with-padding"><a href="/rooms/" class="button-common btn-blue">View all Rooms<i class="fa fa-play"></i></a></div>
+    </div>
+  </div>
+</section>

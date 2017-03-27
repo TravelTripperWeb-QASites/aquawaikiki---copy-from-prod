@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<section>
+  <div class="container no-padding">
+    <div class="page-banner attractions-bannner">
+    	{% region attractions-banner-content %}
+    </div>
+  </div>
+</section>
+{% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
+{% for a in attractions %}
+<section class="models">
+  <div class="container">
+    <div class=" two-col-wrap">
+      <div class="row no-gutters">
+        <div class="col-sm-6 sp-img v-center"> <img src="{{a.image.url}}" alt=""></a> </div>
+        <div class="col-sm-6 sp-content v-center">
+          <p class="title">{{a.name}}</p>
+          <div class="desp">{{a.description}}</div>
+          <div class="btn-holder"><a href="{{a.url}}"  class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}

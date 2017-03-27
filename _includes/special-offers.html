@@ -1,0 +1,26 @@
+<data-owl-carousel  class="owl-carousel"  id="home-carousel-2" data-options="{navigation : false,
+                                                                              slideSpeed : 500,
+                                                                              paginationSpeed : 400,
+                                                                              items : 2,
+                                                                              paginationNumbers: false,
+                                                                               pagination: false,
+                                                                               autoPlay: false,
+                                                                               navigation: true,
+                                                                               navigationText : false,
+
+                                                                               itemsDesktop : [1199,2],
+                                                                              itemsDesktopSmall : [980,2],
+                                                                              itemsTablet: [768,2],
+                                                                              itemsTabletSmall: false,
+                                                                              itemsMobile : [767,1]}">
+	  <div class="item" owl-carousel-item="" ng-repeat = "offer in offers.special_rates">
+      <div class="home-specials-item">
+          <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""/>
+          <div class="car-content">
+              <h3><a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink ]]" style="text-decoration:none;" >[[offer.rate_plan_name]]</a></h3>
+              <p>[[offer.short_description | limitTo: 90]][[offer.short_description.length > 90 ? '...' : '']]</p>
+          </div>
+          <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink ]]"  class="button-common btn-top">View Special</a>
+      </div>
+    </div>
+</data-owl-carousel>

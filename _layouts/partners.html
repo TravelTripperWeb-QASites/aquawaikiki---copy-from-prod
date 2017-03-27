@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="events partners">
+    <section>
+      <div class="container no-padding">
+        <div class="page-banner partners-banner">
+            <div class="graphic"><img src="/images/floating/stamp-1.png" alt=""/></div>
+          <h1 class="page-title"> Partners </h1>
+        </div>
+      </div>
+    </section>
+    {% assign partners = site.data._models.partners | sort : 'sort_order' %}
+    {% for p in partners %}
+    <section class="models">
+      <div class="container">
+        <div class=" two-col-wrap">
+          <div class="row no-gutters">
+            <div class="col-sm-3 sp-img "> <img src="{{p.image.url}}" alt=""></div>
+          	<div class="col-sm-9 sp-content">
+              <h2>{{p.name}}</h2>
+              <div class="desp">{{p.description}}</div>
+    		  <div class="btn-holder"><a href="{{p.url}}" target="_blank" class="button-common btn-blue">View Partner Site<i class="fa fa-play"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% endfor %}
+
+</div>

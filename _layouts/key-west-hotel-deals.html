@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<input type="hidden" id="roomId"  value="{{page.code}}" />
+<input type="hidden" id="roomList" value="[[ browser.roomsList ]]"   />
+<div class="room-details" ng-controller ="roomDetail" >
+
+  <section>
+    <div class="container no-padding">
+      <div class="page-banner rooms-banner" >
+        <div class="graphic"><img src="/images/floating/stamp-1.png" alt=""></div>
+
+        <h1 class="page-title">Key West Hotel Deals</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="gallery-nav">
+
+      <li ng-show="prevRoomName"><a href="/rooms/[[prevRoomName | lowercase | replacePipe  | spacetohyphen]]/"  ><i class="fa fa-angle-left"></i></a></li>
+      <li><a href="#" class="active">[[selectedRoom.name]]</a></li>
+      <li ng-show="nextRoomName"><a href="/rooms/[[nextRoomName | lowercase | replacePipe  | spacetohyphen]]/"   ><i class="fa fa-angle-right"></i></a></li>
+    </ul>
+  </div>
+  
+ 
+  <section ng-show="selectedRoom.amenities.length > 0">
+    <div class="container-fluid">
+      <div class="row details-intro style2">
+        
+        <div class="holds">
+             <h2>Special Offers at 24 North Hotel</h2>
+            <ul>
+                <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
+              </ul>
+            <div class="badger">
+                <img src="../../images/rooms/room-details/logo-details.png" width="160" height="144" alt=""/>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row information">
+        <div class="col-md-5 align-center"><img src="../../images/rooms/room-details/photo-patch.png" width="296" height="386" alt=""/></div>
+        <div class="col-md-7 p-l-0">
+          <h2 class="highlight p-t-35">Special Offers at 24 North Hotel</h2>
+          <br>
+
+          <p class="p-b-25">Are you looking for Key West hotel deals and Special Offers? You've come to the right place! 24 North Hotel in Key West have a variety of exclusive offers, only available when you book direct through our Official Website. Choose from a variety of deals and seasonal offers including advanced-purchase offers, AAA special offers, bed and breakfast packages, and Stay More Save More deals!</p>
+
+          <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
+          <p class="p-b-25">24 North Hotel Service Centre on <a href="tel:800-222-4828" >800-222-4828</a>  or <br>
+            e-mail <a href="mailto:reservations@hotel24north.com">reservations@hotel24north.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!--section class="bt">
+    <div class="container">
+      <div class="border-texture"><img src="/images/rooms/room-details/border.png" alt=""/></div>
+      <div class="cta-theme">
+        <div class="pf-wrap">
+          <h2>Paradise Found</h2>
+          <div><a href="#" class="button-common btn-white">Book Now<i class="fa fa-play"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </section-->
+
+  <section class="more-spls" rt3-special-rates= "offers">
+
+    <div class="graphics"></div>
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large">Special Offers</h2>
+
+        {%  include special-offers.html %}
+
+        <div class="stamp"><img src="../../images/rooms/room-details/stamp.png" alt=""/></div>
+        <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section >
+  <div class="container">
+    <h2 class="heading-large"><a href="/specials/" class="button-common btn-blue">View All Special Offers</a> </h2>
+    </section>
+    </div>
+</div>

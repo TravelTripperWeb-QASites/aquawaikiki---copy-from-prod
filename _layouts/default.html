@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    <div>
-      
-        {{ content }}
-      
-    </div>
-  </body>
+{% include head.html %}
+
+<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGT6Z3J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+{% include header.html %}
+
+	{{ content }}
+
+{% include footer.html %}
+
+{% include scripts.html %}
+
+{% include booking-widget.html %}
+
+</body>
 </html>

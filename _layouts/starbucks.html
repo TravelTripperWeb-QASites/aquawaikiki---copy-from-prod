@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<div class="starbucks">
+<section>
+  <div class="home-banner-wrap">
+    <div id="homeCarousel" class="carousel slide"> 
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak>
+        
+ {% assign slilder_images = site.data._models.starbucks_carousel  | sort : "sort_order" %}
+            {% for slilderimages in slilder_images %}                                 
+            {% if forloop.first == true %}
+            <div class="item active landing" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            {% else %}
+            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            {% endif %}        
+           <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
+          <div class="carousel-caption">
+            <div class="caption-inner">
+            {{ slilderimages.carousel_caption }}
+            </div>
+          </div>
+        </div>
+ {% endfor %}
+
+      </div>
+    </div>
+    <!--<div class="theme-left-panel">
+      <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
+    </div>-->
+    <div class="theme-right-panel">
+      <div class="social-right"> <!--<a href="#"><i class="fa fa-instagram"></i></a>--> <a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid blue-bg">
+    <div class="about-wrap">
+     {% region starbucks-now-open %}
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid no-padding two-col-wrap">
+    <div class="col-sm-6 no-padding v-center">
+      <div class="two-col-content">
+        {% region opening-hours %}
+      </div>
+    </div>
+    {% region sb-1-img %}
+  </div>
+</section>
+<section class="about-home">
+  <div class="container-fluid no-padding two-col-wrap">
+    {% region sb-2-img %}
+    <div class="col-sm-6 no-padding v-center">
+      <div class="two-col-content">
+        {% region allin-detail %}
+       <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>--> 
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid no-padding home-rooms-wrap">
+    <div class="home-rooms"></div>
+  </div>
+</section>
+<section class="lifestyle">
+	<div class="container-fluid">
+    	{% region starbucks-lifestyle %}
+    </div>
+</section>
+<section>
+  <div class="container-fluid show-case">
+    <div class="row">
+      <div class="col-sm-4 no-padding">{% region sb-3-image %}</div>
+      <div class="col-sm-4 no-padding">{% region sb-4-image %}</div>
+      <div class="col-sm-4 no-padding">{% region sb-5-image %}</div>
+    </div>
+  </div>
+</section>
+</div>

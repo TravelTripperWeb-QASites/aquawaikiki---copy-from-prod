@@ -1,0 +1,135 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font-family: "Lato-Light", Helvetica, Arial, sans-serif;
+$base-font-size:   18px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$para:'Lato-Light';
+
+$black: 'Lato-Black';
+$black-italic: 'Lato-BlackItalic';
+$bold-italic: 'Lato-BoldItalic';
+$extra-bold: 'Lato-ExtraBold';
+$extra-bold-italic: 'Lato-ExtraBoldItalic';
+$extra-light: 'Lato-ExtraLight';
+$extra-italic: 'Lato-ExtraLightItalic';
+$italic: 'Lato-Italic';
+$light: 'Lato-Light';
+$light-italic: 'Lato-LightItalic';
+$medium: 'Lato-Medium';
+$medium-italic: 'Lato-MediumItalic';
+$regular: 'Lato-Regular';
+$semi-bold: 'Lato-SemiBold';
+$semi-bold-italic: 'Lato-SemiBoldItalic';
+$thin: 'Lato-Thin';
+$thin-italic: 'Lato-ThinItalic';
+
+
+
+$main-font-bold: "brandon_grotesquebold";
+$main-font-black: "brandon_grotesqueblack";
+$main-font-light: "brandon_grotesquelight";
+$main-font-medium: "brandon_grotesquemedium";
+$main-font-regular: "brandon_grotesqueregular";
+$main-font-thin: "brandon_grotesquethin";
+$secondoray-font: "FuturaStd-Light";
+
+$spacing-unit:     30px;
+
+$bg-white: 			#ffffff;
+$bg-ash-4: 			#333333;
+$bg-blue-1: 		#3a9dc4;
+$bg-blue-2: 		#009ddd;
+$bg-blue-3: 		#1f4552;
+
+$bg-blue-4: 		#0f86b4;
+$bg-ash-1: 			#f5f5f5;
+$bg-ash-2: 			#efefef;
+$bg-ash-3: 			#fbf8ef;
+
+$background-color: #1f1f1f;
+
+$brand-color:      #572700;
+
+
+$tc-white: 		#ffffff;
+$tc-ash-1: 		#333333;
+$tc-ash-3: 		#606060;
+$tc-light-blue-1: #3a9dc4;
+$tc-dark-blue: 	#1f4552;
+$tc-black: 		#000000;
+$tc-light-blue: #1086b4;
+
+
+
+$tc-ash-2: 		#434343;
+
+$tc-ash-4: 		#444444;
+
+
+$text-color:       #111;
+
+
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+$phone-max: 479px;
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+		"bootstrap",
+		"fonts",
+		"jquery-ui", 
+		"datepicker", 
+		"booking-widget", 
+		"layout",
+		"header",
+		"footer",
+		"specials",
+		"location",
+		"gallery",
+		"blog",
+		"starbucks",
+		"meetings",
+		"room-details",
+		"date-picker",
+		"rfp",
+		"save-the-child-section"
+		
+;
+
+

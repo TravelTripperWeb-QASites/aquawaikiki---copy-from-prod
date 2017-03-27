@@ -1,0 +1,20 @@
+{
+    "slider_image":
+    {
+      "required": true,  
+      "type": "image",
+      "label": "Upload Image"
+      
+    }, 
+    "carousel_caption":
+    {
+      "required": true,  
+      "type": "richtext",
+      "label": "Carousel Caption"
+    },
+    "sort_order": 
+    { 
+      "type": "integer",
+      "required": true 
+    }
+}

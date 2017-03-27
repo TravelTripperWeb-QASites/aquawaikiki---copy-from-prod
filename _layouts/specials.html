@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<section>
+  <div class="container no-padding">
+    <div class="page-banner specials-bannner">
+    	{% region specials-banner-content %}
+    </div>
+  </div>
+</section>
+<section rt3-special-rates= "offers" >
+<section class="models" ng-repeat="offer in offers.special_rates">
+  <div class="container">
+    <div class=" two-col-wrap">
+      <div class="row no-gutters">
+        <div class="col-sm-6 sp-img v-center"> <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""> <a ng-href="{{site.data.config.reztripUrl}}en/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank"  class="rate-btn">Check Rate<i class="fa fa-play"></i></a> </div>
+        <div class="col-sm-6 sp-content v-center">
+          <p class="title">[[offer.rate_plan_name]]</p>
+          <p class="desp">[[offer.short_description]]</p>
+          <div class="btn-holder"><a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink ]]"  class="button-common btn-blue">View this special<i class="fa fa-play"></i></a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>

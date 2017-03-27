@@ -1,0 +1,88 @@
+---
+layout: default
+---
+<div class="starbucks shuttle">
+<section>
+  <div class="home-banner-wrap">
+    <div id="homeCarousel" class="carousel slide"> 
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner" rt3-recent-bookings="recentBookings" rt3-rooms-browser="browser" rt3-search-form="search" on-search-changed="browser.tonightRate()" ng-cloak>
+         {% assign slilder_images = site.data._models.shuttle_carousel  | sort : "sort_order" %}
+            {% for slilderimages in slilder_images %}                                 
+            {% if forloop.first == true %}
+            <div class="item active landing" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            {% else %}
+            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+            {% endif %}        
+          <!--<img src="{{ slilderimages.slider_image.url }}" alt="{{ slilderimages.carousel_caption }}"/>-->
+      {% endfor %}
+      </div>
+    </div>
+    <!--<div class="theme-left-panel">
+      <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
+    </div>-->
+    <div class="theme-right-panel">
+      <div class="social-right"> <!--<a href="#"><i class="fa fa-instagram"></i></a>--> <a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid blue-bg">
+    <div class="about-wrap">
+      {% region old-town-shuttle-text %}
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid no-padding two-col-wrap">
+    <div class="col-sm-6 no-padding v-center">
+      <div class="two-col-content">
+      	{% region heart-of-republic %}
+      </div>
+    </div>
+    <div class="col-sm-6 no-padding v-center">{% region shuttle-image-1 %}</div>
+  </div>
+</section>
+<section class="about-home">
+  <div class="container-fluid no-padding two-col-wrap">
+    <div class="col-sm-6 no-padding v-center">{% region shuttle-image-2 %}</div>
+    <div class="col-sm-6 no-padding v-center">
+      <div class="two-col-content">
+        {% region explore-old-key %}
+       <!-- <div class="btn-holder"><a href="#" class="button-common btn-blue">Discover More<i class="fa fa-play"></i></a></div>--> 
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid no-padding home-rooms-wrap">
+    <div class="home-rooms"></div>
+  </div>
+</section>
+<section class="lifestyle" id="schedule">
+	<div class="container-fluid no-padding">
+    	{% region shuttle-schedule-head %}
+        {% region shuttle-table %}
+        <div class="btn-holder extra padding m-80"><a href="/pdf/24N-Shuttle-Flyer.pdf" target="_blank" class="button-common btn-blue">Download Schedule<i class="fa fa-play"></i></a></div>
+    </div>
+</section>
+<section>
+	<div class="container">
+    	<div class="home-location-wrap">
+            {% region shuttle-rout-map-head %}
+            {% region shuttlemap-image %}
+            {% region keywestlabel-image %}
+            {% region driving-directions %}
+        </div>
+    </div>
+</section>
+<section>
+  <div class="container-fluid show-case">
+    <div class="row">
+      <div class="col-sm-4 no-padding">{% region shuttle-image-4 %}</div>
+      <div class="col-sm-4 no-padding">{% region shuttle-image-5 %}</div>
+      <div class="col-sm-4 no-padding">{% region shuttle-image-6 %}</div>
+    </div>
+  </div>
+</section>
+</div>

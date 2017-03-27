@@ -1,0 +1,258 @@
+.loc-main {
+	padding-top: 57px;
+	@media(max-width: $screen-xs-max){
+			padding-top: 30px;
+		}
+}
+.loc-con-inner {
+	padding-left: 80px;
+	
+	@media (max-width: 1240px){
+			padding-left: 0px;
+		}
+}
+.loc-content {
+	font-family: $main-font-light;
+	color: $tc-ash-4;
+	padding: 50px 80px 0px 0px;
+	background-color: #f8f7f7;
+	@media (max-width: 1240px){
+			padding: 25px 0 0px 0;
+		}
+		
+	h2{
+		
+		font-size: 32px;
+		text-transform: uppercase;
+		color: $tc-light-blue-1;
+		padding: 0px 0 40px 0;
+		line-height: normal;
+		letter-spacing: 5px;
+		margin: 0;
+		
+		@media (max-width: $screen-sm-max){
+			padding: 0px 0 25px 0;
+			font-size: 24px;
+		}
+		@media (max-width: $screen-xs-max){
+			padding: 0px 0 15px 0;
+			font-size: 20px;
+			letter-spacing: 3px;
+		}
+	}
+	p {
+		padding: 0 0 100px 0;
+		margin: 0;
+		letter-spacing: 1px;
+		line-height: 30px;
+		font-size: 18px;
+		
+		/*&:last-child {
+			padding: 0;
+		}*/
+		@media (max-width: $screen-sm-max){
+			padding: 0 0 30px 0;
+			
+		}
+			@media (max-width: $screen-xs-max){
+				padding: 0 0 20px 0;
+				line-height: 24px;
+				font-size: 16px;
+			}
+			
+	}
+	.loc-no-padding {
+		padding: 0;
+	}
+	h3{
+		font-family: $main-font-bold;
+		font-size: 14px;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+		position:relative;
+		
+		@media (max-width: $screen-xs-max){
+		letter-spacing: 3px;
+		}
+		
+		&:after{
+			content: "";
+		position:absolute;
+		width: 26px;
+		    background-color: #000;
+    height: 1px;
+    bottom: -18px;
+	left: 0;
+		}
+	}
+	.left-column{
+		
+		
+	/*	@media (max-width: $screen-sm-max){
+			width: 90%;
+		}*/
+		@media (max-width: $screen-xs-max){
+			width: auto;
+		}
+	}
+	.right-column{
+		
+		padding: 0 0 0 20%;
+		
+		@media (max-width: $screen-sm-max){
+			padding: 0 0 0 10%;
+		}
+		@media (max-width: $screen-xs-max){
+			padding: 0;
+		}
+		span{
+			display:block;
+		}
+		p{
+			padding: 35px 0 0 0;
+		}
+	}
+}
+.address-wrap {
+	padding: 0 0 55px 0;
+	
+	
+	a{
+		color: $tc-ash-4;
+		&:hover {
+			color: $tc-light-blue-1;
+		}
+	}
+	@media (max-width: $screen-xs-max){
+		padding: 20px 0 0 0;
+		
+		
+	
+}
+}
+
+.btn-wrap {
+	padding: 55px 0 0 0;
+	
+	@media (max-width: $screen-xs-max){
+		padding: 20px 0 0 0;
+
+}
+}
+.no-top-padding {
+	padding-top:0;
+}
+.extra-padding {
+	padding: 30px 0 0 0;
+	@media (max-width: $screen-xs-max){
+		padding: 15px 0 0 0;
+	}
+}
+.btn-wrapper {
+	
+	padding: 0 0 30px 0;
+	@media (max-width: $screen-xs-max){
+		padding-bottom: 15px; 
+	}
+}
+.common-btn {
+	border: solid 1px #c19b76;
+	padding: 13px 18px;
+	display:inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 12px;
+	transition: all 0.3s;
+	letter-spacing: 1px;
+	
+	&:hover {
+		text-decoration: none;
+		color: #000;
+		
+	}
+	.fa-long-arrow-right {
+		color: #000;
+			text-indent: 14px;
+	}
+	
+}
+
+.cta-theme-location {
+	background-image: url(../images/cta-theme-location.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	h2{
+		padding: 86px 0 60px 0;
+		
+		@media (max-width: 1023px){
+		padding: 30px 0px; 
+	}
+	}
+}
+.empty-container {
+	
+	img {
+		width: 100%;
+	}
+}
+.car-blue-bg {
+	background-color: $bg-blue-3;
+	.heading-large {
+		color: $tc-white;
+	}
+}
+
+.location-banner {
+	background: url("/images/location-banner.jpg") no-repeat center center;
+}
+.shuttle-graphic {
+	margin-left: -15px;
+	max-width: 721px;
+	padding: 40px 0 0 0;
+		@media(min-width: $screen-sm-min){
+			padding: 80px 0 0 0;
+		}
+	img {
+		width: 100%;
+	}
+	&.sg-mobile {
+		display: block;
+		@media(min-width: $screen-sm-min){
+			display: none;
+		}
+	}
+	&.sg-desktop {
+		display: none;
+		@media(min-width: $screen-sm-min){
+			display: block;
+		}
+	}
+}
+.loc-cuba {
+	img {
+		width: 100%;
+	}
+}
+.hdct {
+	position: relative;
+	.graphic {
+		position: absolute;
+		max-width: 1200px;
+		margin: 0 auto;
+		height: 18px;
+		top: -9px;
+		right: 0;
+		left: 0;
+		background-image: url(../images/floating/line-diagonal.png);
+		background-repeat: repeat-x;
+		background-position: center center;
+	}
+}
+.loc-map {
+	
+	img {
+		width: 100%;
+	}
+}
+.sb-img{ width:80%; display:inline-block;}
