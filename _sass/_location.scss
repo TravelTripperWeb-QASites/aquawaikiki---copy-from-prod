@@ -1,5 +1,5 @@
 .loc-main {
-	padding-top: 57px;
+	
 	@media(max-width: $screen-xs-max){
 			padding-top: 30px;
 		}
@@ -12,8 +12,8 @@
 		}
 }
 .loc-content {
-	font-family: $main-font-light;
-	color: $tc-ash-4;
+	font-family: $light;
+	color: $bg-ash-4;
 	padding: 50px 80px 0px 0px;
 	background-color: #f8f7f7;
 	@media (max-width: 1240px){
@@ -21,10 +21,10 @@
 		}
 		
 	h2{
-		
+		font-family:$light;	
 		font-size: 32px;
 		text-transform: uppercase;
-		color: $tc-light-blue-1;
+		color: $bg-blue-2;
 		padding: 0px 0 40px 0;
 		line-height: normal;
 		letter-spacing: 5px;
@@ -41,7 +41,7 @@
 		}
 	}
 	p {
-		padding: 0 0 100px 0;
+		padding: 0 0 54px 0;
 		margin: 0;
 		letter-spacing: 1px;
 		line-height: 30px;
@@ -65,7 +65,7 @@
 		padding: 0;
 	}
 	h3{
-		font-family: $main-font-bold;
+		font-family: $black;
 		font-size: 14px;
 		letter-spacing: 5px;
 		text-transform: uppercase;
@@ -76,13 +76,13 @@
 		}
 		
 		&:after{
-			content: "";
+		content: "";
 		position:absolute;
 		width: 26px;
-		    background-color: #000;
-    height: 1px;
-    bottom: -18px;
-	left: 0;
+		background-color: #000;
+	    height: 1px;
+	    bottom: -18px;
+		left: 0;
 		}
 	}
 	.left-column{

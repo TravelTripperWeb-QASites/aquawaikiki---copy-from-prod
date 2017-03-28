@@ -202,7 +202,7 @@
 	border: solid 2px $tc-white;
 	padding: 12px 20px;
 	text-transform: uppercase;
-	font-family: $main-font-medium;
+	font-family: $regular;
 	letter-spacing: 2px;
 	font-size: 14px;
 	display:inline-block;
@@ -518,23 +518,21 @@
 	}
 }
 .home-rooms-holder-inner{
-	padding: 26px 26px;
-	border: 18px solid transparent;
+	//padding: 26px 26px;
+	//border: 18px solid transparent;
 
-    -webkit-border-image: url(../images/floating/frame.png) 20% round; /* Safari 3.1-5 */
-    -o-border-image: url(../images/floating/frame.png) 20% round; /* Opera 11-12.1 */
-    border-image: url(../images/floating/frame.png) 20% round;
+    /* -webkit-border-image: url(../images/floating/frame.png) 20% round; Safari 3.1-5 */
+   /*  -o-border-image: url(../images/floating/frame.png) 20% round; Opera 11-12.1 */
+   /*  border-image: url(../images/floating/frame.png) 20% round;*/
 }
 .home-rooms-holder{
 
 
 	width: 400px;
 	background-color: $bg-white;
-	padding: 26px 26px;
+	padding: 40px 26px;
 	text-align: center;
-
-
-	font-family: $main-font-light;
+	font-family: $light;
 
 
 	@media (max-width: 767px){
@@ -542,24 +540,34 @@
 		padding: 20px 15px;
 		margin: 0 auto;
 	}
+	.btn-blue{
+		    border-color: $bg-ash-4;
+    		color: $bg-ash-4;
+    		min-width:203px;
+    		&:hover{
+    		background-color:$bg-ash-4;
+    		color:#fff;	
+    		}
 
+
+	}
 	h2{
 		font-size: 14px;
 			text-transform: uppercase;
-			font-family: $main-font-bold;
+			font-family: $extra-bold;
 			letter-spacing: 5px;
 	}
 	h3{
-
+		font-family:$light;
 		font-size: 32px;
 		text-transform: uppercase;
 		color: $tc-light-blue-1;
-		letter-spacing: 6px;
+		letter-spacing: 4px;
 		line-height: 40px;
 		padding-top: 60px;
 		@media (max-width: 1023px){
 			font-size: 24px;
-			letter-spacing: 4px;
+			
 			line-height: 30px;
     		padding-top: 30px;
 		}
@@ -570,20 +578,26 @@
 	}
 	}
 	p{
-		padding: 15px 15% 55px 15%;
+			padding: 24px 15% 55px 15%;
 			font-size: 18px;
 			line-height: 30px;
 			@media (max-width: 1023px){
 			    padding: 15px 15px 30px 15px;
-    font-size: 18px;
-    line-height: 24px;
+			    font-size: 18px;
+			    line-height: 24px;
+
 			}
 
 			@media (max-width: 767px){
-		font-size: 16px;
-		line-height: 24px;
-		padding: 20px 0 20px 0;
-	}
+			font-size: 16px;
+			line-height: 24px;
+			padding: 20px 0 20px 0;
+			}
+			
+			a{
+			    	color:$bg-blue-2;
+
+			    }
 
 	}
 }
@@ -607,7 +621,7 @@
 }
 .btn-blue {
 	border-color: $bg-blue-3;
-	color: $tc-dark-blue;
+	color:$bg-blue-3;
 
 	&:hover, &:focus{
 		background-color: $bg-blue-3;
@@ -618,7 +632,7 @@
 
 
 	.fa-play {
-		color: $tc-dark-blue;
+		color:$bg-ash-4;
 
 
 	}
@@ -639,7 +653,7 @@
 }
 
 .home-specials-wrap {
-	background-color: $bg-ash-3;
+	background-color: #f8f8f8;
 
 	.container {
 		position: relative;
@@ -689,12 +703,13 @@
 	}
 }
 .heading-large {
-	font-family: $main-font-light;
+	font-family: $light;
 	font-size: 32px;
 	letter-spacing: 6px;
 	padding: 50px 0;
 	text-transform: uppercase;
 	text-align: center;
+	color:$bg-ash-4;
 
 	@media (max-width: 1023px){
 			padding: 30px 0;
@@ -734,10 +749,11 @@
 
 
 	h3{
-		font-family: $main-font-bold;
+		font-family: $semi-bold;
 		letter-spacing: 6px;
 		font-size: 14px;
 		text-transform: uppercase;
+		color:$tc-ash-1;
 		@media (max-width: 1023px){
 			letter-spacing: 3px;
 		}
@@ -746,7 +762,7 @@
 		}
 	}
 	p{
-		font-family: $main-font-light;
+		font-family: $light;
 		padding-top: 25px;
 		font-size: 18px;
 		line-height: 28px;
@@ -755,7 +771,7 @@
 		}
 	}
 	a {
-		color : #000;
+		color : $bg-ash-4;
 		&:hover  {
 			 opacity: .6;
 		}
@@ -766,7 +782,7 @@
 	position: absolute;
 	top:0;
 	left: 0;
-	color: $tc-ash-1;
+	color: $bg-blue-3;
 	background-color: $bg-white;
 	padding: 14px 22px;
 }
@@ -777,7 +793,7 @@
 	transform: translateY(-50%);
 	border-radius: 0px;
 	padding: 20px;
-	background-color: $bg-blue-3;
+	background-color: $bg-blue-2;
 	opacity: 1;
 	transition: all 0.1s;
 
@@ -845,7 +861,7 @@
 
 	h2{
 		font-size: 70px;
-		font-family: $secondoray-font;
+		font-family: $light;
 		text-transform: uppercase;
 		color: $tc-white;
 		letter-spacing: 16px;
@@ -865,7 +881,7 @@
 .btn-white {
 	border-color: $bg-white;
 	background-color: $bg-white;
-	color: $tc-dark-blue;
+	color: $bg-blue-3;
 
 	&:hover{
 		border-color: $bg-blue-3;
@@ -873,14 +889,14 @@
 		background-color: $bg-blue-3;
 
 		.fa-play{
-		color: $tc-white;
+		color:$bg-blue-3;
 		}
 	}
 
 
 
 	.fa-play {
-		color: $tc-dark-blue;
+		color: $bg-blue-3;
 	}
 
 
@@ -982,7 +998,7 @@ h2{
 			font-size: 32px;
 			letter-spacing: 4px;
 			line-height: 40px;
-			color: $tc-light-blue-1;
+			color: $bg-blue-2;
 			width: 90%;
 			margin: 0 auto;
 			padding: 60px 0 30px 0;
@@ -1247,7 +1263,7 @@ h2{
 		width: 100%;
 	}
 	h2 {
-		font-family: $main-font-bold;
+		font-family: $extra-bold;
 		    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -1257,14 +1273,14 @@ h2{
 	}
 	}
 	.room-price {
-		font-family: $main-font-regular;
+		font-family: $semi-bold;
 		font-size: 18px;
 		padding-top: 22px;
 
 		span{
-			font-family: $main-font-medium;
-			color: $tc-light-blue-1;
-			padding-left: 14px;
+			font-family: $semi-bold;
+			color: $bg-blue-2;
+			padding-left: 18px;
 		}
 
 
@@ -1277,7 +1293,7 @@ h2{
 	}
 	}
 	p{
-		font-family: $main-font-light;
+		font-family: $light;
 		font-size: 18px;
 		line-height: 26px;
 		padding-top: 22px;

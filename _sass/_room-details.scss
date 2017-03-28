@@ -34,14 +34,22 @@
 				 position:relative; bottom:inherit; left:inherit;z-index: 0;
 		}
 		h3{ padding-top:35px; color:#333333;}
-		p{ color:#3a9dc4; font-size:32px; padding-bottom:15px;}
+		p{ font-size:32px; padding-bottom:30px;
+			a{
+				color:$bg-blue-2;
+
+				&:hover{
+					color:$bg-blue-3;	
+				}
+			}
+			}
 		.btn-holder{ padding:0px;}
 	}
-	.details-intro{ padding:45px; background:#1f4552; color:#fff;
+	.details-intro{ padding:45px; background:$bg-blue-2; color:#fff;
 		h2{
 			font-size: 14px;
 			text-transform: uppercase;
-			font-family: "brandon_grotesquebold";
+			font-family: $semi-bold;
 			letter-spacing: 5px;
 			vertical-align:middle; padding-top:70px;
 			@media (max-width: 767px){
@@ -55,21 +63,29 @@
 			line-height: 24px;
 		}
 	}
-	.information{ padding:33px;
+	.information{ padding:30px;
+
+			@media(min-width: 768px){
+				padding:85px 40px;
+
+			}
+			
 		img{
 				@media (max-width: 767px){
 					 width:90%; height:90%;
 				}
 		}
-		p{font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;
-			&.highlight{font-family: "brandon_grotesqueregular"; padding-bottom:25px;}
+		p{font-family: $light; font-size: 18px; line-height: 24px;
+			&.highlight{font-family: $semi-bold; padding-bottom:25px;}
 			span{ padding:0 15px;}
 		}
 		.lst{
-			li{ list-style:none; font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;position: relative;padding-left: 32px;
+			li{ list-style:none; font-family: $light; font-size: 18px; line-height: 24px;position: relative;padding-left: 32px;
 				&:before{content: '\2022'; padding-right:30px; text-align:right;width:10px;width: 10px;position: absolute;left: 0;top: -0.2em;}
 			}
+
 		}
+		a{font-family: $semi-bold;color:#000; }
 	}
 	.home-specials-item2{
 		background-color: #ffffff;
@@ -101,6 +117,26 @@
 		@media (max-width: 767px){
 				margin-bottom:20px;
 		}
+	.offername{
+					font-family:$light;
+					padding: 35px 0 56px;
+					color: #fff;
+					font-size: 42px;
+					text-transform: uppercase;
+					letter-spacing: 6px;
+					line-height: 50px;
+					 position: absolute;
+					  top: 50%;
+					  left:50%;
+					  transform: translate(-50%,-50%);
+					      text-align: center;
+					@media (max-width: 767px){
+							padding: 25px 0;
+							font-size: 20px;
+							line-height: 55px;
+					}
+			
+	}	
 	}
 	.details-intro{
 				&.style2{
@@ -115,21 +151,21 @@
 							 padding-top:50px;
 							}
 						}
-						p{ font-family: 'brandon_grotesquelight';font-size: 16px;line-height: 24px; text-align:left;  margin:0 auto 20px;}
+						p{ font-family: $semi-bold;font-size: 16px;line-height: 24px; text-align:left;  margin:0 auto 20px;}
 
 						ul{ text-align:left; margin:30px 0 10px;
-							li{ text-align:left; list-style:none; position:relative; padding-left:30px;font-family: 'brandon_grotesquelight';
+							li{ text-align:left; list-style:none; position:relative; padding-left:30px;font-family: $light;
 
-								&:before{
-									content: '\2022';
-									padding-right: 30px;
-									text-align: right;
-									width: 10px;
-									width: 10px;
-									position: absolute;
-									left: 0;
-									top: 0.1em;
-								}
+								//&:before{
+									//content: '\2022';
+									//padding-right: 30px;
+									//text-align: right;
+									//width: 10px;
+									//width: 10px;
+									//position: absolute;
+									//left: 0;
+									//top: 0.1em;
+								//}
 							  }
 						}
 					}
@@ -143,36 +179,29 @@
 				h2 {
 					font-size: 14px;
 					text-transform: uppercase;
-					font-family: "brandon_grotesquebold";
+					font-family: $black;
 					letter-spacing: 5px;
 					padding-top:25px;
 				}
-				h3 {
-					padding: 35px 0 56px;
-					color: #333333;
-					font-size: 32px;
-					text-transform: uppercase;
-					letter-spacing: 6px;
-					line-height: 40px;
-					@media (max-width: 767px){
-							padding: 25px 0;
-					}
-				}
+				
 				p{
 					color: #333333;
-					font-family: 'brandon_grotesquelight'; font-size: 18px; line-height: 24px;
+					font-family: $light; font-size: 18px; line-height: 24px;
 					padding-top:47px;
 					@media (max-width: 767px){
 							padding-bottom:20px; padding-top:20px;
 					}
 				}
-				.booknow{ margin-bottom:23px;
-					a{
+				.btn-blue{
+					min-width:203px;
+				}
+				.booknow{  margin-bottom:23px;
+					a{	min-width:203px;
 						background-color: #3a9dc4;
 						display: inline-block;
 						font-size: 14px;
 						letter-spacing: 2px;
-						font-family: "brandon_grotesquemedium";
+						font-family: $regular;
 						color: #ffffff;
 						padding: 12px 26px;
 						text-align: center;
@@ -186,20 +215,20 @@
 			}
 		
 		.lifestyle{ padding-bottom:50px;
-			background: #fbf8ef;
+			background: #f8f8f8;
 			h3{
 			    font-size: 14px;
 				text-transform: uppercase;
-				font-family: "brandon_grotesquebold";
+				font-family: $black;
 				letter-spacing: 5px;
 				padding: 66px 0 35px;
 				text-align:center;
 
 			}
 			p{  color: #333333;
-				font-family: 'brandon_grotesquelight';
+				font-family: $light;
 				font-size: 18px;
-				line-height: 24px;
+				line-height: 30px;
 				padding:0 16% 10px;
 				text-align:left;
 				@media (max-width: 768px){
