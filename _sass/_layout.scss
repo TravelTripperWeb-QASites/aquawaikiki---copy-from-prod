@@ -136,7 +136,7 @@
 	left:0;
 	right: 0;
 	bottom: 200px;
-	font-family: $secondoray-font;
+	font-family: $thin;
 	text-transform: uppercase;
 	text-shadow: none;
 
@@ -202,7 +202,7 @@
 	border: solid 2px $tc-white;
 	padding: 12px 20px;
 	text-transform: uppercase;
-	font-family: $regular;
+	font-family: $light;
 	letter-spacing: 2px;
 	font-size: 14px;
 	display:inline-block;
@@ -259,17 +259,17 @@
 .price-holder{
 	padding: 1px 20px;
 	color: $tc-black;
-	font-size: 15px;
+	font-size: 18px;
 	background-color: $bg-white;
 	vertical-align:middle;
-	font-family: $main-font-regular;
+	font-family: $regular;
 	letter-spacing: 1px;
 	display:inline-block;
 	margin-right: -2px;
 	
 	@media (max-width: 1023px){
 		    padding: 6px 10px;
-			font-size: 14px;
+			font-size: 16px;
 	}
 
 	span{
@@ -296,6 +296,8 @@
 }
 .blue-bg {
 	background-color: $bg-blue-3;
+	background-size:cover;
+	background-repeat:no-repeat;
 	margin-top: 50px;
 	position: relative;
 	@media (max-width: 767px){
@@ -351,22 +353,23 @@
 	}
 }
 .about-wrap {
-	padding: 70px 0 55px 0;
+	background:$bg-white;
+	padding: 70px 70px 55px 70px;
 	text-align: center;
-	width: 54%;
-	margin: 0 auto;
-	font-family: $main-font-light;
-	color: $tc-white;
+	max-width: 770px;
+	margin: 100px auto;
+	font-family: $base-font-family;
+	color: $tc-ash-1;
 
 	@media (max-width: 1024px){
 		width: 80%;
 	}
 	@media (max-width: 1023px){
-		padding: 40px 0 35px 0;
+		padding: 40px 35px 35px 35px;
 	}
 	@media (max-width: 767px){
 		width:auto;
-		padding: 30px 0 130px 0;
+		padding: 30px 35px 130px 35px;
 	}
 	h1{
 		text-transform: uppercase;
@@ -411,15 +414,15 @@
 		h3{
 			font-size: 14px;
 			text-transform: uppercase;
-			font-family: $main-font-bold;
+			font-family: $black;
 			letter-spacing: 5px;
 		}
 		p{
-			font-family: $main-font-light;
+			font-family: $base-font-family;
 			padding: 60px 0 50px 0;
 			font-size: 18px;
 			line-height: 30px;
-			width: 50%;
+			width: 60%;
 			margin: 0 auto;
 			@media (max-width: 1240px){
 				width: 90%;
@@ -433,8 +436,8 @@
 		}
 	}
 	.logo-icon {
-		width: 83px;
-		height: 83px;
+		width: 280px;
+		height: 70px;
 		margin: 0 auto;
 
 		img {
@@ -517,14 +520,7 @@
 	}
 	}
 }
-.home-rooms-holder-inner{
-	//padding: 26px 26px;
-	//border: 18px solid transparent;
 
-    /* -webkit-border-image: url(../images/floating/frame.png) 20% round; Safari 3.1-5 */
-   /*  -o-border-image: url(../images/floating/frame.png) 20% round; Opera 11-12.1 */
-   /*  border-image: url(../images/floating/frame.png) 20% round;*/
-}
 .home-rooms-holder{
 
 
@@ -532,6 +528,7 @@
 	background-color: $bg-white;
 	padding: 40px 26px;
 	text-align: center;
+	margin:auto;
 	font-family: $light;
 
 
@@ -620,12 +617,14 @@
 	display: block;
 }
 .btn-blue {
+
 	border-color: $bg-blue-3;
 	color:$bg-blue-3;
 
+
 	&:hover, &:focus{
-		background-color: $bg-blue-3;
-		border-color: $bg-blue-3;
+		background-color: $bg-blue-1;
+		border-color: $bg-blue-1;
 		color:#fff;
 	}
 
@@ -1105,6 +1104,63 @@ h2{
 }
 }
 
+.aloha{
+	color:#ffffff;
+	position:relative;
+	text-transform:uppercase;
+	margin:25px 0px;
+	img{
+	width:100%;
+	 } 
+	 .top-pic{
+	 	margin:0px 0px 25px 0px;
+	 }
+
+	 h3{
+	  position:absolute;
+	   top:30%;
+	   text-align:center;
+	 	font-family:$light;
+	 	margin:auto;
+	 left:0;
+	 right:0;
+	 font-size: 24px;
+    letter-spacing: 16px;
+    @media (min-width: $screen-sm-min){
+    font-size: 107px;
+    }
+     @media (min-width: $screen-md-min){
+    font-size: 80px;
+    }
+	 }
+	 .welcome, {
+	position: absolute;
+    top: 8.50%;
+    text-align: center;
+    font-family: "Lato-Black";
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    word-spacing: 4px;
+	 }
+	 .waikiki{
+		 bottom:21%;
+		 position: absolute;
+		  text-align: center;
+	    font-family: "Lato-Black";
+	    margin: auto;
+	    left: 0;
+	    right: 0;
+	    text-transform: uppercase;
+	    letter-spacing: 5px;
+	    font-size: 14px;
+	    word-spacing: 4px;
+		 }
+
+}
 .home-location-wrap {
 	padding: 55px 0;
 	text-align: center;
@@ -1119,12 +1175,14 @@ h2{
 
 	.map-label {
 		position: relative;
-		text-align: center;
-		top: -33px;
+		text-align: left;
+		top: -90px;
+		left:30px;
 
 
 		@media(max-width: 479px){
-				top: -24px;
+				top: -45px;
+				left:15px;
 			}
 
 
@@ -1135,12 +1193,12 @@ h2{
 		}
 	}
 	p{
-		font-family: $main-font-light;
+		font-family: $light;
 		font-size: 18px;
 		color: $tc-ash-1;
 		line-height: 36px;
 		text-transform: normal;
-		width: 85%;
+		width: 79%;
 		margin: 0 auto;
 		letter-spacing: 1px;
 		padding: 40px 0;
@@ -1158,7 +1216,7 @@ h2{
 	}
 
 		.cap {
-			font-family: $main-font-medium;
+			font-family: $light;
 			text-transform: uppercase;
 			color: $tc-light-blue-1;
 			padding: 0 3px;
@@ -1171,12 +1229,12 @@ h2{
 	h2{
 			font-size: 14px;
 			text-transform: uppercase;
-			font-family: $main-font-bold;
+			font-family: $black;
 			letter-spacing: 5px;
 		}
 		h3{
 			font-size: 32px;
-			font-family: $main-font-light;
+			font-family: $light;
 			letter-spacing: 5px;
 			text-transform: uppercase;
 			padding-top: 40px;
@@ -1206,6 +1264,9 @@ h2{
 .show-case {
 	img {
 		width: 100%;
+	}
+	.pattran{
+	margin:4px 0px;
 	}
 }
 
@@ -1347,6 +1408,95 @@ h2{
 
 	}
 }
+.guestbook{
+	position:relative;
+	padding-bottom:25px;
+	h2{
+	    font-size: 14px;
+	    text-transform: uppercase;
+	    font-family: "Lato-Black";
+	    letter-spacing: 4px;
+	    padding:18px 0px;
+	     @media (min-width: $screen-sm-min){
+	       padding:47px 0px;
+	     }
+	    }
+	    h4{
+	    padding-top:20px;
+	    }
+
+	    h3{
+
+		font-size: 32px;
+		text-transform: uppercase;
+		color: $tc-light-blue-1;
+		letter-spacing: 6px;
+		line-height: 40px;
+		
+		@media (max-width: 1023px){
+			font-size: 24px;
+			letter-spacing: 4px;
+			line-height: 30px;
+    		
+		}
+		@media (max-width: 767px){
+		font-size: 16px;
+		line-height: 28px;
+		
+	}
+	}	
+
+	    .caption-message {
+	    	max-width:980px;
+	    	margin:auto;
+	    	 padding:0px 40px;
+	    	 text-align:center;
+	    	 @media (min-width: $screen-sm-min){
+	    	 padding:18px  0px;
+	    	 }
+		}
+
+	.carousel-indicators {
+	/*	-webkit-transform: rotate(90deg);
+		transform: rotate(90deg);
+		transform-origin: top left;*/
+		left: 36px;
+		bottom: 41%;
+		margin: 0;
+		width: auto;
+		text-align: left;
+
+		@media (max-width: 768px){
+			left: 15px;
+			bottom:inherit;
+			top:10px;
+		}
+		
+
+		li {
+			display:block;
+			width: 8px;
+		    height: 8px;
+		    margin: 16px 0px;
+		    text-indent: -999px;
+		    /* border: 1px solid #606060; */
+		    border-radius: 10px;
+		    cursor: pointer;
+		    background-color: #606060;
+			border: 2px solid #606060;
+			&.active {
+			    background-color: transparent;
+			    border: 2px solid #606060;
+				width: 11px;
+				height: 11px;
+				margin-left: -1px;
+			}
+		}
+
+	}    
+
+
+    }
 .cta-outer {
 	padding: 58px 0;
 }
@@ -1540,7 +1690,7 @@ h2{
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-  font-family: "brandon_grotesqueregular";
+  	font-family: $regular;
   z-index:100;
   @media (max-width: 768px){
     bottom:0px;

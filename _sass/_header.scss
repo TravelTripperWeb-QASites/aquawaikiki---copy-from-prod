@@ -4,7 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	line-height: normal;
-	font-family: $main-font-regular;
+	font-family: $base-font-family;
 }
 h1,h2,h3,h4,h5,h6,p,ul {
 	margin: 0;
@@ -25,8 +25,9 @@ a:hover,a:focus {
 /* Scrollable header */
 .header-wrapper {
 	background-color: $bg-white;
-	font-family: $main-font-bold;
+	font-family: $regular;
 	padding: 26px 0;
+	border-top:1px solid #014ea0;
 	text-transform: uppercase;
 	
 		@media (max-width: 1240px){
@@ -40,7 +41,7 @@ a:hover,a:focus {
 	
 	.booknow {
 		float:right;
-		padding: 18px 0 0 0;
+		padding: 15px 0 0 0;
 		
 			@media (max-width: 1240px){
 				padding: 8px 0 0 0;
@@ -52,7 +53,7 @@ a:hover,a:focus {
 			}
 		
 		a{
-			background-color: $bg-blue-1;
+			background-color: $brand-color;
 			display: inline-block;
 		font-size: 13px;
 		letter-spacing: 4px;
@@ -80,7 +81,7 @@ a:hover,a:focus {
 
 .logo {
 	float:left;
-	width: 204px;
+	width: 230px;
 	@media (max-width: 1240px){
 		width: 160px;
 	}
@@ -95,7 +96,7 @@ a:hover,a:focus {
 }
 .main-menu {
 	float: left;
-	padding: 29px 0 0 30px;
+	padding: 22px 0 0 30px;
 	background-color: $bg-white;
 	
 	@media (max-width: 1240px){
@@ -204,7 +205,7 @@ a:hover,a:focus {
 	.booknow {
 		position: absolute;
 		right: 0;
-		top:-18px;
+		top:-15px;
 		a{
 			padding: 29px 20px;
 		}
