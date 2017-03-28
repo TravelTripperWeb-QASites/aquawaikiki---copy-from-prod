@@ -12,7 +12,7 @@
 
 	.page-title
 	{
-		font-family: 'FuturaStd-Light';
+		font-family: $thin;
 		font-size:	72px;
 		letter-spacing: 16px;
 		padding-left:14px;
@@ -87,7 +87,7 @@ section.models
 
 			.rate-btn
 			{
-				font-family: $main-font-medium;
+				font-family: $regular;
 				font-size:14px;
 				text-transform:uppercase;
 				display:inline-block;
@@ -151,7 +151,7 @@ section.models
 
 			.title
 			{
-				font-family: 'brandon_grotesquebold';
+				font-family: $black;
 				font-size:14px;
 				color: #333333;
 				padding-bottom:55px;
@@ -186,7 +186,7 @@ section.models
 			.desp
 			{
 
-				font-family: 'brandon_grotesquelight';
+				font-family: $light;
 				font-size: 18px;
 				line-height: 24px;
 				padding-bottom:50px;

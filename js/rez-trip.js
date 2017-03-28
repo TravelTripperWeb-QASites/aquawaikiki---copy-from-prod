@@ -5,8 +5,8 @@
       $interpolateProvider.endSymbol(']]');
     })
     .value('rt3api', new Rt3Api({
-      portalId: '24northhotel', //'24northhotel',
-      hotelId: 'KEY24N',//'KEY24N',
+      portalId: 'pearlwaikiki', 
+      hotelId: 'HAWPRL',
       defaultLocale: 'en',
       defaultCurrency: 'USD'
     }))
