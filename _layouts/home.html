@@ -64,14 +64,14 @@ layout: default
       <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
     </div>-->
     <div class="theme-right-panel">
-      <div class="social-right"><!-- <a href="#"><i class="fa fa-instagram"></i></a> --><a href="https://www.facebook.com/24-North-Hotel-190785077925312/" target="_blank"><i class="fa fa-facebook"></i></a> <!--<a href="#"><i class="fa fa-twitter"></i></a> --></div>
+      <div class="social-right"><a href="#" target="_blank"><i class="fa fa-instagram"></i></a><a href="https://www.facebook.com/aquawaikikipearl" target="_blank"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com/aquaresorts" target="_blank"><i class="fa fa-twitter"></i></a> </div>
     </div>
   </div>
 </section>
 <section>
-  <div class="container-fluid blue-bg mo">
+  <div class="container-fluid blue-bg mo" style="background-image:url(/images/floewr-bg.jpg);">
     <div class="about-wrap">
-      {% region 24north-hotelkey-west %}
+      {% region aqua-waikiki-pearl %}
 
     </div>
   </div>
@@ -81,23 +81,11 @@ layout: default
     <div class="col-sm-6 no-padding v-center">
       <div class="two-col-content">
         {% region paradise-found %}
-        <div class="logo-icon">{% region logo24-image %}</div>
+        <div class="logo-icon">{% region logoAqua-image %}</div>
       </div>
     </div>
     <div class="col-sm-6 no-padding v-center">{% region paradisefound-image %}</div>
   </div>
-</section>
-<section class="about-home">
-  <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center">{% region abouthotel-image %}</div>
-    <div class="col-sm-6 no-padding v-center">
-      <div class="two-col-content">
-        {% region about-hotel-text %}
-        <!--<div class="btn-holder"><a href="#" class="button-common btn-blue">View this suite<i class="fa fa-play"></i></a></div>-->
-      </div>
-    </div>
-  </div>
-  <div class="graphic">{% region curve2-image %}</div>
 </section>
 
 <section>
@@ -140,7 +128,7 @@ layout: default
     	<div class="container">
        	  {% region special-offer-head %}
           {%  include special-offers.html %}
-          <div class="graphic">{% region stamp2-image %}</div>
+         
 
           <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
 
@@ -149,19 +137,21 @@ layout: default
     </div>
 </section>
 
-<section class="bt">
-	<div class="container-fluid no-padding">
-    <div class="border-texture"><img src="/images/floating/border-textrure.png" alt=""/></div>
-    	<div class="cta-theme">
-        	<div class="pf-wrap">
-        	{% region paradisefound %}
-            <div><a href="/gallery/" class="button-common btn-white">View Gallery<i class="fa fa-play"></i></a></div>
-        	</div>
-        </div>
-    </div>
+<section>
+  <div class="container-fluid aloha">
+      <div class="row">
+        <div class="col-sm-12 no-padding  top-pic" ><img src="/images/aloha-1.jpg" alt=""></div>
+           <div class="col-sm-12 no-padding" style=""><img src="/images/aloha-2.jpg" alt=""> 
+
+            <div class="welcome">Welcome to o’ahu</div>
+            <h3>Aloha</h3>
+            <div class="waikiki">Waikiki</div>
+           </div>
+          <!-- <div class="col-sm-12 no-padding" style="background:url(/images/aloha-2.jpg);"></div>
+      </div> -->
+  </div>
 </section>
 
-{% include grid.html %}
 
 
 
@@ -173,16 +163,11 @@ layout: default
 
       {% include location.html %}
 
-           <div><a href="/location/" class="button-common btn-blue">Explore location<i class="fa fa-play"></i></a></div>
-
-           <div class="graphic">{% region stamp3-image %}</div>
-
-
-
+           <div><a href="/location/" class="button-common btn-blue">get hotel directions<i class="fa fa-play"></i></a></div>
       </div>
     </div>
     </div>
-    <div class="cuba">{% region cuba-image %}</div>
+   
 </section>
 
 
@@ -192,11 +177,20 @@ layout: default
     	<div class="col-sm-4 no-padding">{% region showcase-img-1 %}</div>
         <div class="col-sm-4 no-padding">{% region showcase-img-2 %}</div>
         <div class="col-sm-4 no-padding">{% region showcase-img-3 %}</div>
+        <div class="col-sm-12 no-padding pattran">{% region showcase-flower-bg %}</div>
         </div>
     </div>
 </section>
 
+ {% include guestbook.html %}
+
 <section>
-	<div class="new-map">
-    {% region new-map-image %} </div>
+  <div class="container-fluid show-case">
+      <div class="row">
+      <div class="col-sm-4 no-padding">{% region showcase-img-4 %}</div>
+        <div class="col-sm-4 no-padding">{% region showcase-img-5 %}</div>
+        <div class="col-sm-4 no-padding">{% region showcase-img-6 %}</div>
+      
+        </div>
+    </div>
 </section>

@@ -2,7 +2,7 @@
 	width: auto;
 	padding: 40px 0px;
 	background-color: $bg-ash-4;
-	font-family: $main-font-regular;
+	font-family: $thin;
 	font-size: 14px;
 	color: $tc-white;
 	letter-spacing: 2px;
@@ -25,6 +25,7 @@
 		text-transform: uppercase;
 		font-size: 14px;
 		padding-bottom: 20px;
+		font-family:$medium;
 	}
 	p{
 		line-height: 22px;
@@ -71,7 +72,7 @@
 	background-color: transparent;
 	padding: 12px 20px;
 	font-size: 14px;
-	font-style: italic;
+	font-family: $light;
 	width: 100%;
 	border-radius: 0px;
 		@media (max-width: 767px){
@@ -95,7 +96,7 @@
 	appearance: none;
 	border: solid 2px #fff;
 	background-color: transparent;
-	font-family: $main-font-medium;
+	font-family: $light;
 	font-size: 14px;
 	text-align: center;
 	padding: 12px 50px;
@@ -135,7 +136,7 @@
 	color: $tc-ash-1;
 	
 .footer-copyright {
-	font-family: $main-font-regular;
+	font-family: $regular;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 45px;
