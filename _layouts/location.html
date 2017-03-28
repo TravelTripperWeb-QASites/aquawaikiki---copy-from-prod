@@ -1,168 +1,161 @@
 ---
 layout: default
----  
-
+---
 <section>
-  
-
-  <div class="container no-padding">
-  <div class="page-banner location-banner">
     
-    
-
-    {% region banner-heading %}
-
-  </div>
-
-</div>
-
+    <div class="container no-padding">
+        <div class="page-banner location-banner">
+            
+            
+            {% region banner-heading %}
+        </div>
+    </div>
 </section>
-
 <section class="loc-main">
-<div class="loc-main-inner">
-	<div class="container loc-content">
-    	
-    		<div class="col-sm-7">
-            <div class="loc-con-inner">
-        		<div class="left-column">
-                	{% region accessability %}
-                    
-                    {% region overview %}
-
-                    {% region directions %}
-
-
-
-
-
-                    
-              </div>
-              </div>
-              
-        	</div>
-        	<div class="col-sm-5">
-        		<div class="right-column">
-                	<div class="address-wrap">
+    <div class="loc-main-inner">
+        <div class="container loc-content">
+            
+            <div class="col-sm-7">
+                <div class="loc-con-inner">
+                    <div class="left-column">
+                        {% region accessability %}
+                        
+                        {% region overview %}
+                        {% region directions %}
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-5">
+                <div class="right-column">
+                    <div class="address-wrap">
                         {% region address %}
-                     </div>
+                    </div>
                     <div class="address-wrap">
                         {% region contanct %}
                     </div>
                     <div class="address-wrap">
-                         {% region check-in %}
+                        {% region check-in %}
                     </div>
-                    <div class="address-wrap">
-                         {% region gps %}
-                    </div>
+                   
                     <div class="btn-wrap">
-                       <div><a href="#" class="button-common btn-blue">Download Map<i class="fa fa-play"></i></a></div>
-                       <div class="extra-padding"><a href="#" class="button-common btn-blue">Download Fact Sheet<i class="fa fa-play"></i></a></div>
+                        <div><a href="#" class="button-common btn-blue">Download Map<i class="fa fa-play"></i></a></div>
+                        <div class="extra-padding"><a href="#" class="button-common btn-blue">Download Fact Sheet<i class="fa fa-play"></i></a></div>
                         <div></div>
                     </div>
                 </div>
-        	</div>
-           
-    </div>
-    
+            </div>
+            
+        </div>
+        
     </div>
 </section>
-
 <section class="bt">
-	<div class="container no-padding">
-    
-    	<div class="cta-theme cta-theme-location">
-        <div class="pf-wrap">
-        	{% region paradise-found-booknow %}
+    <div class="container no-padding">
+        
+        <div class="cta-theme cta-theme-location">
+            <div class="pf-wrap">
+                {% region paradise-found-booknow %}
             </div>
         </div>
     </div>
 </section>
-
-
-
 <section>
-	<div class="container">
-   	  <div class="home-location-wrap"> 
-      
-      {% include location.html %}
-      
-           <div><a href="/gallery/" class="button-common btn-blue">View Gallery<i class="fa fa-play"></i></a></div>
+    <div class="container">
+        <div class="home-location-wrap location-map">
+            <h2>Location</h2>
+            <h3>exploring  Oʻahu</h3>
+            <div class="container-fluid show-case">
+                <div class="row">
+                    <div class="col-sm-4 no-padding">{% region showcase-img-1 %}</div>
+                    <div class="col-sm-4 no-padding">{% region showcase-img-2 %}</div>
+                    <div class="col-sm-4 no-padding">{% region showcase-img-3 %}</div>
+                    
+                </div>
+            </div>
+            <div class="map-wrap"><img src="/images/map.jpg" alt="Location"/></div>
+            <div class="map-label"><img src="/images/logo-footer.png" alt=""/></div>
+            <h2>a few sites in driving distance</h2>
+            <p><span class="cap">A</span> International Market Place 3 mins <span class="cap">B </span>Ala Moana Center 12 min <span class="cap">C</span>  Diamond Head State Monument 14 min <span class="cap">D</span> Snorkeling at Hanauma Bay 25 min <span class="cap">E</span> Honolulu Zoo 6 min <span class="cap">F</span> Waikiki Aquarium 9 min  <span class="cap">G</span> Manoa Falls 17 min <span class="cap">H</span> Magic Island 10 min <span class="cap">I</span> Pearl Harbor 42 min <span class="cap">J</span> Iolani Palace 14 min <span class="cap">K</span> Bishop Museum 12 min </p>
             
-      </div>
+            {% include location.html %}
+            
+            <div><a href="/location/" class="button-common btn-blue">get hotel directions<i class="fa fa-play"></i></a></div>
+            
+        </div>
     </div>
 </section>
-
-
-
 <section class="hdct">
-	<div class="container-fluid no-padding">
-    <div class="graphic"></div>
-    	<div class="empty-container">{% region loc-1 %}</div>
+    <div class="container-fluid no-padding">
+        
+        <div class="natural-wonders"><h2>Natural wonders</h2></div>
         
     </div>
 </section>
-
 {% include grid.html %}
-
-<section>
-	<div class="loc-map">
-    {% region loc-map-img %} </div>
+{% include guestbook.html %}
+<section class="hdct">
+    <div class="container-fluid no-padding">
+        
+        <div class="livethesprit"><h2>live the spirit<br>of Aloha</h2></div>
+        
+    </div>
 </section>
-
 <!--<section>
-	<div class="container-fluid no-padding home-specials-wrap car-blue-bg">
-    	<div class="container">
-       	  <h2 class="heading-large">current events</h2>
-          
-          <div id="home-carousel-2">
-  				<div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-1.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>fantasy festival</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
+        <div class="container-fluid no-padding home-specials-wrap car-blue-bg">
+            <div class="container">
+                <h2 class="heading-large">current events</h2>
+            
+            <div id="home-carousel-2">
+                                <div class="item">
+                    <div class="home-specials-item">
+                        <img src="../images/loc-event-1.jpg" alt=""/>
+                        <div class="car-content">
+                            <h3>fantasy festival</h3>
+                            <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
+                        </div>
+                        <a href="#" class="button-common btn-top">View Event</a>
+                    </div>
+                    
                 </div>
-                <a href="#" class="button-common btn-top">View Event</a>
-            </div>
-            
-            </div>
-            
-            <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-2.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>ernest hemingway</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
+                
+                <div class="item">
+                    <div class="home-specials-item">
+                        <img src="../images/loc-event-2.jpg" alt=""/>
+                        <div class="car-content">
+                            <h3>ernest hemingway</h3>
+                            <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
+                        </div>
+                        <a href="#" class="button-common btn-top">View Event</a>
+                    </div>
+                    
                 </div>
-                <a href="#" class="button-common btn-top">View Event</a>
-            </div>
-            
-            </div>
-            
-             <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-1.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>grand opening special</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
+                
+                <div class="item">
+                    <div class="home-specials-item">
+                        <img src="../images/loc-event-1.jpg" alt=""/>
+                        <div class="car-content">
+                            <h3>grand opening special</h3>
+                            <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
+                        </div>
+                        <a href="#" class="button-common btn-top">View Special</a>
+                    </div>
+                    
                 </div>
-                <a href="#" class="button-common btn-top">View Special</a>
-            </div>
-            
-            </div>
-            
-             <div class="item">
-            <div class="home-specials-item">
-                <img src="../images/loc-event-2.jpg" alt=""/>
-                <div class="car-content">
-                    <h3>book early & save!</h3>
-                    <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
+                
+                <div class="item">
+                    <div class="home-specials-item">
+                        <img src="../images/loc-event-2.jpg" alt=""/>
+                        <div class="car-content">
+                            <h3>book early & save!</h3>
+                            <p>Lorem ipsum dolor sit amet, in quo magna oratio, illum assum neglegentur nec ne...</p>
+                        </div>
+                        <a href="#" class="button-common btn-top">View Special</a>
+                    </div>
+                    
                 </div>
-                <a href="#" class="button-common btn-top">View Special</a>
-            </div>
-            
-            </div>
-            
+                
             </div>
             
             <div class="btn-holder-with-padding"><a href="#" class="button-common">View all Events<i class="fa fa-play"></i></a></div>
@@ -170,6 +163,3 @@ layout: default
         </div>
     </div>
 </section>-->
-
-
-
