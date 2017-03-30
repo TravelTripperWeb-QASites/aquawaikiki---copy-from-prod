@@ -74,19 +74,27 @@
 	.white-bg{ position:relative;
 		.about-wrap{
 			text-align: center;
-			padding: 90px 15px;
+			padding: 15px 15px;
 			color: #333333;	
 			@media (max-width: 480px){
-				padding:40px 10px;
+				padding:10px 10px;
 			}
 			h3 {
 				font-size: 14px;
 				text-transform: uppercase;
-				font-family: "brandon_grotesquebold";
+				font-family: 'Lato-Black';
 				letter-spacing: 5px;
 				padding-bottom:40px;
 			}
 			p{ max-width:550px; margin:0 auto;}
+
+			.btn-blue{
+				color:$bg-blue-3;
+
+				&:hover{
+					color:#fff;
+				}
+			}
 			
 		}
 		.graphic-1{
@@ -159,7 +167,7 @@
 	}
 	.lifestyle{ background:#fff; padding:30px 0 90px; position:relative;
 		@media (max-width: 767px){ padding:30px 0 60px;}
-		p{ padding-bottom:45px;}
+		p{font-family:$light; padding-bottom:45px;color:$bg-blue-1}
 		.stamp2{ position:absolute; right:0; top:calc(50% - 150px); width:100px;
 			img{ width:100%;}
 			@media (max-width: 767px){display:none;}
@@ -191,16 +199,19 @@
 
 .rfp-callus{
 	color: #333333; 
-	font-family: brandon_grotesquelight; 
+	font-family: $light; 
+	font-size: 20px; 
+	letter-spacing: normal; 
+	text-transform: none;
+	line-height: 40px;
+}
+
+.rfp-phone{
+	background-color: #ffffff; 
+	font-family: $light; 
 	font-size: 20px; 
 	letter-spacing: normal; 
 	text-transform: none;
 }
 
-.rfp-phone{
-	background-color: #ffffff; 
-	font-family: brandon_grotesquelight; 
-	font-size: 20px; 
-	letter-spacing: normal; 
-	text-transform: none;
-}
+.group-banner{background: url(/images/groups-banner.jpg) no-repeat center center;background-size: cover;}
