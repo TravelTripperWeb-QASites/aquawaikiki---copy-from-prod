@@ -1,5 +1,55 @@
 [
   {
+    "name": "home-carousel-1",
+    "file_name": "home-carousel-1.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083019/home-carousel-1.jpg",
+    "date_added": "2017-03-27-083019",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-03-27-083019_home-carousel-1.jpg.json"
+  },
+  {
+    "name": "home-carousel-2",
+    "file_name": "home-carousel-2.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083020/home-carousel-2.jpg",
+    "date_added": "2017-03-27-083020",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-03-27-083020_home-carousel-2.jpg.json"
+  },
+  {
+    "name": "home-carousel-3",
+    "file_name": "home-carousel-3.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083021/home-carousel-3.jpg",
+    "date_added": "2017-03-27-083021",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-03-27-083021_home-carousel-3.jpg.json"
+  },
+  {
+    "name": "home-carousel-4",
+    "file_name": "home-carousel-4.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-084108/home-carousel-4.jpg",
+    "date_added": "2017-03-27-084108",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-03-27-084108_home-carousel-4.jpg.json"
+  },
+  {
+    "name": "home-carousel-5",
+    "file_name": "home-carousel-5.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-084109/home-carousel-5.jpg",
+    "date_added": "2017-03-27-084109",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-03-27-084109_home-carousel-5.jpg.json"
+  },
+  {
     "name": "bight-before-christmas.jpg",
     "url": "//cdn.traveltripper.io/site-assets/359_384_1001/media/bight-before-christmas.jpg",
     "git_file_name": "_assets/image_data/site-assets_359_384_1001_media_bight-before-christmas.json"

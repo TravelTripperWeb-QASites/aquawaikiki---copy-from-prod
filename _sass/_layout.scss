@@ -202,7 +202,7 @@
 	border: solid 2px $tc-white;
 	padding: 12px 20px;
 	text-transform: uppercase;
-	font-family: $light;
+	font-family: $regular;
 	letter-spacing: 2px;
 	font-size: 14px;
 	display:inline-block;
@@ -520,17 +520,13 @@
 	}
 	}
 }
-.home-rooms-holder-inner{
-	padding: 26px 26px;
-	border: 18px solid transparent;
 
-}
 .home-rooms-holder{
 
 
 	width: 400px;
 	background-color: $bg-white;
-	padding: 26px 26px;
+	padding: 40px 26px;
 	text-align: center;
 	margin:auto;
 	font-family: $light;
@@ -541,24 +537,35 @@
 		padding: 20px 15px;
 		margin: 0 auto;
 	}
+	.btn-blue{
+		    border-color: $bg-ash-4;
+    		color: $bg-ash-4;
+    		min-width:203px;
+    		&:hover{
+    		background-color:$bg-ash-4;
+    		border-color: $bg-ash-4;
+    		color:#fff;	
+    		}
 
+
+	}
 	h2{
 		font-size: 14px;
 			text-transform: uppercase;
-			font-family: $black;
+			font-family: $extra-bold;
 			letter-spacing: 5px;
 	}
 	h3{
-
+		font-family:$light;
 		font-size: 32px;
 		text-transform: uppercase;
 		color: $tc-light-blue-1;
-		letter-spacing: 6px;
+		letter-spacing: 4px;
 		line-height: 40px;
 		padding-top: 60px;
 		@media (max-width: 1023px){
 			font-size: 24px;
-			letter-spacing: 4px;
+			
 			line-height: 30px;
     		padding-top: 30px;
 		}
@@ -569,20 +576,26 @@
 	}
 	}
 	p{
-		padding: 15px 15% 55px 15%;
+			padding: 24px 15% 55px 15%;
 			font-size: 18px;
 			line-height: 30px;
 			@media (max-width: 1023px){
 			    padding: 15px 15px 30px 15px;
-    font-size: 18px;
-    line-height: 24px;
+			    font-size: 18px;
+			    line-height: 24px;
+
 			}
 
 			@media (max-width: 767px){
-		font-size: 16px;
-		line-height: 24px;
-		padding: 20px 0 20px 0;
-	}
+			font-size: 16px;
+			line-height: 24px;
+			padding: 20px 0 20px 0;
+			}
+			
+			a{
+			    	color:$bg-blue-2;
+
+			    }
 
 	}
 }
@@ -605,8 +618,10 @@
 	display: block;
 }
 .btn-blue {
-	border-color: $bg-ash-4;
-	color: $tc-ash-1;
+
+	border-color: $bg-blue-3;
+	color:$bg-blue-3;
+
 
 	&:hover, &:focus{
 		background-color: $bg-blue-1;
@@ -617,7 +632,7 @@
 
 
 	.fa-play {
-		color: $tc-dark-blue;
+		color:$bg-ash-4;
 
 
 	}
@@ -638,7 +653,7 @@
 }
 
 .home-specials-wrap {
-	background-color: $bg-ash-3;
+	background-color: #f8f8f8;
 
 	.container {
 		position: relative;
@@ -694,6 +709,7 @@
 	padding: 50px 0;
 	text-transform: uppercase;
 	text-align: center;
+	color:$bg-ash-4;
 
 	@media (max-width: 1023px){
 			padding: 30px 0;
@@ -737,6 +753,7 @@
 		letter-spacing: 6px;
 		font-size: 14px;
 		text-transform: uppercase;
+		color:$tc-ash-1;
 		@media (max-width: 1023px){
 			letter-spacing: 3px;
 		}
@@ -754,7 +771,7 @@
 		}
 	}
 	a {
-		color : #000;
+		color : $bg-ash-4;
 		&:hover  {
 			 opacity: .6;
 		}
@@ -765,7 +782,7 @@
 	position: absolute;
 	top:0;
 	left: 0;
-	color: $tc-ash-1;
+	color: $bg-blue-3;
 	background-color: $bg-white;
 	padding: 14px 22px;
 }
@@ -844,7 +861,7 @@
 
 	h2{
 		font-size: 70px;
-		font-family: $secondoray-font;
+		font-family: $light;
 		text-transform: uppercase;
 		color: $tc-white;
 		letter-spacing: 16px;
@@ -864,7 +881,7 @@
 .btn-white {
 	border-color: $bg-white;
 	background-color: $bg-white;
-	color: $tc-dark-blue;
+	color: $bg-blue-3;
 
 	&:hover{
 		border-color: $bg-blue-3;
@@ -872,14 +889,14 @@
 		background-color: $bg-blue-3;
 
 		.fa-play{
-		color: $tc-white;
+		color:$bg-blue-3;
 		}
 	}
 
 
 
 	.fa-play {
-		color: $tc-dark-blue;
+		color: $bg-blue-3;
 	}
 
 
@@ -908,7 +925,7 @@
 		text-align:center;
 		padding: 80px 15px;
 		color: $tc-ash-1;
-		font-family: $main-font-light;
+		font-family: $light;
 		@media (max-width: 1240px){
 			padding: 20px 15px;
 			}
@@ -919,7 +936,7 @@
 		h3{
 			font-size: 14px;
 			text-transform: uppercase;
-			font-family: $main-font-bold;
+			font-family: $black;
 			letter-spacing: 5px;
 		}
 		h2{
@@ -981,7 +998,7 @@ h2{
 			font-size: 32px;
 			letter-spacing: 4px;
 			line-height: 40px;
-			color: $tc-light-blue-1;
+			color: $bg-blue-2;
 			width: 90%;
 			margin: 0 auto;
 			padding: 60px 0 30px 0;
@@ -1308,7 +1325,7 @@ h2{
 		width: 100%;
 	}
 	h2 {
-		font-family: $main-font-bold;
+		font-family: $extra-bold;
 		    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -1318,14 +1335,14 @@ h2{
 	}
 	}
 	.room-price {
-		font-family: $main-font-regular;
+		font-family: $semi-bold;
 		font-size: 18px;
 		padding-top: 22px;
 
 		span{
-			font-family: $main-font-medium;
-			color: $tc-light-blue-1;
-			padding-left: 14px;
+			font-family: $semi-bold;
+			color: $bg-blue-2;
+			padding-left: 18px;
 		}
 
 
@@ -1338,7 +1355,7 @@ h2{
 	}
 	}
 	p{
-		font-family: $main-font-light;
+		font-family: $light;
 		font-size: 18px;
 		line-height: 26px;
 		padding-top: 22px;
@@ -1406,7 +1423,8 @@ h2{
 	     }
 	    }
 	    h4{
-	    padding-top:20px;
+		    padding-top:20px;
+		    padding-bottom: 30px;
 	    }
 
 	    h3{
@@ -1780,4 +1798,58 @@ h2{
 			margin-top:0px;
 		}
 	}
+}
+
+.natural-wonders{
+
+	background-image: url(/images/loc-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	    h2 {
+	    font-size: 30px;
+	    font-family: "Lato-Light";
+	    text-transform: uppercase;
+	    color: #ffffff;
+	    letter-spacing: 16px;
+	    padding: 120px 0;
+	    text-align:center;
+	    @media(min-width: $screen-sm-min){
+			padding: 250px 0;
+			font-size: 50px;
+		}
+		@media(min-width: $screen-md-min){
+			padding: 300px 0;
+			font-size: 70px;
+		}
+		}
+}
+
+.livethesprit{
+
+	background-image: url(/images/live.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+	    h2 {
+	    font-size: 30px;
+	    font-family: "Lato-Light";
+	    text-transform: uppercase;
+	    color: #ffffff;
+	    letter-spacing: 16px;
+	    padding: 150px 0;
+	    text-align:center;
+	    @media(min-width: $screen-sm-min){
+			 padding: 280px 0;
+			 font-size: 50px;
+		}
+		@media(min-width: $screen-md-min){
+			 padding: 350px 0;
+			 font-size: 70px;
+		}
+		}
+
+
 }
