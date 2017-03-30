@@ -84,9 +84,11 @@ a:hover,a:focus {
 	width: 230px;
 	@media (max-width: 1240px){
 		width: 160px;
+		margin-top:12px;
 	}
 	@media (max-width: 767px){
 		width: 110px;
+		margin-top:12px;
 	}
 	
 	img {
@@ -201,6 +203,7 @@ a:hover,a:focus {
 	
 	.logo {
 		width: 160px;
+		margin-top:12px;
 	}
 	.booknow {
 		position: absolute;
