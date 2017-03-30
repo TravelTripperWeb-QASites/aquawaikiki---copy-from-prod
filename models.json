@@ -469,60 +469,10 @@
       }
     ]
   ],
-  "gallery_foodndrink_images": [
+  "gallery_attractions_images": [
     [
       {
-        "file": "gallery_foodndrink_image1.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image10.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image11.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image2.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image3.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image4.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image5.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image6.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image7.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image8.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_foodndrink_image9.json"
+        "file": "gallery_attractions_image1.json"
       }
     ]
   ],
@@ -531,169 +481,12 @@
       {
         "file": "gallery_hotel_image1.json"
       }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image10.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image11.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image12.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image13.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image14.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image15.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image16.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image17.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image2.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image3.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image4.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image5.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image6.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image7.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image8.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_hotel_image9.json"
-      }
     ]
   ],
-  "gallery_keywest_images": [
+  "gallery_restaurantbar_images": [
     [
       {
-        "file": "gallery_keywest_image1.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_keywest_image2.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_keywest_image3.json"
-      }
-    ]
-  ],
-  "gallery_pool_images": [
-    [
-      {
-        "file": "gallery_pool_image1.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image10.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image11.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image12.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image13.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image2.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image3.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image4.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image5.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image6.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image7.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image8.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_pool_image9.json"
+        "file": "gallery_restaurantbar_image1.json"
       }
     ]
   ],
@@ -701,46 +494,6 @@
     [
       {
         "file": "gallery_rooms_image1.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_rooms_image2.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_rooms_image3.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_rooms_image4.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_rooms_image5.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_rooms_image6.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_rooms_image7.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_rooms_image8.json"
-      }
-    ],
-    [
-      {
-        "file": "gallery_rooms_image9.json"
       }
     ]
   ],
