@@ -1,1 +1,9 @@
-{"thumb_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_818/media/gallery-1.jpg"},"slider_image":{"url":"//cdn.traveltripper.io/site-assets/359_384_818/media/gallery-1-large.jpg"},"sort_order":1}
+{
+	"thumb_image": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-30-043008/gallery-2-a.jpg"
+	},
+	"sort_order": 1,
+	"slider_image": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-30-043009/gallery-2-large-a.jpg"
+	}
+}
