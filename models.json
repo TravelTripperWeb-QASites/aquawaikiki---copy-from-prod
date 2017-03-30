@@ -499,6 +499,11 @@
       {
         "file": "gallery_attractions_image6.json"
       }
+    ],
+    [
+      {
+        "file": "gallery_attractions_image7.json"
+      }
     ]
   ],
   "gallery_hotel_images": [
@@ -506,12 +511,27 @@
       {
         "file": "gallery_hotel_image1.json"
       }
+    ],
+    [
+      {
+        "file": "gallery_hotel_image2.json"
+      }
+    ],
+    [
+      {
+        "file": "gallery_hotel_image3.json"
+      }
     ]
   ],
   "gallery_restaurantbar_images": [
     [
       {
         "file": "gallery_restaurantbar_image1.json"
+      }
+    ],
+    [
+      {
+        "file": "gallery_restaurantbar_image2.json"
       }
     ]
   ],
@@ -539,6 +559,21 @@
     [
       {
         "file": "gallery_rooms_image5.json"
+      }
+    ],
+    [
+      {
+        "file": "gallery_rooms_image6.json"
+      }
+    ],
+    [
+      {
+        "file": "gallery_rooms_image7.json"
+      }
+    ],
+    [
+      {
+        "file": "gallery_rooms_image8.json"
       }
     ]
   ],
