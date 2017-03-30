@@ -27,6 +27,13 @@
 			
 		},
 		{
+			'title':'Wedding',
+			'name': 'wedding',
+			'url': '/wedding/',
+			'submenu': 'flase' 
+			
+		},
+		{
 			'title':'Groups',
 			'name': 'meetings-and-events-key-west',
 			'url': '/meetings-and-events-key-west/',

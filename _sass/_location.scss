@@ -190,6 +190,19 @@
 	}
 	}
 }
+.cta-theme-aloha {
+	background-image: url(../images/home-beach.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	
+	h2{
+		padding: 86px 0 60px 0;
+		
+		@media (max-width: 1023px){
+		padding: 30px 0px; 
+	}
+	}
+}
 .empty-container {
 	
 	img {
