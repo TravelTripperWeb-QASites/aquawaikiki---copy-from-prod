@@ -149,6 +149,8 @@
 				margin:20px auto;	
 			}
 		}
+		a{ color:#fff;}
+
 		.blue-bg{
 			.two-col-content{
 				@media (max-width: 1024px){ padding:30px 15px;}
@@ -215,3 +217,27 @@
 }
 
 .group-banner{background: url(/images/groups-banner.jpg) no-repeat center center;background-size: cover;}
+
+.meetings-addresses{
+	color:#fff;
+	
+	.title-add{
+
+			font-family:$medium;
+			color:#fff;
+			line-height:20px;
+			letter-spacing:1px;
+			padding: 20px 0px 10px 0px;
+			
+		}
+	.dash{
+			    width: 46px;
+			    border-bottom: 1px solid $bg-blue-1;
+			    padding-top: 16px;
+			    margin: 0 auto;
+
+	}	
+	a{
+		letter-spacing:1px;
+	}
+}
