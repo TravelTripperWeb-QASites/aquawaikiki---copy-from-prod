@@ -295,7 +295,7 @@
 	}
 }
 .blue-bg {
-	background-color: $bg-blue-3;
+	background-color: #004f67;
 	background-size:cover;
 	background-repeat:no-repeat;
 	margin-top: 50px;
@@ -1852,4 +1852,44 @@ h2{
 		}
 
 
+}
+
+.wedding-content{
+	 color:#fff;
+	h2
+	{
+		font-family: $thin;
+		font-size:	72px;
+		letter-spacing: 16px;
+		padding-left:14px;
+		text-transform:uppercase;
+		padding: 114px 0;
+
+		@media(max-width:$phone-max)
+		{
+
+			font-size:	40px;
+			letter-spacing: 12px;
+			
+		}
+
+		@media(min-width:$screen-xs-min) and (max-width: $screen-xs-max)
+		{
+
+			font-size:	58px;
+			letter-spacing: 14px
+			
+		}
+	}
+	h4{
+
+	font-family: $black;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+	}
+}
+.wedding-content-wrap{
+
+	margin:10px auto;
 }
