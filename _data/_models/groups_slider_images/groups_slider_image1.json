@@ -1,10 +1,10 @@
 {
-	"carousel_caption": "<p>Key West Meetings</p>\n<h1>A Premier Destinations In The Tropics</h1>\n<div><a class=\"button-common\" href=\"/meetings-and-events-key-west/request-for-proposal/\">Request for Proposal </a></div>",
+	"carousel_caption": "<p>Group Meetings</p>\n<h1>A Premier Destinations In The Tropics</h1>\n<div><a class=\"button-common\" href=\"/meetings-and-events-key-west/request-for-proposal/\">Request for Proposal </a></div>",
 	"slider_image": {
-		"url": "https://cdn.traveltripper.io/site-assets/359_384_2039/media/2017-03-06-015205/mc-1.jpg"
+		"url": "/images/group.jpg"
 	},
 	"sort_order": 1,
 	"thumb_image": {
-		"url": "https://cdn.traveltripper.io/site-assets/359_384_2039/media/2017-03-06-015904/mc-t-1.jpg"
+		"url": "/images/group.jpg"
 	}
 }
