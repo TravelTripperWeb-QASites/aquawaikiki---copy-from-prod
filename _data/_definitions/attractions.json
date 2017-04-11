@@ -13,7 +13,7 @@
 "image":
 	{"type":"image"},
 "contents_1":
-	{"type":"richtext","required":true,"label": "Short Description",},
+	{"type":"richtext","required":true,"label": "Short Description"},
 "category":
     {
       "label": "Choose Category",
@@ -22,17 +22,16 @@
       "model_name":"attractions_category"
     },
 "description":
-	{"type":"richtext","required":true, "label": "Description",},
+	{"type":"richtext","required":true, "label": "Description"},
 
 "contact":
-	{"type":"text","label": "Phone Number",},
+	{"type":"text","label": "Phone Number"},
 	"time":
-	{"type":"text","label": "timeing",},
+	{"type":"text","label": "timeing"},
 "address":
 	{"type":"richtext","label": "Address", "required":true,"hint":"Address here"},
 "Price":
 	{},	
- 
 "sort_order": 
     { 
       "type": "integer",
