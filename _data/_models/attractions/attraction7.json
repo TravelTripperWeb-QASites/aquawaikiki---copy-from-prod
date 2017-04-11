@@ -11,5 +11,11 @@
 	"address": "<p>3308 Kanaina Ave Honolulu<br /><a href=\"http://www.rainbowdrivein.com/\" target=\"_blank\" rel=\"nofollow\">Restaurant Website</a></p>",
 	"time": "7am-9pm; Daily",
 	"Price": "Mostly Under $10",
-	"sort_order": 2
+	"sort_order": 2,
+	"thumbnail": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-090145/attractions-3.jpg"
+	},
+	"image": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-090145/attractions-big-3.jpg"
+	}
 }
