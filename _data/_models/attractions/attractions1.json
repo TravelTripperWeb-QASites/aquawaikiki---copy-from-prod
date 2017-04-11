@@ -1,20 +1,21 @@
 {
 	"title": "International Market Place",
 	"attraction_title": "International Market Place",
-	"seo_description": "Known for its iconic banyan tree and lush Hawaiian landscaping, the International Market Place will offer unique open-air shopping & dining with a",
+	"seo_description": "Known for its iconic banyan tree and lush Hawaiian landscaping, the International Market Place will offer unique open-air shopping & dining with a “Hawaiian Sense of Place” in the heart of Waikiki.",
 	"url_friendly_name": "international-market-place",
 	"attraction_type": "shopping",
 	"address": "<p>2330 Kalakaua Avenue, Honolulu</p>",
-	"contents_1": "<p>Known for its iconic banyan tree and lush Hawaiian landscaping, the International Market Place will offer unique open-air shopping & dining with a “Hawaiian Sense of Place” in the heart of Waikiki. </p>",
+	"contents_1": "<p>Known for its iconic banyan tree and lush Hawaiian landscaping, the International Market Place will offer unique open-air shopping &amp; dining with a &ldquo;Hawaiian Sense of Place&rdquo; in the heart of Waikiki. It&rsquo;s sure to be among Oahu&rsquo;s top places to visit, and we&rsquo;re just one short block away! Your shopping adventure awaits.</p>",
 	"booking-link": "https://www.eventbrite.com/e/saint-archer-beer-dinner-tickets-31658282776",
 	"sort_order": 1,
 	"image": {
 		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-074657/attractions-1.jpg"
 	},
-
 	"thumbnail": {
 		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-074657/attractions-1.jpg"
 	},
 	"contact": "<p>Tel<span class=\"Apple-tab-span\" style=\"white-space: pre;\"> <a href=\"tel:928-224-5577\">(928) 224-5577</a></span></p>\n<p><a href=\"http://www.havasujetpack.com\" target=\"_blank\">www.havasujetpack.com</a></p>",
-	"category": "attractions_category1"
+	"category": "attractions_category1",
+	"description": "<p>Known for its iconic banyan tree and lush Hawaiian landscaping, the International Market Place will offer unique open-air shopping &amp; dining with a &ldquo;Hawaiian Sense of Place&rdquo; in the heart of Waikiki.</p>",
+	"time": "Mon - Sun  10:00 AM - 11:00 PM"
 }
