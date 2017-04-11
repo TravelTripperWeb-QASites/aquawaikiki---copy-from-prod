@@ -1,11 +1,6 @@
 {
 	 'mainnav':[ 
-	 	{
-			'title':'About',
-			'name': 'rooms',
-			'url': '/About/',
-			'submenu': 'false'
-		},
+	 	
 		
 		{
 			'title':'Rooms',
@@ -27,9 +22,9 @@
 			
 		},
 		{
-			'title':'Wedding',
-			'name': 'wedding',
-			'url': '/wedding/',
+			'title':'Weddings',
+			'name': 'weddings',
+			'url': '/weddings/',
 			'submenu': 'flase' 
 			
 		},
