@@ -11,5 +11,11 @@
 	"category": "attractions_category5",
 	"contents_1": "<p>Deeply rooted in Hawaiian history, Waimea Valley is a wonderland of historical sites, cultural activities and native wildlife.</p>",
 	"attraction_type": "CULTURE & HIST",
-	"sort_order": 10
+	"sort_order": 10,
+	"thumbnail": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-142918/attractions-10.jpg"
+	},
+	"image": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-142919/attractions-big-10.jpg"
+	}
 }
