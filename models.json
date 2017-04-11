@@ -684,5 +684,37 @@
         "file": "starbucks_carousel1.json"
       }
     ]
+  ],
+  "attractions_category": [
+    [
+      {
+        "title": "shopping",
+        "file": "attractions_category1.json"
+      }
+    ],
+    [
+      {
+        "title": "Dining",
+        "file": "attractions_category2.json"
+      }
+    ],
+    [
+      {
+        "title": "Outdoor Activities",
+        "file": "attractions_category3.json"
+      }
+    ],
+    [
+      {
+        "title": "Nature",
+        "file": "attractions_category4.json"
+      }
+    ],
+    [
+      {
+        "title": "Culture And History",
+        "file": "attractions_category5.json"
+      }
+    ]
   ]
 }

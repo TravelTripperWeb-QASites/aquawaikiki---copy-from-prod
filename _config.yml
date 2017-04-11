@@ -35,3 +35,6 @@ page_gen:
   - data: 'blog'
     template: 'blog-details'
     dir: 'blog'
+  - data: 'attractions'
+    template: 'attractions-details'
+    dir: 'attractions'  

@@ -8,6 +8,48 @@ layout: default
     </div>
   </div>
 </section>
+
+<ul class="gallery-nav attractions-filter-nav">
+    <li><a href="javascript:;" data-rel="all" class="filter active" data-filter="all">All</a></li>
+    {% assign catlist = site.data._models.attractions_category %} 
+
+    {% for cat in catlist %}
+    <li><a href="javascript:;" data-rel="{{cat.title}}" class="filter">{{cat.title}}</a></li>
+    {% endfor %}
+  </ul>
+
+   
+
+
+
+    {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
+    {% for e in events %}
+    {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+
+    <section class="models fancybox" data-filter="{{e.category.title}}">
+      <div class="container">
+        <div class=" two-col-wrap">
+          <div class="row no-gutters">
+            {% if cycle == 'even' %}
+            <div class="col-sm-6 sp-img "> <img src="{{e.thumb_image.url}}" alt=""></div>
+            {% endif %}
+            <div class="col-sm-6 sp-content">
+              <h2>{{e.name}}</h2>
+              <div class="title">{{e.schedule}}</div>
+              <div class="desp">{{e.short_description}}</div>
+          <div class="btn-holder"><a href="/location/events/{{e.url}}"  class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+            </div>
+            {% if cycle == 'odd' %}
+            <div class="col-sm-6 sp-img "> <img src="{{e.thumb_image.url}}" alt=""></div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    {% endfor %} 
+<!-- 
 {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
 {% for a in attractions %}
 <section class="models">
@@ -24,4 +66,4 @@ layout: default
     </div>
   </div>
 </section>
-{% endfor %}
+{% endfor %} -->
