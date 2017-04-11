@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+{% assign attractions = page %}
+{% assign model = page %}
+
+<section>
+  <div class="container no-padding">
+    <div class="page-banner rooms-banner" style="background-image: url({{attractions.image.url}});">
+      <h1 class="page-title">{{attractions.attraction_type}}</h1>
+    </div>
+  </div>
+</section>
+
+<section>
+<div class="container">
+<div class="blog-list blog-detail attractions-details">
+<div class="col-sm-5 no-padding">
+<img src="{{attractions.thumbnail.url}}">
+</div>
+<div class="col-sm-7">
+<div class="blog-item"> 
+<h3>{{attractions.attraction_title}}</h3>
+{{attractions.description}}
+<a href="tel:{{attractions.contact}}">{{attractions.contact}}</a>
+{{attractions.address}}
+<div class="price">{{attractions.Price}}</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
