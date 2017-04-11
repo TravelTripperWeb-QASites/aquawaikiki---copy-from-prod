@@ -27,9 +27,9 @@
 "contact":
 	{"type":"text","label": "Phone Number"},
 	"time":
-	{"type":"text","label": "timeing"},
+	{"type":"text","label": "timings"},
 "address":
-	{"type":"richtext","label": "Address", "required":true,"hint":"Address here"},
+	{"type":"richtext","label": "Address", "hint":"Address here"},
 "Price":
 	{},	
 "sort_order": 
