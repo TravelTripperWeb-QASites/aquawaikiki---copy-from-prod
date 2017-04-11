@@ -9,5 +9,7 @@
 	"address": "<p>1 Arizona Memorial Place, Honolulu</p>",
 	"Price": "Free (Tickets are limited)",
 	"sort_order": 14,
-	"description": "<p>Take a tour of U.S. history when you visit Pearl Harbor, the largest natural harbor in Hawaii and the number one visitor destination on Oahu. You&rsquo;ll learn about the fascinating history of the politics, people, and events that started World War II. The Aqua Waikiki Pearl will be happy to help you to book your tour.</p>"
+	"description": "<p>Take a tour of U.S. history when you visit Pearl Harbor, the largest natural harbor in Hawaii and the number one visitor destination on Oahu. You&rsquo;ll learn about the fascinating history of the politics, people, and events that started World War II. The Aqua Waikiki Pearl will be happy to help you to book your tour.</p>",
+	"category": "attractions_category5",
+	"attraction_type": "Culture & History"
 }
