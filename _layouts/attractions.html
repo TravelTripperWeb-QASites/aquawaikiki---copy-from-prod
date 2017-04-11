@@ -4,66 +4,226 @@ layout: default
 <section>
   <div class="container no-padding">
     <div class="page-banner attractions-bannner">
-    	{% region attractions-banner-content %}
+      {% region attractions-banner-content %}
     </div>
   </div>
 </section>
+<section class="global-container banner-onscroll content-top-margin room-container m-b-60">
+  
 
-<ul class="gallery-nav attractions-filter-nav">
-    <li><a href="javascript:;" data-rel="all" class="filter active" data-filter="all">All</a></li>
-    {% assign catlist = site.data._models.attractions_category %} 
+      <div class="col-md-12">
+       <ul class="gallery-nav events-filter-nav">
+          <li><a href="javascript:;" data-rel="all" class="filter active" data-filter="all">All</a></li>
+		  {% assign catlist = site.data._models.attractions_category %}
+		  {% for cat in catlist %}
+			<li><a href="javascript:;" data-rel="{{cat.title}}" class="filter">{{cat.title}}</a></li>
+		  {% endfor %}
+       </ul>
+      </div>
 
-    {% for cat in catlist %}
-    <li><a href="javascript:;" data-rel="{{cat.title}}" class="filter">{{cat.title}}</a></li>
-    {% endfor %}
-  </ul>
+  <div class="style-comfort-section">
+	<div class="container ">
+	  
+		<div class="col-sm-10 pull-right no-gutter room-couple-img-width">
+		  {% region attractions-description %}
+		</div>
+	 
+	</div>
+  </div>
+</section>
 
-   
+
+  {% assign postsPerPage = 6 %}
+  {% assign numPages = site.data._models.attractions | size | divided_by: postsPerPage %}
+
+  {% if site.data._models.attractions.size | modulo: postsPerPage > 0 %}
+    {% assign numPages = numPages | plus: 1 %}
+  {% endif %}
+  {% assign endIndex = numPages | minus: 1 %}
 
 
+    {% for pageNum in (0..endIndex) %}
+      {% assign offset = pageNum | times: postsPerPage %}
+      {% assign attractions-sorted = site.data._models.attractions | sort: 'sort_order' %}
+      {% for attractions in attractions-sorted limit: postsPerPage offset: offset %}
+        <!--first-->
+        {% if forloop.index == 1 %}
+          <!--div class="col-sm-5 no-gutter" data-filter="{{attractions.category.title}}">
+            <a href="{{attractions.url_friendly_name}}">
+              <div class="events-img" style="background: url({{attractions.thumbnail.url}});">
+                <div class="bottom">
+                  <div class="cat">{{attractions.attraction_type}}</div>
+                  <div class="title">{{attractions.attraction_title}}</div>
+				        </div>
+              </div>
+            </a>
 
-    {% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
-    {% for e in events %}
-    {% capture cycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+          </div-->
 
-    <section class="models fancybox" data-filter="{{e.category.title}}">
-      <div class="container">
-        <div class=" two-col-wrap">
-          <div class="row no-gutters">
-            {% if cycle == 'even' %}
-            <div class="col-sm-6 sp-img "> <img src="{{e.thumb_image.url}}" alt=""></div>
-            {% endif %}
-            <div class="col-sm-6 sp-content">
-              <h2>{{e.name}}</h2>
-              <div class="title">{{e.schedule}}</div>
-              <div class="desp">{{e.short_description}}</div>
-          <div class="btn-holder"><a href="/location/events/{{e.url}}"  class="button-common btn-blue">View this event<i class="fa fa-play"></i></a></div>
+        <section class="models fancybox" data-filter="{{attractions.category.title}}">
+        <div class="container" >
+          <div class=" two-col-wrap  "  >
+            <div class="row no-gutters ">
+              <div class="col-sm-6 sp-img v-center"> <img src="{{attractions.thumbnail.url}}" alt=""> </div>
+              <div class="col-sm-6 sp-content v-center">
+                <p class="title">{{attractions.attraction_title}}</p>
+                <div class="desp">{{attractions.contents_1}}</div>
+                <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+              </div>
             </div>
-            {% if cycle == 'odd' %}
-            <div class="col-sm-6 sp-img "> <img src="{{e.thumb_image.url}}" alt=""></div>
-            {% endif %}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+        {% endif %}
+        <!--scd-->
+        {% if forloop.index == 2 %}
+          <!--div class="col-sm-4 no-gutter fancybox" data-filter="{{attractions.category.title}}">
+            <a href="{{attractions.url_friendly_name}}">
+              <div class="events-img" style="background: url({{attractions.thumbnail.url}});">
+                <div class="top">
+                  <div class="cat">{{attractions.attraction_type}}</div>
+                  <div class="title">{{attractions.attraction_title}}</div>
+                </div>
+              </div>
+            </a>
+          </div-->
 
-    {% endfor %} 
-<!-- 
-{% assign attractions = site.data._models.attractions | sort : 'sort_order' %}
-{% for a in attractions %}
-<section class="models">
-  <div class="container">
-    <div class=" two-col-wrap">
-      <div class="row no-gutters">
-        <div class="col-sm-6 sp-img v-center"> <img src="{{a.image.url}}" alt=""></a> </div>
-        <div class="col-sm-6 sp-content v-center">
-          <p class="title">{{a.name}}</p>
-          <div class="desp">{{a.description}}</div>
-          <div class="btn-holder"><a href="{{a.url}}"  class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+        <section class="models fancybox" data-filter="{{attractions.category.title}}">
+        <div class="container">
+          <div class=" two-col-wrap "  >
+            <div class="row no-gutters">
+              <div class="col-sm-6 sp-img v-center"> <img src="{{attractions.thumbnail.url}}" alt=""> </div>
+              <div class="col-sm-6 sp-content v-center">
+                <p class="title">{{attractions.attraction_title}}</p>
+                <div class="desp">{{attractions.contents_1}}</div>
+                <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+        {% endif %}
+        <!--third-->
+        {% if forloop.index == 3 %}
+          <!--div class="col-sm-4 no-gutter fancybox" data-filter="{{attractions.category.title}}">
+            <a href="{{attractions.url_friendly_name}}">
+              <div class="events-img" style="background: url({{attractions.thumbnail.url}});">
+                <div class="bottom-right">
+                  <div class="cat">{{attractions.attraction_type}}</div>
+                  <div class="title">{{attractions.attraction_title}}</div>
+                </div>
+              </div>
+            </a>
+          </div-->
+    <section class="models fancybox"  data-filter="{{attractions.category.title}}">
+    <div class="container">
+      <div class=" two-col-wrap ">
+        <div class="row no-gutters">
+              <div class="col-sm-6 sp-img v-center"> <img src="{{attractions.thumbnail.url}}" alt=""> </div>
+              <div class="col-sm-6 sp-content v-center">
+                <p class="title">{{attractions.attraction_title}}</p>
+                <div class="desp">{{attractions.contents_1}}</div>
+                <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+              </div>
+            </div>
       </div>
     </div>
-  </div>
+  </section>
+        {% endif %}
+        <!--4th-->
+        {% if forloop.index == 4 %}
+          <!--div class="col-sm-4 no-gutter fancybox" data-filter="{{attractions.category.title}}">
+            <a href="{{attractions.url_friendly_name}}">
+              <div class="events-img" style="background: url({{attractions.thumbnail.url}});">
+                <div class="bottom">
+                  <div class="cat">{{attractions.attraction_type}}</div>
+                  <div class="title">{{attractions.attraction_title}}</div>
+                </div>
+              </div>
+            </a>
+          </div-->
+
+           <section class="models fancybox" data-filter="{{attractions.category.title}}">
+    <div class="container">
+      <div class=" two-col-wrap " >
+        <div class="row no-gutters">
+              <div class="col-sm-6 sp-img v-center"> <img src="{{attractions.thumbnail.url}}" alt=""> </div>
+              <div class="col-sm-6 sp-content v-center">
+                <p class="title">{{attractions.attraction_title}}</p>
+                <div class="desp">{{attractions.contents_1}}</div>
+                <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+
+        {% endif %}
+        <!--5th-->
+        {% if forloop.index == 5 %}
+          <!--div class="col-sm-5 no-gutter fancybox" data-filter="{{attractions.category.title}}">
+            <a href="{{attractions.url_friendly_name}}">
+              <div class="events-img" style="background: url({{attractions.thumbnail.url}});">
+                <div class="top">
+                  <div class="cat">{{attractions.attraction_type}}</div>
+                  <div class="title">{{attractions.attraction_title}}</div>
+                </div>
+              </div>
+            </a>
+          </div-->
+
+  <section class="models fancybox" data-filter="{{attractions.category.title}}">
+    <div class="container">
+      <div class=" two-col-wrap " >
+        <div class="row no-gutters">
+              <div class="col-sm-6 sp-img v-center"> <img src="{{attractions.thumbnail.url}}" alt=""> </div>
+              <div class="col-sm-6 sp-content v-center">
+                <p class="title">{{attractions.attraction_title}}</p>
+                <div class="desp">{{attractions.contents_1}}</div>
+                <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+        {% endif %}
+        <!--6th-->
+        {% if forloop.index == 6 %}
+          <!--div class="col-sm-4 no-gutter fancybox" data-filter="{{attractions.category.title}}">
+            <a href="{{attractions.url_friendly_name}}">
+              <div class="events-img" style="background: url({{attractions.thumbnail.url}});">
+                <div class="bottom">
+                  <div class="cat">{{attractions.attraction_type}}</div>
+                  <div class="title">{{attractions.attraction_title}}</div>
+                </div>
+              </div>
+            </a>
+          </div-->
+           <section class="models fancybox" data-filter="{{attractions.category.title}}">
+    <div class="container">
+      <div class=" two-col-wrap " >
+        <div class="row no-gutters">
+              <div class="col-sm-6 sp-img v-center"> <img src="{{attractions.thumbnail.url}}" alt=""> </div>
+              <div class="col-sm-6 sp-content v-center">
+                <p class="title">{{attractions.attraction_title}}</p>
+                <div class="desp">{{attractions.contents_1}}</div>
+                <div class="btn-holder"><a href="{{attractions.url_friendly_name}}" class="button-common btn-blue">View this attraction<i class="fa fa-play"></i></a></div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </section>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+     
+	
+
+</div>
+
 </section>
-{% endfor %} -->
+</div>
+
+

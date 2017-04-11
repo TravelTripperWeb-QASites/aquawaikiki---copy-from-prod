@@ -356,7 +356,7 @@
 	background:$bg-white;
 	padding: 70px 70px 55px 70px;
 	text-align: center;
-	max-width: 770px;
+	max-width: 900px;
 	margin: 100px auto;
 	font-family: $base-font-family;
 	color: $tc-ash-1;
@@ -394,6 +394,34 @@
 		padding: 15px 0 20px 0;
 	}
 	}
+}
+
+
+.wedding-special{
+	.col-sm-6{
+	text-align:center;
+	.btn-holder{
+    padding:20px;
+	    @media (min-width: $screen-sm-min){
+	      padding:60px;
+	    }
+    }
+	}
+	background: #f8f7f7;
+    padding: 50px 0px;
+
+    h3{
+    color: #009ddd;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    font-size: 32px;
+
+    }
+    p{
+    text-align: center;
+    }
+
 }
 
 

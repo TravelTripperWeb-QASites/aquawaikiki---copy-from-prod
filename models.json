@@ -2,472 +2,69 @@
   "attractions": [
     [
       {
-        "name": "Dry Tortugas",
-        "file": "attraction1.json"
+        "title": "International Market Place",
+        "file": "attractions1.json"
       }
     ],
     [
       {
-        "name": "San Carlos Institute",
-        "file": "attraction10.json"
+        "title": "Paina Lanai Food Court",
+        "file": "attractions2.json"
       }
     ],
     [
       {
-        "name": "KinoΓÇÖs Sandal Factory",
-        "file": "attraction11.json"
+        "title": "Bridgewater Links Golf Course",
+        "file": "attractions3.json"
       }
     ],
     [
       {
-        "name": "Audubon House and Botanical Gardens",
-        "file": "attraction12.json"
+        "title": "Wanderlust Hot Air Balloon Rides",
+        "file": "attractions4.json"
       }
     ],
     [
       {
-        "name": "Harry S. Truman Little White House",
-        "file": "attraction13.json"
-      }
-    ],
-    [
-      {
-        "name": "The Key West Lighthouse & KeeperΓÇÖs Quarters Museum",
-        "file": "attraction14.json"
-      }
-    ],
-    [
-      {
-        "name": "Mel Fisher Maritime Heritage Museum",
-        "file": "attraction15.json"
-      }
-    ],
-    [
-      {
-        "name": "The Key West Butterfly and Nature Conservatory",
-        "file": "attraction16.json"
-      }
-    ],
-    [
-      {
-        "name": "Cayo Hueso y Habana Historeum",
-        "file": "attraction17.json"
-      }
-    ],
-    [
-      {
-        "name": "Key West Golf Club",
-        "file": "attraction18.json"
-      }
-    ],
-    [
-      {
-        "name": "Old Town Trolley Tours",
-        "file": "attraction19.json"
-      }
-    ],
-    [
-      {
-        "name": "Duval Street",
-        "file": "attraction2.json"
-      }
-    ],
-    [
-      {
-        "name": "Conch Tour Train",
-        "file": "attraction20.json"
-      }
-    ],
-    [
-      {
-        "name": "Key West Aquarium",
-        "file": "attraction21.json"
-      }
-    ],
-    [
-      {
-        "name": "Overseas Railroad Museum",
-        "file": "attraction22.json"
-      }
-    ],
-    [
-      {
-        "name": "Shipwreck Musuem",
-        "file": "attraction23.json"
-      }
-    ],
-    [
-      {
-        "name": "Fort Zachary Taylor Historic State Park",
-        "file": "attraction3.json"
-      }
-    ],
-    [
-      {
-        "name": "Ernest Hemingway Home and Museum",
-        "file": "attraction4.json"
-      }
-    ],
-    [
-      {
-        "name": "Key West Historic Memorial Sculpture Garden",
-        "file": "attraction5.json"
-      }
-    ],
-    [
-      {
-        "name": "Mallory Square",
-        "file": "attraction6.json"
-      }
-    ],
-    [
-      {
-        "name": "Rodriguez Cigar Factory",
-        "file": "attraction7.json"
-      }
-    ],
-    [
-      {
-        "name": "Southernmost Point Buoy",
-        "file": "attraction8.json"
-      }
-    ],
-    [
-      {
-        "name": "Cuban Coffee Queen",
-        "file": "attraction9.json"
+        "title": "Refuge Golf Club",
+        "file": "attractions5.json"
       }
     ]
   ],
-  "blog": [
+  "attractions_category": [
     [
       {
-        "title": "24 Things To Do in Key West ΓÇô 4 Must-See Attractions in Key West",
-        "file": "24-things-to-do-in-key-west-4-must-see-attractions-in-key-west.json"
+        "title": "Shopping",
+        "file": "attractions_category1.json"
       }
     ],
     [
       {
-        "title": "24 Things to Do in Key West ΓÇô Historical Landmarks in Key West",
-        "file": "24-things-to-do-in-key-west-historical-landmarks-in-key-west.json"
+        "title": "Dining",
+        "file": "attractions_category2.json"
       }
     ],
     [
       {
-        "title": "24 Things to Do in Key West ΓÇô Our Favorite Drinks in Key West",
-        "file": "24-things-to-do-in-key-west-our-favorite-drinks-in-key-west.json"
+        "title": "Outdoor Actitities",
+        "file": "attractions_category3.json"
       }
     ],
     [
       {
-        "title": "24 Things to Do in Key West ΓÇô Where to Snorkel & Dive in Key West",
-        "file": "24-things-to-do-in-key-west-where-to-snorkel-dive-in-key-west.json"
+        "title": "Nature",
+        "file": "attractions_category4.json"
       }
     ],
     [
       {
-        "title": "24 Things to Do in Key West",
-        "file": "24-things-to-do-in-key-west.json"
-      }
-    ],
-    [
-      {
-        "title": "24 Things to Do in Key West - 4 Places You Must Eat in Key West",
-        "file": "4-places-you-must-eat-in-key-west.json"
-      }
-    ],
-    [
-      {
-        "title": "An Interview with Jorge de la Torriente, of DE LA Gallery",
-        "file": "an-interview-with-jorge-de-la-torriente-of-de-la-gallery.json"
-      }
-    ],
-    [
-      {
-        "title": "Fantasy Fest 2016 ΓÇô Bahama Village Goombay",
-        "file": "bahama-village-goombay.json"
-      }
-    ],
-    [
-      {
-        "title": "The ΓÇ£BightΓÇ¥ Before Christmas and 2016 Key West Holiday Events",
-        "file": "blog1.json"
-      }
-    ],
-    [
-      {
-        "title": "A Romantic Retreat at 24 North",
-        "file": "blog10.json"
-      }
-    ],
-    [
-      {
-        "title": "Drag Shows in Key West",
-        "file": "blog11.json"
-      }
-    ],
-    [
-      {
-        "title": "The Cuban Key West: Where to Go for a Cuban Experience in Key West",
-        "file": "blog12.json"
-      }
-    ],
-    [
-      {
-        "title": "How to Spend Spring Break in Key West",
-        "file": "blog13.json"
-      }
-    ],
-    [
-      {
-        "title": "Tennessee Williams' 106th Birthday Celebration",
-        "file": "blog14.json"
-      }
-    ],
-    [
-      {
-        "title": "Try StarbucksΓÇÖ Two New Drinks @ 24 North",
-        "file": "blog15.json"
-      }
-    ],
-    [
-      {
-        "title": "New YearΓÇÖs Eve in Key West",
-        "file": "blog2.json"
-      }
-    ],
-    [
-      {
-        "title": "Shopping in Key West ΓÇô Christmas Edition",
-        "file": "blog3.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Half-Marathon & 5K",
-        "file": "blog4.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Race Week 2017",
-        "file": "blog5.json"
-      }
-    ],
-    [
-      {
-        "title": "Hens and Roosters in Key West",
-        "file": "blog6.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Cuba Race Week - The Conch Republic Cup",
-        "file": "blog7.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Food & Wine Festival 2017",
-        "file": "blog8.json"
-      }
-    ],
-    [
-      {
-        "title": "The Cuban Key West: The Best Cuban Sandwiches on Key West",
-        "file": "blog9.json"
-      }
-    ],
-    [
-      {
-        "title": "Fantasy Fest 2016 ΓÇô Political Voodoo & Ballot-Box Barbarians",
-        "file": "fantasy-fest-2016.json"
-      }
-    ],
-    [
-      {
-        "title": "Happy Birthday, 24 North!",
-        "file": "happy-birthday-24-north.json"
-      }
-    ],
-    [
-      {
-        "title": "The Haunted History of Key West",
-        "file": "haunted-history-key-west.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Brewfest 2016",
-        "file": "key-west-brewfest.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Events ΓÇô Hemingway Days 2016",
-        "file": "key-west-events-hemingway-days-2016.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Pride 2016",
-        "file": "key-west-pride-2016.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Events: Lobsterfest 2016",
-        "file": "lobster-fest.json"
-      }
-    ],
-    [
-      {
-        "title": "Key West Events ΓÇô Mini-Lobster Season 2016",
-        "file": "mini-lobster-season.json"
-      }
-    ],
-    [
-      {
-        "title": "Old Town Key West Shuttle",
-        "file": "old-town-key-west-shuttle.json"
-      }
-    ],
-    [
-      {
-        "title": "Outdoor Activities in Key West",
-        "file": "outdoor-activities-in-key-west.json"
-      }
-    ],
-    [
-      {
-        "title": "Phil Peterson's Poker Run 2016",
-        "file": "phil-petersons-poker-run-2016.json"
-      }
-    ],
-    [
-      {
-        "title": "Powerboat World Championships in Key West",
-        "file": "powerboat-world-championships.json"
-      }
-    ],
-    [
-      {
-        "title": "What to Do on a Rainy Day in Key West",
-        "file": "rainy-day-in-key-west.json"
-      }
-    ],
-    [
-      {
-        "title": "The Old Key West ΓÇô Key West's Cuban History",
-        "file": "the-old-key-west.json"
-      }
-    ],
-    [
-      {
-        "title": "The Sheriff's Animal Farm ΓÇô Key West",
-        "file": "the-sheriffs-animal-farm.json"
-      }
-    ],
-    [
-      {
-        "title": "The Songwriter's Festival ΓÇô A Key West Classic",
-        "file": "the-songwriters-festival-a-key-west-classic.json"
-      }
-    ],
-    [
-      {
-        "title": "Tis the Starbucks Season",
-        "file": "tis-starbucks-season.json"
-      }
-    ],
-    [
-      {
-        "title": "Unofficially, the Most Fun in Key West: Conch Republic Independence Celebration",
-        "file": "unofficially-the-most-fun-in-key-west-conch-republic-independence-celebration.json"
-      }
-    ],
-    [
-      {
-        "title": "Where to Go on Duval",
-        "file": "where-to-go-on-duval.json"
+        "title": "Culture And History",
+        "file": "attractions_category5.json"
       }
     ]
   ],
   "events": [
-    [
-      {
-        "name": "Conch Shell Blowing Contest",
-        "file": "event11.json"
-      }
-    ],
-    [
-      {
-        "name": "Fourth Annual Cow Key Channel Bridge Run",
-        "file": "event12.json"
-      }
-    ],
-    [
-      {
-        "name": "35th Annual Conch Republic Independence Celebration",
-        "file": "event13.json"
-      }
-    ],
-    [
-      {
-        "name": "Papio Kinetic Sculpture Parade",
-        "file": "event14.json"
-      }
-    ],
-    [
-      {
-        "name": "Key West Songwriters Festival",
-        "file": "event15.json"
-      }
-    ],
-    [
-      {
-        "name": "Key West Pride",
-        "file": "event16.json"
-      }
-    ],
-    [
-      {
-        "name": "DJ Chris Brown",
-        "file": "event4.json"
-      }
-    ],
-    [
-      {
-        "name": "DJ Kyd",
-        "file": "event5.json"
-      }
-    ],
-    [
-      {
-        "name": "Pool Deck Yoga",
-        "file": "event6.json"
-      }
-    ],
-    [
-      {
-        "name": "Trivia",
-        "file": "event7.json"
-      }
-    ]
-  ],
-  "event_category": [
-    [
-      {
-        "title": "24 North Hotel Events",
-        "file": "event_category1.json"
-      }
-    ],
-    [
-      {
-        "title": "City Wide Events",
-        "file": "event_category2.json"
-      }
-    ]
+
   ],
   "gallery_attractions_images": [
     [
@@ -612,84 +209,15 @@
     ]
   ],
   "partners": [
-    [
-      {
-        "name": "De La Gallery",
-        "file": "partner1.json"
-      }
-    ],
-    [
-      {
-        "name": "Coast Design",
-        "file": "partner2.json"
-      }
-    ],
-    [
-      {
-        "name": "Rodriguez Cigar",
-        "file": "partner3.json"
-      }
-    ],
-    [
-      {
-        "name": "Papa's Pilar Rum",
-        "file": "partner4.json"
-      }
-    ],
-    [
-      {
-        "name": "The Key West Theatre",
-        "file": "partner5.json"
-      }
-    ]
+
   ],
   "shuttle_carousel": [
-    [
-      {
-        "file": "shuttle_carousel2.json"
-      }
-    ]
+
   ],
   "simple": [
 
   ],
   "starbucks_carousel": [
-    [
-      {
-        "file": "starbucks_carousel1.json"
-      }
-    ]
-  ],
-  "attractions_category": [
-    [
-      {
-        "title": "shopping",
-        "file": "attractions_category1.json"
-      }
-    ],
-    [
-      {
-        "title": "Dining",
-        "file": "attractions_category2.json"
-      }
-    ],
-    [
-      {
-        "title": "Outdoor Activities",
-        "file": "attractions_category3.json"
-      }
-    ],
-    [
-      {
-        "title": "Nature",
-        "file": "attractions_category4.json"
-      }
-    ],
-    [
-      {
-        "title": "Culture And History",
-        "file": "attractions_category5.json"
-      }
-    ]
+
   ]
 }
