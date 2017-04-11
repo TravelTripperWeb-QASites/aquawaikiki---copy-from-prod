@@ -10,5 +10,11 @@
 	"time": "Mon-Sat 9:30am-9pm; Sun 10am-7pm",
 	"address": "<p>1450 Ala Moana Boulevard, Honolulu</p>",
 	"sort_order": 13,
-	"category": "attractions_category1"
+	"category": "attractions_category1",
+	"thumbnail": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-074657/attractions-1.jpg"
+	},
+	"image": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-30-070730/gallery-18-large-rb.jpg"
+	}
 }
