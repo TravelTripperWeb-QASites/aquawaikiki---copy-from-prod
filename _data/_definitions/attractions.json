@@ -8,30 +8,31 @@
 	{"type":"url_slug"},
 "attraction_type":
 	{"type":"text"},
-"contact":
-	{"type":"richtext","required":true,"hint":"Contact Short Description here"},
-	"description":
-	{"type":"richtext","required":true,"hint":"Contact  Details here"},
-"address":
-	{"type":"richtext","required":true,"hint":"Address here"},
-
-"time":
-	{
-
-	},
 "thumbnail":
 	{"type":"image"},
 "image":
 	{"type":"image"},
 "contents_1":
-	{"type":"richtext","required":true,"hint":"Write the detailed description"},
+	{"type":"richtext","required":true,"label": "Short Description",},
 "category":
     {
       "label": "Choose Category",
       "type":"model",
       "display_field": "title", 
       "model_name":"attractions_category"
-    }, 
+    },
+"description":
+	{"type":"richtext","required":true, "label": "Description",},
+
+"contact":
+	{"type":"text","label": "Phone Number",},
+	"time":
+	{"type":"text","label": "timeing",},
+"address":
+	{"type":"richtext","label": "Address", "required":true,"hint":"Address here"},
+"Price":
+	{},	
+ 
 "sort_order": 
     { 
       "type": "integer",
