@@ -2,6 +2,90 @@
   "attractions": [
     [
       {
+        "title": "Waikiki Aquarium",
+        "file": "attraction1.json"
+      }
+    ],
+    [
+      {
+        "title": "Ward Village Shops",
+        "file": "attraction10.json"
+      }
+    ],
+    [
+      {
+        "title": "Pearl Harbor / USS Arizona Memorial",
+        "file": "attraction11.json"
+      }
+    ],
+    [
+      {
+        "title": "Waimea Valley",
+        "file": "attraction12.json"
+      }
+    ],
+    [
+      {
+        "title": "Bishop Museum",
+        "file": "attraction13.json"
+      }
+    ],
+    [
+      {
+        "title": "Polynesian Cultural Center",
+        "file": "attraction14.json"
+      }
+    ],
+    [
+      {
+        "title": "Manoa Falls",
+        "file": "attraction2.json"
+      }
+    ],
+    [
+      {
+        "title": "Magic Island at Ala Moana Beach Park",
+        "file": "attraction3.json"
+      }
+    ],
+    [
+      {
+        "title": "Snorkeling at Hanauma Bay",
+        "file": "attraction4.json"
+      }
+    ],
+    [
+      {
+        "title": "Surf and SUP Lessons",
+        "file": "attraction5.json"
+      }
+    ],
+    [
+      {
+        "title": "Catamaran Cruise",
+        "file": "attraction6.json"
+      }
+    ],
+    [
+      {
+        "title": "Rainbow Drive-In",
+        "file": "attraction7.json"
+      }
+    ],
+    [
+      {
+        "title": "The Cheesecake Factory",
+        "file": "attraction8.json"
+      }
+    ],
+    [
+      {
+        "title": "Ala Moana Center",
+        "file": "attraction9.json"
+      }
+    ],
+    [
+      {
         "title": "International Market Place",
         "file": "attractions1.json"
       }
@@ -46,7 +130,7 @@
     ],
     [
       {
-        "title": "Outdoor Actitities",
+        "title": "Outdoor Activities",
         "file": "attractions_category3.json"
       }
     ],
@@ -62,9 +146,6 @@
         "file": "attractions_category5.json"
       }
     ]
-  ],
-  "events": [
-
   ],
   "gallery_attractions_images": [
     [
@@ -208,16 +289,7 @@
       }
     ]
   ],
-  "partners": [
-
-  ],
-  "shuttle_carousel": [
-
-  ],
   "simple": [
-
-  ],
-  "starbucks_carousel": [
 
   ]
 }
