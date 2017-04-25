@@ -14,22 +14,25 @@
       </ol>
 
       <div class="carousel-inner" role="listbox">
+
+      {% assign guest_images = site.data._models.guest_reviews  | sort : "sort_order" %}
+            {% for guest_images in guest_images %}
+            {% if forloop.first == true %}
                                  <div class="item active">
                                    <div class="caption-message ">
-                                    <h3>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”</h3>
-                                    <h4 class="c-name">- Thomas Brown</h4>
+                                    <h3>“ {{guest_images.guest_feedback}} ”</h3>
+                                    <h4 class="c-name">{{guest_images.guest_name}}<!-- - Thomas Brown --></h4>
                                   </div>
                                  </div>
-
+                              {% else %}
                                  <div class="item">
-                                  
                                   <div class="caption-message ">
-                                      <h3>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”</h3>
+                                      <h3>“ {{guest_images.guest_feedback}} ”</h3>
                                       <h4 class="c-name">- Thomas Brown</h4>
                                   </div>
                                  </div>
-
-                                 <div class="item">
+                                {% endif %}
+                                 <!--div class="item">
                                    <div class="caption-message ">
                                   
                                        <h3>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”</h3>
@@ -42,9 +45,11 @@
                                       <h3>“ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ”</h3>
                                       <h4 class="c-name">- Thomas Brown</h4>
                                   </div>
-                                 </div>
-     </div>
+                                 </div-->
 
+                                  {% endfor %}
+     </div>
+         
    </div>
    </div>
 </section>
