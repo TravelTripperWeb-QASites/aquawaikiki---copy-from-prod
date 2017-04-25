@@ -69,8 +69,8 @@
 			'submenu': 'false'
 		},
 		{
-			'title':'Site map',
-			'name': 'Site map',
+			'title':'Sitemap',
+			'name': 'Sitemap',
 			'url': '/sitemap/',
 			'submenu': 'false' 
 		} 
