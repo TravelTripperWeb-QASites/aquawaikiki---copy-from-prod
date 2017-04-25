@@ -3,7 +3,6 @@
     {
       "required": true,  
       "label": "Client name"
-      
     }, 
     "guest_feedback":
     {
