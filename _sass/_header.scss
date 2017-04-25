@@ -27,7 +27,6 @@ a:hover,a:focus {
 	background-color: $bg-white;
 	font-family: $regular;
 	padding: 26px 0;
-	border-top:1px solid #014ea0;
 	text-transform: uppercase;
 	
 		@media (max-width: 1240px){
@@ -41,7 +40,7 @@ a:hover,a:focus {
 	
 	.booknow {
 		float:right;
-		padding: 15px 0 0 0;
+		padding: 18px 0 0 0;
 		
 			@media (max-width: 1240px){
 				padding: 8px 0 0 0;
@@ -81,14 +80,12 @@ a:hover,a:focus {
 
 .logo {
 	float:left;
-	width: 230px;
+	width: 204px;
 	@media (max-width: 1240px){
 		width: 160px;
-		margin-top:12px;
 	}
 	@media (max-width: 767px){
 		width: 110px;
-		margin-top:12px;
 	}
 	
 	img {
@@ -98,7 +95,7 @@ a:hover,a:focus {
 }
 .main-menu {
 	float: left;
-	padding: 22px 0 0 30px;
+	padding: 29px 0 0 30px;
 	background-color: $bg-white;
 	
 	@media (max-width: 1240px){
@@ -203,12 +200,11 @@ a:hover,a:focus {
 	
 	.logo {
 		width: 160px;
-		margin-top:12px;
 	}
 	.booknow {
 		position: absolute;
 		right: 0;
-		top:-15px;
+		top:-18px;
 		a{
 			padding: 29px 20px;
 		}
@@ -288,5 +284,3 @@ a:hover,a:focus {
 			padding-top: 52px;
 		}
 }
-
-
