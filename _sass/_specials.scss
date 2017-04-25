@@ -123,6 +123,21 @@ section.models
 
 
 			}
+
+
+				.special-image{
+				background-repeat: no-repeat;
+				background-size: cover;
+			    height: 280px;
+			    background-size: cover;
+
+			    	@media(min-width:$screen-sm-min){
+			    	  height: 350px;
+			    	}
+
+			    }
+
+
 		}
 
 		.sp-content

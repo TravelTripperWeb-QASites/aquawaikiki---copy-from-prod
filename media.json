@@ -618,5 +618,15 @@
     "tags": "",
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-04-11-142919_attractions-big-10.jpg.json"
+  },
+  {
+    "name": "placeholder-attraction",
+    "file_name": "placeholder-attraction.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-12-081601/placeholder-attraction.jpg",
+    "date_added": "2017-04-12-081602",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-04-12-081601_placeholder-attraction.jpg.json"
   }
 ]
