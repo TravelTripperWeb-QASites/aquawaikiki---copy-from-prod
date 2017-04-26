@@ -262,8 +262,12 @@
       }
     ]
   ],
-  "guest_reviews ": [
-
+  "guest_reviews": [
+    [
+      {
+        "file": "guest_reviews1.json"
+      }
+    ]
   ],
   "homepage_slider": [
     [
@@ -294,27 +298,5 @@
   ],
   "simple": [
 
-  ],
-  "guest_reviews": [
-    [
-      {
-        "file": "guest_review1.json"
-      }
-    ],
-    [
-      {
-        "file": "guest_review2.json"
-      }
-    ],
-    [
-      {
-        "file": "guest_review3.json"
-      }
-    ],
-    [
-      {
-        "file": "guest_review4.json"
-      }
-    ]
   ]
 }
