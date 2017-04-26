@@ -56,7 +56,7 @@
     ],
     [
       {
-        "title": "Surf and SUP Lessons",
+        "title": "surf and paddleboard lessons",
         "file": "attraction5.json"
       }
     ],
@@ -259,6 +259,18 @@
     [
       {
         "file": "groups_slider_image1.json"
+      }
+    ]
+  ],
+  "guest_reviews": [
+    [
+      {
+        "file": "guest_review1.json"
+      }
+    ],
+    [
+      {
+        "file": "guest_reviews1.json"
       }
     ]
   ],

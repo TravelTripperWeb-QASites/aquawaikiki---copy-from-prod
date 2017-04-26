@@ -10,6 +10,12 @@
 	"time": "9am-5pm, Closed Tuesdays",
 	"address": "<p>1525 Bernice Street, Honolulu</p>",
 	"Price": "$19.95 Adults; Discounts for seniors, children, kamaaina and military",
-	"description": "<p>There is no better place to discover the comprehensive and complex history, arts and culture of the Hawaiian people. The Bernice Pauahi Bishop Museum is recognized throughout the world for scientific research, educational programs, and extensive collections which give voice to the stories of Hawaii and the broader Pacific. The Museum has large lawn spaces that are ideal for picnics.</p>",
-	"sort_order": 3
+	"description": "<p>There is no better place to discover the comprehensive and complex history, arts and culture of the Hawaiian people. The Bernice Pauahi Bishop Museum is recognized throughout the world for scientific research, educational programs, and extensive collections which give voice to the stories of Hawaii and the broader Pacific. The museum also has large lawn spaces that are ideal for picnics.</p>",
+	"thumbnail": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-26-064608/Bishop-Museum.jpg"
+	},
+	"image": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-26-064608/Bishop-Museum.jpg"
+	},
+	"sort_order": 3    
 }

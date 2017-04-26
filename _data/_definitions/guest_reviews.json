@@ -1,0 +1,18 @@
+{
+    "guest_name":
+    {
+      "required": true,  
+      "label": "Client name"
+    }, 
+    "guest_feedback":
+    {
+      "required": true,  
+      "type": "richtext",
+      "label": "Client FeedBack"
+    },
+    "sort_order": 
+    { 
+      "type": "integer",
+      "required": true 
+    }
+}
