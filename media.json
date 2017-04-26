@@ -628,5 +628,35 @@
     "tags": "",
     "description": "",
     "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-04-12-081601_placeholder-attraction.jpg.json"
+  },
+  {
+    "name": "Bishop-Museum",
+    "file_name": "Bishop-Museum.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-26-064608/Bishop-Museum.jpg",
+    "date_added": "2017-04-26-064609",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-04-26-064608_Bishop-Museum.jpg.json"
+  },
+  {
+    "name": "Explore-Catamaran",
+    "file_name": "Explore-Catamaran.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-26-064609/Explore-Catamaran.jpg",
+    "date_added": "2017-04-26-064609",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-04-26-064609_Explore-Catamaran.jpg.json"
+  },
+  {
+    "name": "Polynesian-Cultural-Center",
+    "file_name": "Polynesian-Cultural-Center.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-26-065813/Polynesian-Cultural-Center.jpg",
+    "date_added": "2017-04-26-065813",
+    "tags": "",
+    "description": "",
+    "git_file_name": "_assets/image_data/site-assets_32_655_2386_media_2017-04-26-065813_Polynesian-Cultural-Center.jpg.json"
   }
 ]
