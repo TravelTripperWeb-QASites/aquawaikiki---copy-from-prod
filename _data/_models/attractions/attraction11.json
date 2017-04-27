@@ -12,5 +12,11 @@
 	"sort_order": 15,
 	"description": "<p>Take a tour of U.S. history when you visit Pearl Harbor, the largest natural harbor in Hawaii and the number one visitor destination on Oahu. You&rsquo;ll learn about the fascinating history of the politics, people, and events that started World War II. The Pearl Hotel Waikiki will be happy to help you to book your tour.</p>",
 	"category": "attractions_category5",
-	"attraction_type": "Culture & History"
+	"attraction_type": "Culture & History",
+	"image": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-27-033613/Pearl-Harbor-Memorial-big.jpg"
+	},
+	"thumbnail": {
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-27-040824/Pearl-Harbor-Memorial.jpg"
+	}
 }
