@@ -1,9 +1,10 @@
 {
 	"title": "The Cheesecake Factory",
+	"seo_title":"The Cheesecake Factory in Waikiki | Things to do in Waikiki",
 	"attraction_title": "The Cheesecake Factory",
 	"url_friendly_name": "cheesecake-factory",
 	"attraction_type": "Dining",
-	"seo_description": "Located a short walk from the Aqua Waikiki Pearl is this popular American sit-down restaurant.",
+	"seo_description": "Located a short walk from the Aqua Waikiki Pearl is this iconic American restaurant. The menu is large, but save room for dessert: their cheesecake is a must",
 	"contents_1": "<p>Located a short walk from the Aqua Waikiki Pearl is this popular American sit-down restaurant.</p>",
 	"description": "<p>Located a short walk from the Aqua Waikiki Pearl is this popular American sit-down restaurant. The menu is large, but save room for dessert: their cheesecake is a must-try!</p>",
 	"category": "attractions_category2",
@@ -13,9 +14,9 @@
 	"Price": "Price range $11-30",
 	"sort_order": 8,
 	"thumbnail": {
-		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-090145/attractions-3.jpg"
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-26-083107/chesecake-factory.jpg"
 	},
 	"image": {
-		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-090145/attractions-big-3.jpg"
+		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-26-083108/chesecake-factory-big.jpg"
 	}
 }

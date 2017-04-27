@@ -1,5 +1,7 @@
 {"title":
 	{"required":true},
+"seo_title":
+	{"type":"text","required":true},
 "seo_description":
 	{"type":"text","required":true},	
 "attraction_title":
