@@ -1,11 +1,11 @@
 {
 	"title": "Bishop Museum",
-	"seo_title":"Bishop Museum in Waikiki | Attractions in Waikiki",
+	"seo_title": "Bishop Museum in Waikiki | Attractions in Waikiki",
 	"seo_description": "There is no better place to discover the comprehensive and complex history, arts and culture of the Hawaiian people than at the Bishop Museum.",
 	"contents_1": "<p>There is no better place to discover the comprehensive and complex history, arts and culture of the Hawaiian people.</p>\n<p>&nbsp;</p>",
 	"attraction_title": "Bishop Museum",
 	"url_friendly_name": "bishop-museum",
-	"attraction_type": "CULTURE & HISTOR",
+	"attraction_type": "CULTURE & HISTORY",
 	"category": "attractions_category5",
 	"contact": "(808) 847-3511",
 	"time": "9am-5pm, Closed Tuesdays",
@@ -18,5 +18,5 @@
 	"image": {
 		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-26-064608/Bishop-Museum.jpg"
 	},
-	"sort_order": 3    
+	"sort_order": 3
 }
