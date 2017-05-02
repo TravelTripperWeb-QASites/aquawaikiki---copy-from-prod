@@ -38,6 +38,12 @@
     ],
     [
       {
+        "title": "Kahala Mall",
+        "file": "attraction15.json"
+      }
+    ],
+    [
+      {
         "title": "Manoa Falls",
         "file": "attraction2.json"
       }
