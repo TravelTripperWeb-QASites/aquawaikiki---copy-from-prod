@@ -1,0 +1,40 @@
+{
+  "thumb_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-180947/WOMAN-HIKING-thumb.jpg",
+    "name": "WOMAN-HIKING-thumb",
+    "file_name": "WOMAN-HIKING-thumb.jpg",
+    "file_type": "image/jpeg",
+    "date_added": "2017-07-27-180949",
+    "tags": "",
+    "file_size": 1371739,
+    "width": 1085,
+    "height": 809,
+    "description": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-180947/large_WOMAN-HIKING-thumb.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-180947/medium_WOMAN-HIKING-thumb.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-180947/small_WOMAN-HIKING-thumb.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-180947/xsmall_WOMAN-HIKING-thumb.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-180947/thumb_WOMAN-HIKING-thumb.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-180947/WOMAN-HIKING-thumb.jpg",
+    "alt": "Woman hiking"
+  },
+  "slider_image": {
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-175925/shutterstock-379103503.jpg",
+    "path": "https://cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-175925/shutterstock-379103503.jpg",
+    "file_type": "image/jpeg",
+    "name": "WOMAN-HIKING",
+    "tags": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-175925/large_shutterstock_379103503.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-175925/thumb_shutterstock_379103503.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-175925/medium_shutterstock_379103503.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-175925/small_shutterstock_379103503.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-175925/xsmall_shutterstock_379103503.jpg",
+    "width": 3000,
+    "height": 2000,
+    "file_size": 2184614,
+    "alt": "Woman hiking",
+    "caption": "",
+    "description": ""
+  },
+  "sort_order": 9
+}
