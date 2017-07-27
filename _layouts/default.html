@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+	{% include head.html %}
 
-<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGT6Z3J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-{% include header.html %}
+	<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+		
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KB4L62Z"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
-	{{ content }}
+		{% include header.html %}
 
-{% include footer.html %}
+			{{ content }}
 
-{% include scripts.html %}
+		{% include footer.html %}
 
-{% include booking-widget.html %}
+		{% include scripts.html %}
 
-</body>
+		{% include booking-widget.html %}
+
+	</body>
 </html>

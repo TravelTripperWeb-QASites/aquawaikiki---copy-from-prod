@@ -5,7 +5,7 @@ name                     : "Pearl Hotel Waikiki"
 description              : "Site default description."
 url                      : "http://www.aquawaikikipearl.com" # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : TravelTripperWeb/bedrock # GitHub username/repo-name e.g. "TravelTripperWeb/aquawaikiki"
+repository               : TravelTripperWeb/aquawaikiki
 
 # Language Settings
 default_lang             : 'en'

@@ -12,7 +12,7 @@
 	"time": "Daily 6am-6pm (Winter)/6am-7pm (Summer)",
 	"address": "<p>100 Hanauma Bay Road, Honolulu</p>",
 	"Price": "$7.50 per person",
-	"sort_order": 1,
+	"sort_order": 9,
 	"image": {
 		"url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-04-11-103536/attractions-big-8.jpg"
 	},
