@@ -1,1 +1,6 @@
-[{"_template":"html","content":"<h1 class=\"page-title\">Specials Offers</h1>"}]
+[
+  {
+    "_template": "html",
+    "content": "<h1 class=\"page-title\" style=\"background-color: rgba(0, 0, 0, 0.4);\">Specials Offers</h1>"
+  }
+]
