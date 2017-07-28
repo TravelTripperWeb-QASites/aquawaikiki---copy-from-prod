@@ -1,31 +1,81 @@
- # Site settings
-title: AQUA WAIKIKI PEARL
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.aquawaikikipearl.com/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# Site Settings
+title                    : "Pearl Hotel Waikiki"
+title_separator          : "-"
+name                     : "Pearl Hotel Waikiki"
+description              : "Site default description."
+url                      : "https://www.aquawaikikipearl.com" # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : TravelTripperWeb/aquawaikiki
 
+# Language Settings
+default_lang             : 'en'
+languages                : ['en']
+
+# Reading Files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - Makefile
+  - media.json
+  - models.json
+  - node_modules
+  - old_media.json
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - sitemap.json
+  - tmp
+keep_files:
+  - .git
+  - assets
+rsync_copy:
+- _assets
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+    load_paths:
+        - _sass
+    style: compressed
+
+# Outputting
 permalink: pretty
-
-default_lang: 'en'
-languages: ['en']
-
-exclude: ['sitemap.json']
-empty_array: []
-
-booking_widget_url: https://pearlwaikiki.reztrip.com/mobile
-
-
-
-
-
-#paginate_path: "/page:num/"
-markdown: kramdown 
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 page_gen:
   - data: 'attractions'
     template: 'attractions-details'
-    dir: 'attractions'  
+    dir: 'attractions'
+
+booking_widget_url: https://pearlwaikiki.reztrip.com/mobile

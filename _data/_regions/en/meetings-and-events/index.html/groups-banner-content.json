@@ -1,1 +1,6 @@
-[{"_template":"html","content":"<h1 class=\"page-title\">GROUP TRAVEL</h1>"}]
+[
+  {
+    "_template": "html",
+    "content": "<h1 class=\"page-title\" style=\"background-color: rgba(0, 0, 0, 0.4);\">GROUP TRAVEL</h1>"
+  }
+]

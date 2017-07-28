@@ -23,7 +23,7 @@ $(".campaign-item").height(maxHeight);
 		  autoPlay: false,
 		  pagination: false,
 		  navigation: true,
-		  navigationText : false
+      navigationText : false
 
 
 
