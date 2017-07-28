@@ -159,7 +159,7 @@ $(window).on('load scroll resize', function () {
 
 $('#homeCarousel,#specialsCarousel').carousel({
   interval: 7000,
-  cycle: true,
+  cycle: true
 });
 
 $('#roomDetailsCarousel11').carousel({
