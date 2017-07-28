@@ -23,7 +23,7 @@ $(".campaign-item").height(maxHeight);
 		  autoPlay: false,
 		  pagination: false,
 		  navigation: true,
-		  navigationText : false
+      navigationText : false
 
 
 
@@ -159,7 +159,7 @@ $(window).on('load scroll resize', function () {
 
 $('#homeCarousel,#specialsCarousel').carousel({
   interval: 7000,
-  cycle: true
+  cycle: true,
 });
 
 $('#roomDetailsCarousel11').carousel({
