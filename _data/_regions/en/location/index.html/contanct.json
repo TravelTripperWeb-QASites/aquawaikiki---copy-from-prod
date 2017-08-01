@@ -1,7 +1,6 @@
 [
-	{
-		"_template": "html",
-		"content": "<h3>Contact</h3>\n<p><a href='tel:(808) 922-1616'>(808) 922-1616</a><br /><a href='tel:(866) 970-4162'>(866) 970-4162</a><br /><a href=\"mailto:reservations@pearlhotelwaikiki.com\">reservations@pearlhotelwaikiki.com<br /><br /></a></p>\n",
-		"rendered_height": 500
-	}
+  {
+    "_template": "html",
+    "content": "<h3>Contact</h3>\n<p><a href=\"tel:(808) 922-1616\">(808) 922-1616</a><br /><a href=\"tel:(855) 518-3455\">(855) 518-3455</a><br /><a href=\"mailto:reservations@pearlhotelwaikiki.com\">reservations@pearlhotelwaikiki.com<br /><br /></a></p>"
+  }
 ]

@@ -968,5 +968,41 @@
     "url_xsmall": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-185543/xsmall_logo.png",
     "url_thumb": "//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-185543/thumb_logo.png",
     "git_file_name": "_assets/image_data/site-assets_32_655_5565_media_2017-07-27-185543_logo.png.json"
+  },
+  {
+    "name": "aquarium",
+    "file_name": "aquarium.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-103701/aquarium.jpg",
+    "date_added": "2017-08-01-103702",
+    "tags": "",
+    "file_size": 195118.0,
+    "width": 960,
+    "height": 350,
+    "description": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-103701/large_aquarium.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-103701/medium_aquarium.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-103701/small_aquarium.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-103701/xsmall_aquarium.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-103701/thumb_aquarium.jpg",
+    "git_file_name": "_assets/image_data/site-assets_32_655_5761_media_2017-08-01-103701_aquarium.jpg.json"
+  },
+  {
+    "name": "butterflyfish-longnose_620",
+    "file_name": "butterflyfish-longnose_620.jpg",
+    "file_type": "image/jpeg",
+    "url": "https://cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-104211/butterflyfish-longnose-620.jpg",
+    "date_added": "2017-08-01-104212",
+    "tags": "",
+    "file_size": 65872.0,
+    "width": 620,
+    "height": 350,
+    "description": "",
+    "url_large": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-104211/large_butterflyfish-longnose_620.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-104211/medium_butterflyfish-longnose_620.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-104211/small_butterflyfish-longnose_620.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-104211/xsmall_butterflyfish-longnose_620.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/32_655_5761/media/2017-08-01-104211/thumb_butterflyfish-longnose_620.jpg",
+    "git_file_name": "_assets/image_data/site-assets_32_655_5761_media_2017-08-01-104211_butterflyfish-longnose-620.jpg.json"
   }
 ]
