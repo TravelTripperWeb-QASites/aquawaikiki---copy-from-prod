@@ -1,7 +1,7 @@
 [
 	{
 		"_template": "html",
-		"content": "<h1>Pearl Hotel Waikiki</h1>\n<p>Located just steps from the International Market Place and Waikiki Bay, the Pearl Hotel Waikiki puts you in the heart of Oahu's South Shore among the island&rsquo;s most coveted attractions. Swim with the sea turtles at Hanauma Bay, surf the waves of Waikiki Beach, or take in the views from Diamond Head. In paradise, your options are endless.</p>\n<div class=\"btn-holder\"><a class=\"button-common btn-blue\" href=\"rooms/\">View Rooms </a></div>",
+		"content": "<h1>Pearl Hotel Waikiki</h1>\n<p>Located just steps from the International Market Place and Waikiki Beach, the Pearl Hotel Waikiki puts you in the heart of Oahu's South Shore among the island&rsquo;s most coveted attractions. Swim with the sea turtles at Hanauma Bay, surf the waves of Waikiki Beach, or take in the views from Diamond Head. In paradise, your options are endless.</p>\n<div class=\"btn-holder\"><a class=\"button-common btn-blue\" href=\"rooms/\">View Rooms </a></div>",
 		"rendered_height": 500
 	}
 ]
