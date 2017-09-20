@@ -34,14 +34,14 @@ layout: default
             </div>
           </div>
 
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="#" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
           <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
                        <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
              <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
                 <div class="boxes">
                   <div class="tonight-rate ">
                   <p>Best Price Available</p>
-                  <h4>Tonight's Rate <a href="#" class="homeTonightRate" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  <h4>Tonight's Rate <a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
                   </div>
                   <div class="ota-list" >
                     <ul>
