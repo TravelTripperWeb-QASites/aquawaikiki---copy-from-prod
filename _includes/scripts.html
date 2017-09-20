@@ -20,7 +20,27 @@ function getIp(data){
 
 <script src="/js/jquery.mousewheel.min.js"></script>
 
-<script src="/js/booking-widget.js"></script>
+<!--New Booking Widget-->
+
+<script src="https://plugins.traveltripper.io/v2/rt3api.js"></script> 
+<script src="https://plugins.traveltripper.io/v2/jquery.ttweb.js"></script> 
+<script>
+   
+    TTWeb.Config.configure({
+      hotelId: 'HAWPRL', //'orwhatever your values are',
+      portalId: 'pearlwaikiki',
+      defaultTimezone: 'America/New_York', // timezone of site
+      ipAddress: sessionStorage.ip_add,
+      defaultCurrency: 'USD'
+    });
+    
+
+    $("[show-booking-widget]").bookingWidget({
+         showRateCalendar: true,
+         showOfferCode: true          
+    });
+</script>
+
 <script src="/js/angular.min.js"></script>
 <script src="/js/jquery-ui.min.js"></script>
 <script src="/js/rt3api.js"></script>
