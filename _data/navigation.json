@@ -22,13 +22,6 @@
 			
 		},
 		{
-			'title':'Weddings',
-			'name': 'weddings',
-			'url': '/weddings/',
-			'submenu': 'flase' 
-			
-		},
-		{
 			'title':'Groups',
 			'name': 'meetings-and-events',
 			'url': '/meetings-and-events/',
