@@ -1,1 +1,6 @@
-[{"_template":"html","content":"<h3>Paradise Found</h3>\n<p>At Pearl Hotel Waikiki, comfort and convenience are key. While our spacious rooms and prime location will put you at ease, it&rsquo;s our thoughtful staff that will make your stay in Waikiki absolutely divine. </p>","rendered_height":500}]
+[
+  {
+    "_template": "html",
+    "content": "<h3>Paradise Found</h3>\n<p>At <a title=\"Waikiki Hotels\" href=\"https://www.pearlhotelwaikiki.com/\">Pearl Hotel Waikiki</a>, comfort and convenience are key. While our <a title=\"Waikiki accommodations\" href=\"https://www.pearlhotelwaikiki.com/rooms/\">spacious rooms</a> and <a title=\"Waikiki beach hotel\" href=\"https://www.pearlhotelwaikiki.com/location/\">prime location</a> will put you at ease, it&rsquo;s our thoughtful staff that will make your stay in Waikiki absolutely divine.</p>"
+  }
+]

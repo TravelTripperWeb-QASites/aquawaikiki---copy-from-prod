@@ -1,1 +1,6 @@
-[{"_template":"html","content":"<h2>directions</h2>\n<p>From the Honolulu International Airport, take Interstate H-1 eastbound for Honolulu. Exit at King Street toward Honolulu Zoo / Waikiki, and continue on to Harding Avenue. Turn right at Kapahulu Avenue. Next turn right at Kuhio Avenue. Finally, turn right at Nahua Street. The Pearl Hotel Waikiki is located at 415 Nahua Street.</p>","rendered_height":500}]
+[
+  {
+    "_template": "html",
+    "content": "<h2>directions</h2>\n<p>From the Honolulu International Airport, take Interstate H-1 eastbound for Honolulu. Exit at King Street toward Honolulu Zoo / Waikiki, and continue on to Harding Avenue. Turn right at Kapahulu Avenue. Next turn right at Kuhio Avenue. Finally, turn right at Nahua Street. The <a title=\"Aqua Waikiki Resort\" href=\"https://www.pearlhotelwaikiki.com/\">Pearl Hotel Waikiki</a> is located at 415 Nahua Street.</p>"
+  }
+]

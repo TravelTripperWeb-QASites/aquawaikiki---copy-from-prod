@@ -1,1 +1,6 @@
-[{"_template":"html","content":"<h3>Work from Waikiki</h3>\n<p class=\"wide\">Live the dream and work from paradise at The Pearl Hotel Waikiki. All of our rooms come equipped with WiFi, and our spacious suites also come with a desk and chair. Once you've finished your work, hit the beach.</p>\n<div><a class=\"button-common\" href=\"/rooms/\">View Rooms <i class='fa fa-play'></i></a></div>","rendered_height":500}]
+[
+  {
+    "_template": "html",
+    "content": "<h3>Work from Waikiki</h3>\n<p class=\"wide\">Live the dream and work from paradise at The <a title=\"Hotels in Waikiki\" href=\"https://www.pearlhotelwaikiki.com/\">Pearl Hotel Waikiki</a>. All of our rooms come equipped with WiFi, and our spacious suites also come with a desk and chair. Once you've finished your work, hit the beach.</p>\n<div><a class=\"button-common\" href=\"../rooms/\">View Rooms </a></div>"
+  }
+]
