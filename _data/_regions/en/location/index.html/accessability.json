@@ -1,1 +1,6 @@
-[{"_template":"html","content":"<h2 class=\"no-top-padding\">ACCESSIBILITY</h2>\n<p>Just 10 miles (16 km) from the Honolulu International Airport, the Pearl Hotel Waikiki is in the center of the bustling city&rsquo;s best shops, restaurants, and attractions | One block from the International Market Place and 1.5 blocks from the famous Waikiki Beach.</p>","rendered_height":500}]
+[
+  {
+    "_template": "html",
+    "content": "<h2 class=\"no-top-padding\">ACCESSIBILITY</h2>\n<p>Just 10 miles (16 km) from the Honolulu International Airport, the <a title=\"Pearl Hotel in Waikiki\" href=\"https://www.pearlhotelwaikiki.com/\">Pearl Hotel Waikiki</a> is in the center of the bustling city&rsquo;s best shops, restaurants, and attractions | One block from the International Market Place and 1.5 blocks from the famous Waikiki Beach.</p>"
+  }
+]
