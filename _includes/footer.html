@@ -21,7 +21,7 @@
                 	<h2>Links</h2>
                     <ul>
                     	 {% for items in site.data.navigation.footernav %}
-        				<li><a href="{{ items.url }}">{{ items.title }}</a></li>
+        				<li><a href="{{ items.url }}" rel="nofollow">{{ items.title }}</a></li>
        						{% endfor %}                       
                     </ul>
                     
@@ -59,8 +59,8 @@
     </div>
     <div class="container">
     	<div class="footer-bottom-wrapper">
-    	<div class="col-sm-4 no-padding"><div class="footer-copyright">Pearl Hotel Waikiki
-&copy; 2017</div></div>
+    	<div class="col-sm-4 no-padding"><div class="footer-copyright"><a href="https://www.pearlhotelwaikiki.com/" target="_blank" title="Pearl Hotel Waikiki, formerly Aqua Waikiki">Pearl Hotel Waikiki
+&copy; 2017</a></div></div>
         <div class="col-sm-4 no-padding"><!--<div class="footer-languages"><a href="#" class="active">English</a> - <a href="#">Español</a> - <a href="#">Deutsch</a></div>--></div>
         <div class="col-sm-4 no-padding">
             <div class="footer-social">
