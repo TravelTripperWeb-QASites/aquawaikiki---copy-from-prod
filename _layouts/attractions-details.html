@@ -2,13 +2,13 @@
 layout: default
 ---
 
-{% assign attractions = page %}
+{% assign attraction = page %}
 {% assign model = page %}
 
 <section>
   <div class="container no-padding">
-    <div class="page-banner rooms-banner" style="background-image: url({{attractions.image.url}});">
-      <h1 class="page-title">{{attractions.attraction_type}}</h1>
+    <div class="page-banner rooms-banner" style="background-image: url({{attraction.image.url}});">
+      <h1 class="page-title">{{attraction.attraction_type}}</h1>
     </div>
   </div>
 </section>
@@ -21,11 +21,11 @@ layout: default
 </div>
 <div class="col-sm-7">
 <div class="blog-item"> 
-<h3>{{attractions.attraction_title}}</h3>
-{{attractions.description}}
-<a href="tel:{{attractions.contact}}">{{attractions.contact}}</a>
-{{attractions.address}}
-<div class="price">{{attractions.Price}}</div>
+<h3>{{attraction.attraction_title}}</h3>
+{{attraction.description}}
+<a href="tel:{{attractions.contact}}">{{attraction.contact}}</a>
+{{attraction.address}}
+<div class="price">{{attraction.Price}}</div>
 </div>
 </div>
 
