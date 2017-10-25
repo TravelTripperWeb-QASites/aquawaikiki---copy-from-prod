@@ -13,9 +13,20 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
+
+{% if page.seo_title %}
+  {% assign seo_title = page.seo_title | default: page.title %}
+{% endif %}
+
 <title>{{ seo_title }}</title>
 
 {% assign seo_description = page.meta_description | default: page.excerpt | default: site.description %}
+
+{% if page.seo_description %}
+  {% assign seo_description = page.seo_description | default: page.excerpt | default: site.description %}
+{% endif %}
+
+
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | normalize_whitespace | escape_once %}
 {% endif %}
