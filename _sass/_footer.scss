@@ -179,7 +179,8 @@
 	
 }
 .footer-social {
-	text-align:right;
+	/*text-align:right;*/
+	text-align: left;
 	line-height: 45px;
 	
 	@media (max-width: 767px){
@@ -188,8 +189,9 @@
 		}
 	
 	.fa {
-		color: $tc-ash-1;
-		padding: 0 0 0 30px;
+		/*color: $tc-ash-1;
+		padding: 0 0 0 30px;*/
+		padding: 0 20px 0 0;
 		
 		@media (max-width: 767px){
 			padding: 0 15px 0 15px;
