@@ -49,7 +49,7 @@ layout: default
 
             <!-- Wrapper for Slides -->
             <div class="carousel-inner">
-              <div class="item"  ng-repeat ="photo in offers.sRdetail.images" ng-class="{'active': $index == 0}">
+              <div class="item overlay"  ng-repeat ="photo in offers.sRdetail.images" ng-class="{'active': $index == 0}">
                 <img ng-src="[[photo.yankee_large]]" alt=""/>
                 <h3 class="offername"><span class="block-element ">[[offers.sRdetail.rate_plan_name]]</h3>
               </div>
