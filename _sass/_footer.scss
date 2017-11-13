@@ -227,10 +227,13 @@
 
 /* Modal Content (image) */
 .modal-content {
+	top: 50%;
+	transform: translateY(-50%);
     margin: auto;
     display: block;
     width: 80%;
     max-width: 500px;
+    background: transparent;
 }
 
 /* Caption of Modal Image */
