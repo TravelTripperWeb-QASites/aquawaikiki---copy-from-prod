@@ -179,7 +179,8 @@
 	
 }
 .footer-social {
-	text-align:right;
+	/*text-align:right;*/
+	text-align: left;
 	line-height: 45px;
 	
 	@media (max-width: 767px){
@@ -188,8 +189,10 @@
 		}
 	
 	.fa {
-		color: $tc-ash-1;
-		padding: 0 0 0 30px;
+		/*color: $tc-ash-1;
+		padding: 0 0 0 30px;*/
+		padding: 0 20px 0 0;
+		vertical-align: middle;
 		
 		@media (max-width: 767px){
 			padding: 0 15px 0 15px;
@@ -197,4 +200,49 @@
 		}
 	}
 	
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    opacity: 1.2;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+#snapchatModal{
+	    background-color: rgba(0,0,0,0.8);
+}
+.modal-dialog{
+	.snapmodel{
+		max-width: 500px;
+	    margin: 0 auto;
+	    width: 80%;
+	    box-shadow: none;
+	    border: none;
+	    background: transparent;
+	    h3{
+	    	color: #FFFFFF;
+	    	font-weight: bold;
+	    	font-size: 30px;
+    		letter-spacing: 2px;
+	    }
+	}
 }
