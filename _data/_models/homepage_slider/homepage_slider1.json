@@ -1,8 +1,8 @@
 {
-  "carousel_caption": "<p>Black Friday and Cyber Monday offer</p>\n<div><a class=\"button-common\" href=\"https://pearlwaikiki.reztrip.com/classic/en/special_offer?action=show&amp;controller=landings&amp;locale=en&amp;rate_code=DBFD&amp;rate_code=DBFD&amp;starting_page=special_offer&amp;vr=3\"> Book Now </a></div>",
+  "carousel_caption": "<p style=\"text-align: center;\">Black Friday&nbsp;&amp;<br />Cyber Monday Offer</p>\n<div style=\"text-align: center;\"><a class=\"button-common\" href=\"https://pearlwaikiki.reztrip.com/classic/en/special_offer?action=show&amp;controller=landings&amp;locale=en&amp;rate_code=DBFD&amp;rate_code=DBFD&amp;starting_page=special_offer&amp;vr=3\"> Book Now </a></div>",
   "slider_image": {
     "url": "https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083019/home-carousel-1.jpg",
-    "alt": "Black Friday and Cyber Monday offer"
+    "alt": "Black Friday & Cyber Monday offer"
   },
   "sort_order": 1
 }
