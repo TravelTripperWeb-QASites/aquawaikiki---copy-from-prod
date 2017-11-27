@@ -135,6 +135,11 @@
 		display: block !important;
 	}
 }
+@media(max-width: 1024px){
+	.home-banner-wrap .transparent-bg .caption-inner p{
+		font-weight: bold;
+	}
+}
 .caption-inner {
 	position: absolute;
 	text-align:center;
