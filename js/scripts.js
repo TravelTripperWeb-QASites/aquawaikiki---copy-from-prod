@@ -11,6 +11,34 @@ $(".campaign-item").each(function(){
 $(".campaign-item").height(maxHeight);
 });*/
 
+
+  //* Add locale while submitting booking widget form
+  $(document).on('submit', 'form', function() {
+  var this_action = $(this).attr("action");
+  var localeEl = '';
+  var locale = $("#siteLang").val() || 'en';
+  if (this_action && this_action.indexOf('https://pearlwaikiki.reztrip.com/') != -1 && $(".ttweb-booking-widget input[name='locale']").length == 0) {
+    localeEl = localeEl + "<input type='hidden' name='locale' value='" + locale + "'>";
+  }
+  if (localeEl != '') {
+    localeEl = $(localeEl);
+    $(this).prepend(localeEl);
+  }
+  });
+
+  $(document).on("click", "a", function() {
+  var this_href = $(this).attr("href");
+  var locale = $("#siteLang").val() || 'en';
+  if (this_href && this.href.indexOf('https://pearlwaikiki.reztrip.com/calendar') != -1 && this_href.indexOf('locale') == -1) {
+    if (this_href.indexOf('?') != -1)
+      this_href = this_href + "&";
+    else
+      this_href = this_href + "?";
+    this_href = this_href + 'locale=' + locale;
+    $(this).attr('href', this_href);
+  }
+  });
+
   $(document).ready(function() {
 
       $("#carousel-bottom").owlCarousel({

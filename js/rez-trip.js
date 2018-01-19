@@ -7,7 +7,7 @@
     .value('rt3api', new Rt3Api({
       portalId: 'pearlwaikiki', 
       hotelId: 'HAWPRL',
-      defaultLocale: 'en',
+      defaultLocale: $("#siteLang").val() || 'en',
       defaultCurrency: 'USD'
     }))
    .config(function($locationProvider) {
@@ -80,7 +80,7 @@
            for(var j= 0 ; j < roomsList.length ; j++){
              rName = $filter('formatNameForLink')(roomId);
              tmpName = $filter('formatNameForLink')(roomsList[j].name);
-               if(rName == tmpName ){
+               if(rName == tmpName || rName ==  $filter('formatNameForLink')(roomsList[j].code)){
                   // find room size for diff size units
 
                   if(roomsList[j].room_size_units == 'sqft'){
@@ -98,10 +98,12 @@
                   // find previous and next rooms name
                   if(j > 0){
                      $scope.prevRoomName = roomsList[j-1].name;
+                     $scope.prevRoomCode = roomsList[j-1].code;
                   }
 
                   if(j < roomsList.length -1){
                      $scope.nextRoomName = roomsList[j+1].name;
+                     $scope.nextRoomCode = roomsList[j+1].code;
                   }
                   break;
                }

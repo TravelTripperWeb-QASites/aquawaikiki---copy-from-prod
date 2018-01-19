@@ -1,0 +1,167 @@
+--- 
+language: ja 
+title: ワイキキのホテル ディールおよび特別キャンペーン | パール・ホテル・ワイキキ
+seo_description: パール・ホテル・ワイキキの公式ウェブサイト限定のワイキキ特別キャンペーンおよびディールをご予約ください。
+site_name: パール・ホテル・ワイキキ
+---
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+    {% include head.html %}
+
+	<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+      <input type="hidden" id="siteLang" value="ja">
+
+      {% include google-tag-manager.html %} 
+      {% include header-ja.html %}
+
+			<div class="room-details special-details" rt3-special-rates="offers" ng-controller="offerDetail">
+
+  <section>
+    <div class="container no-padding">
+      <div class="page-banner specials-banner">
+      
+        <h1 class="page-title">특별 행사</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="gallery-nav">
+
+      <li ng-repeat="o in offers.special_rates"><a ng-href="/ja/special/#[[o.rate_plan_code | formatNameForLink]]" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}">[[o.rate_plan_name]]</a></li>
+
+    </ul>
+  </div>
+  <section>
+    <div class="container room-details-carousel">
+      <div class="row">
+      <div class="col-sm-3 col-xs-12">
+          <div class="spcl-lstng">
+          	<h2>특별 행사</h2>
+            <p ng-bind-html="offers.sRdetail.short_description | renderHTMLCorrectly"></p>
+            <p>
+               <!--<strong><span ng-show="!offers.sRdetail.booking_end_date">Available From: </span>
+                    [[offers.sRdetail.booking_start_date | date:"MM-dd-yyyy"]]
+                    <span ng-show="[[offers.sRdetail.booking_end_date]]">until<br> [[offers.sRdetail.booking_end_date | date:"MM-dd-yyyy"]]</span>
+               </strong>-->
+            </p>
+            
+            <div class="booknow"> <a ng-href="[[offers.sRdetail.promo_url]]" target="_blank">지금 예약</a> </div>
+            <div class="btn-holder extra padding"><a href="mailto:reservations@pearlhotelwaikiki.com" class="button-common btn-blue">연락처</i></a></div>
+            
+          </div>
+      </div>
+      <div class="col-sm-9 col-xs-12">
+
+          <div id="roomDetailsCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators" ng-show="offers.sRdetail.images.length>1">
+              <li data-target="#roomDetailsCarousel" ng-repeat="photo in offers.sRdetail.images" data-slide-to="[[$index]]" ng-class="{'active': $index == 0}"></li>
+
+            </ol>
+
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner">
+              <div class="item overlay" ng-repeat="photo in offers.sRdetail.images" ng-class="{'active': $index == 0}">
+                <img ng-src="[[photo.yankee_large]]" alt=""/>
+                <h3 class="offername"><span class="block-element ">[[offers.sRdetail.rate_plan_name]]</h3>
+              </div>
+
+
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="lifestyle">
+  	<div class="container-fluid">
+    	<h3>행사 소개</h3>
+        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+    </div>
+  </section>
+  <section ng-show="offers.sRdetail.addons.length > 0">
+    <div class="container-fluid">
+
+      <div class="row details-intro style2">
+      	<div class="holds">
+        <div class="col-md-5">
+        <h2>다음 특전 제공</h2>
+        </div>  
+         <div class="col-md-7">
+         <ul>
+            <li ng-repeat="addon in offers.sRdetail.addons">[[addon]]</li>
+         </ul>
+
+        </div>  
+        
+        
+       
+      </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row information">
+        <div class="col-md-5 align-center"><img src="../../images/specials/special-details/photo-patch-spcls.png" width="296" height="297" alt=""/></div>
+        <div class="col-md-7 p-l-0">
+          <p class="highlight p-t-35">이용 약관:</p>
+          <ul class="lst p-b-25">
+
+          	<li ng-repeat="terms in offers.sRdetail.policy_description " ng-bind-html="terms | replaceNewline | renderHTMLCorrectly">[[terms]]</li>
+
+          </ul>
+          <p class="highlight">도움이 필요하세요? 예약 전담 팀이 24시간 대기하고 있습니다. </p>
+          <p class="p-b-25">전화 <a href="tel:1.808.922.1616">1.808.922.1616</a> 또는 이메일 <a href="mailto:reservations@pearlhotelwaikiki.com">reservations@pearlhotelwaikiki.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="more-spls">
+    <!--<div class="graphics"></div>-->
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large">추가 특별 행사</h2>
+
+<data-owl-carousel  class="owl-carousel"  id="home-carousel-2" data-options="{navigation : false,
+  slideSpeed : 500,
+  paginationSpeed : 400,
+  items : 2,
+  paginationNumbers: false,
+   pagination: false,
+   autoPlay: false,
+   navigation: true,
+   navigationText : false,
+
+   itemsDesktop : [1199,2],
+  itemsDesktopSmall : [980,2],
+  itemsTablet: [768,2],
+  itemsTabletSmall: false,
+  itemsMobile : [767,1]}">
+<div class="item" owl-carousel-item="" ng-repeat = "offer in offers.special_rates">
+<div class="home-specials-item">
+<img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""/>
+<div class="car-content">
+<h3><a ng-href="/ja/special/#[[offer.rate_plan_code | formatNameForLink ]]" style="text-decoration:none;" >[[offer.rate_plan_name]]</a></h3>
+<p>[[offer.short_description | limitTo: 90]][[offer.short_description.length > 90 ? '...' : '']]</p>
+</div>
+<a ng-href="/ja/special/#[[offer.rate_plan_code | formatNameForLink ]]"  class="button-common btn-top">특별 행사 보기 </a>
+</div>
+</div>
+</data-owl-carousel>
+
+
+        
+        <div class="btn-holder-with-padding"><a href="/ja/specials/" class="button-common btn-blue">모든 특별 행사 보기<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% include save-the-children-ja.html %}
+{% include footer-ja.html %}
+{% include scripts.html %}
+
+	</body>
+</html>

@@ -2,7 +2,7 @@
 title                    : "Pearl Hotel Waikiki"
 title_separator          : "-"
 name                     : "Pearl Hotel Waikiki"
-description              : "Site default description."
+description              : "Located in the vibrant heart of Waikiki, our hotel offers spacious accommodations and easy access to top beaches and attractions. Book your Hawaii getaway now!"
 url                      : "https://www.pearlhotelwaikiki.com" # the base hostname & protocol for your site e.g. "https://www.traveltripper.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : TravelTripperWeb/aquawaikiki
