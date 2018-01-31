@@ -1,0 +1,175 @@
+--- 
+language: ko 
+title: 와이키키 호텔 | 펄 호텔 와이키키의 객실 및 스위트 
+seo_description: 둘만의 로맨틱한 여행을 계획하시든, 온 가족의 휴가를 계획하시든, 모든 고객에게 적합한 객실과 스위트가 준비되어 있습니다. 지금 온라인으로 객실 옵션을 비교해 보세요.  
+site_name: 펄 호텔 와이키키
+---
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+    {% include head.html %}
+
+	<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+      <input type="hidden" id="siteLang" value="ko">
+
+      {% include google-tag-manager.html %} 
+      {% include header-ko.html %}
+
+			<input type="hidden" id="roomId" value=""/>
+<input type="hidden" id="roomList" value="[[ browser.roomsList ]]"/>
+<div class="room-details" ng-controller="roomDetail">
+
+  <section>
+    <div class="container no-padding">
+      <div class="page-banner rooms-banner">
+          <h1 class="page-title">객실 및 스위트</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="gallery-nav">
+
+      <li ng-show="prevRoomName"><a ng-href="/ko/room/#[[prevRoomCode | formatNameForLink ]]">이전 객실</a></li>
+      <li><a href="#" class="active">[[selectedRoom.name]]</a></li>
+      <li ng-show="nextRoomName"><a ng-href="/ko/room/#[[nextRoomCode | formatNameForLink ]]">다음 객실</a></li>
+    </ul>
+  </div>
+  <section>
+    <div class="container room-details-carousel" ng-cloak>
+
+      <div class="home-rooms-holder">
+        <div class="home-rooms-holder-inner">
+          <div id="carousel-bottom">
+            <div class="item">
+              <div>
+                <h2>프리미엄</h2>
+
+                <h3><span class="block-element">[[selectedRoom.name]]</h3>
+                <p><a ng-href="https://pearlwaikiki.reztrip.com/search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]&locale=ko" target="_blank">[[ selectedRoom.todayRate ]]</a></p>
+                <div class="btn-holder extra padding"><a ng-href="https://pearlwaikiki.reztrip.com/search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]&locale=ko" target="_blank" class="button-common btn-blue">지금 예약</a></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="roomDetailsCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" ng-show="selectedRoom.photos.length > 1">
+          <li data-target="#roomDetailsCarousel" ng-repeat="photo in selectedRoom.photos" data-slide-to="[[$index]]" ng-class="{'active': $index == 0}"></li>
+
+
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+          <div class="item" ng-repeat="photo in selectedRoom.photos" ng-class="{'active': $index == 0}" style="background-image: url();">
+          	<img ng-src="[[photo.yankee_large]]" alt=""/>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section ng-show="selectedRoom.amenities.length > 0">
+    <div class="container-fluid">
+      <div class="row details-intro style2">
+        
+        <div class="holds">
+             <h2>다음 특전 제공</h2>
+            <ul>
+                <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
+              </ul>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row information">
+        <div class="col-md-5 align-center"><img src="/images/rooms/room-details/bed-photo.jpg" width="296" height="297" alt=""/></div>
+        <div class="col-md-7 p-l-0">
+          <p class="highlight">정보:</p>
+
+          <p class="p-b-25"><span>[[selectedRoom.room_size_sqm]]</span> <span>[[selectedRoom.room_size_sqft]]</span></p>
+          <p class="p-b-25">[[selectedRoom.description]]</p>
+
+          <p class="highlight">도움이 필요하세요? 예약 전담 팀이 24시간 대기하고 있습니다. </p>
+          <p class="p-b-25">전화 <a href="tel:1.855.518.3455">1.855.518.3455</a> 또는 이메일 <a href="mailto:reservations@pearlhotelwaikiki.com">reservations@pearlhotelwaikiki.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section><section>
+  <div class="container-fluid no-padding home-specials-wrap">
+    <div class="container">
+      <h2 class="heading-large">추가 객실</h2>
+
+      <div class="owl-carousel" id="room-carousel-1">
+
+        <div class="item" ng-repeat="room in browser.roomsList">
+          <div class="home-specials-item2"> <img ng-src="[[room.photos[0].yankee_large]]" alt=""/>
+            <div class="car-content">
+              <h3><a ng-href="/ko/room/#[[room.code | formatNameForLink]]">[[room.name]]</a></h3>
+              <p>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
+            </div>
+            <a ng-href="/ko/room/#[[room.code | formatNameForLink]]" class="button-common btn-top">객실 보기</a> </div>
+        </div>
+
+      </div>
+      
+      <div class="btn-holder-with-padding"><a href="/ko/rooms/" class="button-common btn-blue">모든 객실 보기<i class="fa fa-play"></i></a></div>
+    </div>
+  </div>
+</section>
+</section>
+  <section class="bt">
+    <div class="container">
+     <div class="cta-theme">
+        <div class="pf-wrap">
+          <h2>되찾은 낙원</h2>
+          <div><a href="https://pearlwaikiki.reztrip.com/?locale=ko" target="_blank" class="button-common btn-white">지금 예약<i class="fa fa-play"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-spls" rt3-special-rates="offers">
+
+   
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large">특별 행사</h2>
+
+        <data-owl-carousel class="owl-carousel" id="home-carousel-2" data-options="{navigation : false,                                                                              slideSpeed : 500,                                                                              paginationSpeed : 400,                                                                              items : 2,                                                                              paginationNumbers: false,                                                                               pagination: false,                                                                               autoPlay: false,                                                                               navigation: true,                                                                               navigationText : false,                                                                               itemsDesktop : [1199,2],                                                                              itemsDesktopSmall : [980,2],                                                                              itemsTablet: [768,2],                                                                              itemsTabletSmall: false,                                                                              itemsMobile : [767,1]}">
+	  <div class="item" owl-carousel-item="" ng-repeat="offer in offers.special_rates">
+      <div class="home-specials-item">
+          <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""/>
+          <div class="car-content">
+              <h3><a ng-href="/ko/special/#[[offer.rate_plan_code | formatNameForLink ]]" style="text-decoration:none;">[[offer.rate_plan_name]]</a></h3>
+              <p>[[offer.short_description | limitTo: 90]][[offer.short_description.length > 90 ? '...' : '']]</p>
+          </div>
+          <a ng-href="/ko/special/#[[offer.rate_plan_code | formatNameForLink ]]" class="button-common btn-top">특별 행사 보기 </a>
+      </div>
+    </div>
+</data-owl-carousel>
+
+
+      
+        <div class="btn-holder-with-padding"><a href="/ko/specials/" class="button-common btn-blue">모든 특별 행사 보기<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% include save-the-children-ko.html %}
+{% include footer-ko.html %}
+{% include scripts.html %}
+
+	</body>
+</html>

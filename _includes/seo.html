@@ -50,7 +50,7 @@
 
 
 <meta property="og:locale" content="{{ site.active_lang | replace: "-", "_" | default: "en_US" }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:site_name" content="{{ page.site_name | default: site.title}}">
 <meta property="og:title" content="{{ page.title | default: site.title | escape_once }}">
 
 {% if seo_url %}

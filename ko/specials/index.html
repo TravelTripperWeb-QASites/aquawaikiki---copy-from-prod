@@ -1,0 +1,49 @@
+--- 
+language: ko 
+title: 와이키키 호텔 상품 및 특별 행사 | 펄 호텔 와이키키 
+seo_description: 펄 호텔 와이키키 공식 웹 사이트에서 예약하는 경우에만 만날 수 있는 전용 와이키키 특별 행사 및 상품을 이용해 보세요!   
+site_name: 펄 호텔 와이키키
+---
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+        {% include head.html %}
+
+	<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+            <input type="hidden" id="siteLang" value="ko">
+
+            {% include google-tag-manager.html %}
+            {% include header-ko.html %}
+
+			<section>
+  <div class="container no-padding">
+    <div class="page-banner specials-bannner">
+    	<div class='tt-region' data-region='en/specials/index.html/specials-banner-content.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><h1 class="page-title" style="background-color: rgba(0, 0, 0, 0.4);">특별 행사</h1></div></div>
+    </div>
+  </div>
+</section>
+<section rt3-special-rates="offers">
+<section class="models" ng-repeat="offer in offers.special_rates">
+  <div class="container">
+    <div class=" two-col-wrap">
+      <div class="row no-gutters">
+        <div class="col-sm-6 sp-img v-center"> <div class="special-image" style="background-image: url([[offer.lead_photo_url.yankee_large]])"></div><!-- <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""> --> <a ng-href="https://pearlwaikiki.reztrip.com/ko/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank" class="rate-btn">요금 확인<i class="fa fa-play"></i></a> </div>
+        <div class="col-sm-6 sp-content v-center">
+          <p class="title">[[offer.rate_plan_name]]</p>
+          <p class="desp">[[offer.short_description]]</p>
+          <div class="btn-holder"><a ng-href="/ko/special/#[[offer.rate_plan_code | formatNameForLink ]]" class="button-common btn-blue">이 특별 행사 보기<i class="fa fa-play"></i></a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+{% include save-the-children-ko.html %}
+{% include footer-ko.html %}
+{% include scripts.html %}
+
+	</body>
+</html>

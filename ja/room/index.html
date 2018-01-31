@@ -1,0 +1,174 @@
+---
+language: ja
+title: ワイキキのホテル | パール・ホテル・ワイキキの客室およびスイート 
+seo_description: カップルでのロマンティックなご旅行やご家族でのバケーションをご計画なら、ぴったりの客室やスイートをご用意しています。客室のオプションをオンラインで比較いただけます。
+site_name: パール・ホテル・ワイキキ
+---
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+    {% include head.html %}
+
+	<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+      <input type="hidden" id="siteLang" value="ja">
+      {% include google-tag-manager.html %} 
+      {% include header-ja.html %}
+
+			<input type="hidden" id="roomId" value=""/>
+<input type="hidden" id="roomList" value="[[ browser.roomsList ]]"/>
+<div class="room-details" ng-controller="roomDetail">
+
+  <section>
+    <div class="container no-padding">
+      <div class="page-banner rooms-banner">
+          <h1 class="page-title">客室およびスイート</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="gallery-nav">
+
+      <li ng-show="prevRoomName"><a ng-href="/ja/room/#[[prevRoomCode | formatNameForLink ]]">前の客室を見る</a></li>
+      <li><a href="#" class="active">[[selectedRoom.name]]</a></li>
+      <li ng-show="nextRoomName"><a ng-href="/ja/room/#[[nextRoomCode | formatNameForLink ]]">次の客室を見る</a></li>
+    </ul>
+  </div>
+  <section>
+    <div class="container room-details-carousel" ng-cloak>
+
+      <div class="home-rooms-holder">
+        <div class="home-rooms-holder-inner">
+          <div id="carousel-bottom">
+            <div class="item">
+              <div>
+                <h2>プレミアム</h2>
+
+                <h3><span class="block-element">[[selectedRoom.name]]</h3>
+                <p><a ng-href="https://pearlwaikiki.reztrip.com/search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]&locale=ja" target="_blank">[[ selectedRoom.todayRate ]]</a></p>
+                <div class="btn-holder extra padding"><a ng-href="https://pearlwaikiki.reztrip.com/search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]&locale=ja" target="_blank" class="button-common btn-blue">今すぐ予約</a></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="roomDetailsCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" ng-show="selectedRoom.photos.length > 1">
+          <li data-target="#roomDetailsCarousel" ng-repeat="photo in selectedRoom.photos" data-slide-to="[[$index]]" ng-class="{'active': $index == 0}"></li>
+
+
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+          <div class="item" ng-repeat="photo in selectedRoom.photos" ng-class="{'active': $index == 0}" style="background-image: url();">
+          	<img ng-src="[[photo.yankee_large]]" alt=""/>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section ng-show="selectedRoom.amenities.length > 0">
+    <div class="container-fluid">
+      <div class="row details-intro style2">
+        
+        <div class="holds">
+             <h2>次の特典をお楽しみください</h2>
+            <ul>
+                <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
+              </ul>
+            
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row information">
+        <div class="col-md-5 align-center"><img src="../../images/rooms/room-details/bed-photo.jpg" width="296" height="297" alt=""/></div>
+        <div class="col-md-7 p-l-0">
+          <p class="highlight">お知らせ：</p>
+
+          <p class="p-b-25"><span>[[selectedRoom.room_size_sqm]]</span> <span>[[selectedRoom.room_size_sqft]]</span></p>
+          <p class="p-b-25">[[selectedRoom.description]]</p>
+
+          <p class="highlight">お手伝いが必要ですか？ 当ホテル専属予約チームが24時間対応いたします。</p>
+          <p class="p-b-25"><a href="tel:1.855.518.3455">1.855.518.3455</a>までお電話いただくか、Eメール（ <a href="mailto:reservations@pearlhotelwaikiki.com">reservations@pearlhotelwaikiki.com</a>）にてお問い合わせください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section><section>
+  <div class="container-fluid no-padding home-specials-wrap">
+    <div class="container">
+      <h2 class="heading-large">客室をもっと見る</h2>
+
+      <div class="owl-carousel" id="room-carousel-1">
+
+        <div class="item" ng-repeat="room in browser.roomsList">
+          <div class="home-specials-item2"> <img ng-src="[[room.photos[0].yankee_large]]" alt=""/>
+            <div class="car-content">
+              <h3><a ng-href="/ja/room/#[[room.code | formatNameForLink]]">[[room.name]]</a></h3>
+              <p>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
+            </div>
+            <a ng-href="/ja/room/#[[room.code | formatNameForLink]]" class="button-common btn-top">客室を見る</a> </div>
+        </div>
+
+      </div>
+      
+      <div class="btn-holder-with-padding"><a href="/ja/rooms/" class="button-common btn-blue">すべての客室を見る<i class="fa fa-play"></i></a></div>
+    </div>
+  </div>
+</section>
+</section>
+  <section class="bt">
+    <div class="container">
+     <div class="cta-theme">
+        <div class="pf-wrap">
+          <h2>楽園はここに</h2>
+          <div><a href="https://pearlwaikiki.reztrip.com/?locale=ja" class="button-common btn-white">今すぐ予約<i class="fa fa-play"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-spls" rt3-special-rates="offers">
+
+   
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large">特別キャンペーン</h2>
+
+        <data-owl-carousel class="owl-carousel" id="home-carousel-2" data-options="{navigation : false,                                                                              slideSpeed : 500,                                                                              paginationSpeed : 400,                                                                              items : 2,                                                                              paginationNumbers: false,                                                                               pagination: false,                                                                               autoPlay: false,                                                                               navigation: true,                                                                               navigationText : false,                                                                               itemsDesktop : [1199,2],                                                                              itemsDesktopSmall : [980,2],                                                                              itemsTablet: [768,2],                                                                              itemsTabletSmall: false,                                                                              itemsMobile : [767,1]}">
+	  <div class="item" owl-carousel-item="" ng-repeat="offer in offers.special_rates">
+      <div class="home-specials-item">
+          <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""/>
+          <div class="car-content">
+              <h3><a ng-href="/ja/special/#[[offer.rate_plan_code | formatNameForLink ]]" style="text-decoration:none;">[[offer.rate_plan_name]]</a></h3>
+              <p>[[offer.short_description | limitTo: 90]][[offer.short_description.length > 90 ? '...' : '']]</p>
+          </div>
+          <a ng-href="/ja/special/#[[offer.rate_plan_code | formatNameForLink ]]" class="button-common btn-top">スペシャルを見る</a>
+      </div>
+    </div>
+</data-owl-carousel>
+
+
+      
+        <div class="btn-holder-with-padding"><a href="/ja/specials/" class="button-common btn-blue">スペシャルをすべて見る<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% include save-the-children-ja.html %}
+{% include footer-ja.html %}
+{% include scripts.html %}
+
+	</body>
+</html>

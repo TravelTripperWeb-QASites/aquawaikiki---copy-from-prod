@@ -324,14 +324,15 @@ angular.module('rezTrip')
       rt3api.getAllSpecialRates().then(function(response) {
 
              $rootScope.$applyAsync(function() {
-              var formatResponseValue,hashName, tmpName;
+              var formatResponseValue,hashName, tmpName, tmpCode;
               formatResponseValue = formatRespone(response);
               if(specialRates.locationHash){
                   angular.forEach(response.special_rates, function(value, key) {
 
                     tmpName = $filter ('formatNameForLink')(value.rate_plan_name);
+                    tmpCode = $filter ('formatNameForLink')(value.rate_plan_code);
                     hashName = $filter ('formatNameForLink')(specialRates.locationHash);
-                    if (tmpName == hashName) {
+                    if (tmpName == hashName  || tmpCode == hashName ) {
                           angular.extend(specialRates.sRdetail, value);
 
                       }
