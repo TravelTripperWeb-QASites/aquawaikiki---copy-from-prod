@@ -1,0 +1,49 @@
+--- 
+language: ja 
+title: ワイキキのホテル ディールおよび特別キャンペーン | パール・ホテル・ワイキキ
+seo_description: パール・ホテル・ワイキキの公式ウェブサイト限定のワイキキ特別キャンペーンおよびディールをご予約ください。
+site_name: パール・ホテル・ワイキキ
+---
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+    {% include head.html %}
+
+	<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+        <input type="hidden" id="siteLang" value="ja">
+
+            {% include google-tag-manager.html %} 
+            {% include header-ja.html %}
+
+			<section>
+  <div class="container no-padding">
+    <div class="page-banner specials-bannner">
+    	<div class='tt-region' data-region='en/specials/index.html/specials-banner-content.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><h1 class="page-title" style="background-color: rgba(0, 0, 0, 0.4);">特別キャンペーン</h1></div></div>
+    </div>
+  </div>
+</section>
+<section rt3-special-rates="offers">
+<section class="models" ng-repeat="offer in offers.special_rates">
+  <div class="container">
+    <div class=" two-col-wrap">
+      <div class="row no-gutters">
+        <div class="col-sm-6 sp-img v-center"> <div class="special-image" style="background-image: url([[offer.lead_photo_url.yankee_large]])"></div><!-- <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""> --> <a ng-href="https://pearlwaikiki.reztrip.com/ja/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank" class="rate-btn">料金の確認<i class="fa fa-play"></i></a> </div>
+        <div class="col-sm-6 sp-content v-center">
+          <p class="title">[[offer.rate_plan_name]]</p>
+          <p class="desp">[[offer.short_description]]</p>
+          <div class="btn-holder"><a ng-href="/ja/special/#[[offer.rate_plan_code | formatNameForLink ]]" class="button-common btn-blue">このスペシャルを見る<i class="fa fa-play"></i></a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+
+{% include save-the-children-ja.html %}
+{% include footer-ja.html %}
+{% include scripts.html %}
+
+	</body>
+</html>

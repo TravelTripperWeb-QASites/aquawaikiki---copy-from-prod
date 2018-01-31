@@ -1,0 +1,363 @@
+---
+language: ja
+title: ハワイ州ホノルルのホテル | パール・ホテル・ワイキキ
+seo_description: ワイキキの賑やかな中心街に位置する当ホテルは、広々とした客室と有名ビーチや人気スポットへの便利なアクセスが自慢です。ハワイ旅行を今すぐご予約ください！
+site_name: パール・ホテル・ワイキキ
+---
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+	{% include head.html %}
+
+	<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+    <input type="hidden" id="siteLang" value="ja">
+		
+		{% include google-tag-manager.html %}
+    {% include header-ja.html %}
+				<section>
+  <div class="home-banner-wrap">
+    <div id="homeCarousel" class="carousel slide">
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#homeCarousel" data-slide-to="1"></li>
+        <li data-target="#homeCarousel" data-slide-to="2"></li>
+        <li data-target="#homeCarousel" data-slide-to="3"></li>
+        <li data-target="#homeCarousel" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for Slides -->
+      <div class="carousel-inner" rt3-recent-bookings="recentBookings" ng-cloak>
+            <div class="item active" style="background-image:url(https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083019/home-carousel-1.jpg); background-size: cover; background-position: center;">
+            
+            <!-- <img src="https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083019/home-carousel-1.jpg" alt=""/>-->
+          <div class="carousel-caption transparent-bg">
+            <div class="caption-inner">
+               <p>夢を実現</p>
+<h1>パール・ホテル・ワイキキ</h1>
+<div><a class="button-common" title="詳細はこちら" href="/ja/location/">詳細はこちら</a></div>
+            </div>
+          </div>
+
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>人がこの2日間に当ホテルを予約しました</span><span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span>[[ browser.toNightsRate ]]</span></a>本日の宿泊料金</span></div>
+          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
+                <div class="boxes">
+                  <div class="tonight-rate ">
+                  <p>最低料金</p>
+                  <h4>本日の宿泊料金 <a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  </div>
+                  <div class="ota-list">
+                    <ul>
+                    <li ng-repeat="(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+ 
+            
+            <div class="item" style="background-image:url(https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083020/home-carousel-2.jpg); background-size: cover; background-position: center;">
+            
+            <!-- <img src="https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083020/home-carousel-2.jpg" alt=""/>-->
+          <div class="carousel-caption transparent-bg">
+            <div class="caption-inner">
+               <p>想像を超える</p>
+<h1>自然の驚異</h1>
+<div><a class="button-common" href="/ja/specials/">スペシャルを見る<i class='fa fa-play'></i></a></div>
+            </div>
+          </div>
+
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>人がこの2日間に当ホテルを予約しました</span><span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span>[[ browser.toNightsRate ]]</span></a>本日の宿泊料金</span></div>
+          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
+                <div class="boxes">
+                  <div class="tonight-rate ">
+                  <p>最低料金</p>
+                  <h4>本日の宿泊料金 <a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  </div>
+                  <div class="ota-list">
+                    <ul>
+                    <li ng-repeat="(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+ 
+            
+            <div class="item" style="background-image:url(https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083021/home-carousel-3.jpg); background-size: cover; background-position: center;">
+            
+            <!-- <img src="https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-083021/home-carousel-3.jpg" alt=""/>-->
+          <div class="carousel-caption transparent-bg">
+            <div class="caption-inner">
+               <p>理想的なご滞在を</p>
+<h1> ワイキキの中心で</h1>
+<div><a class="button-common" href="/ja/rooms/">客室を見る <i class='fa fa-play'></i></a></div>
+            </div>
+          </div>
+
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>人がこの2日間に当ホテルを予約しました</span><span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span>[[ browser.toNightsRate ]]</span></a>本日の宿泊料金</span></div>
+          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
+                <div class="boxes">
+                  <div class="tonight-rate ">
+                  <p>最低料金</p>
+                  <h4>本日の宿泊料金 <a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  </div>
+                  <div class="ota-list">
+                    <ul>
+                    <li ng-repeat="(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+ 
+            
+            <div class="item" style="background-image:url(https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-084108/home-carousel-4.jpg); background-size: cover; background-position: center;">
+            
+            <!-- <img src="https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-084108/home-carousel-4.jpg" alt=""/>-->
+          <div class="carousel-caption transparent-bg">
+            <div class="caption-inner">
+               <p>飛び込もう</p>
+<h1>冒険の世界へ</h1>
+<div><a class="button-common" href="/ja/gallery/">ギャラリーを見る <i class='fa fa-play'></i></a></div>
+            </div>
+          </div>
+
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>人がこの2日間に当ホテルを予約しました</span><span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span>[[ browser.toNightsRate ]]</span></a>本日の宿泊料金</span></div>
+          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
+                <div class="boxes">
+                  <div class="tonight-rate ">
+                  <p>最低料金</p>
+                  <h4>本日の宿泊料金 <a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  </div>
+                  <div class="ota-list">
+                    <ul>
+                    <li ng-repeat="(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+ 
+            
+            <div class="item" style="background-image:url(https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-084109/home-carousel-5.jpg); background-size: cover; background-position: center;">
+            
+            <!-- <img src="https://cdn.traveltripper.io/site-assets/32_655_2386/media/2017-03-27-084109/home-carousel-5.jpg" alt=""/>-->
+          <div class="carousel-caption transparent-bg">
+            <div class="caption-inner">
+               <p>地上の楽園</p>
+<h1>神聖な場所</h1>
+<div><a class="button-common" href="/ja/location/">オアフを満喫 <i class='fa fa-play'></i></a></div>
+            </div>
+          </div>
+
+          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>人がこの2日間に当ホテルを予約しました</span><span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span>[[ browser.toNightsRate ]]</span></a>本日の宿泊料金</span></div>
+          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+             <div class="best-rate-ota" ng-show="browser.otaRates.brgFound">
+                <div class="boxes">
+                  <div class="tonight-rate ">
+                  <p>最低料金</p>
+                  <h4>本日の宿泊料金 <a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate"><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                  </div>
+                  <div class="ota-list">
+                    <ul>
+                    <li ng-repeat="(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+ 
+
+
+
+
+      </div>
+    </div>
+    <!--<div class="theme-left-panel">
+      <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
+    </div>-->
+    <div class="theme-right-panel">
+      <!-- <div class="social-right"></div>-->
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid blue-bg mo" style="background-image:url(/images/floewr-bg.jpg);">
+    <div class="about-wrap">
+      <div class='tt-region' data-region='en/index.html/aqua-waikiki-pearl.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><h1>パール・ホテル・ワイキキ</h1>
+<p>パール・ホテル・ワイキキはインターナショナルマーケットプレイスやワイキキビーチからも近く、島内有数の<a title="ワイキキの人気スポット" href="https://www.pearlhotelwaikiki.com/attractions/">人気スポット</a>が集まるオアフ島サウスショアの中心部に位置しています。ハナウマ湾でウミガメと泳いだり、ワイキキビーチでサーフィンをしたり、ダイヤモンドヘッドから景色を楽しんだり。ここは無数のオプションが揃う楽園です。</p>
+<div class="btn-holder"><a class="button-common btn-blue" href="/ja/rooms/">客室を見る </a></div></div></div>
+
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container-fluid no-padding two-col-wrap">
+    <div class="col-sm-6 no-padding v-center">
+      <div class="two-col-content">
+        <div class='tt-region' data-region='en/index.html/paradise-found.jsonparadise-found.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><h3>楽園はここに</h3>
+<p>パール・ホテル・ワイキキは快適さと利便性を兼ね備えたホテル。<a title="ワイキキの宿泊施設" href="/ja/rooms/">広々とした客室</a>や<a title="ワイキキビーチのホテル" href="/ja/location/">便利なロケーション</a>で快適にお過ごしいただけるほか、親切丁寧なサービスでワイキキでの素晴らしいご滞在を叶えます。&rsquo;</p></div></div>
+        <div class="logo-icon"><div class='tt-region' data-region='en/index.html/logoAqua-image.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img id="1501196145715" class=" " src="//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-185543/xsmall_logo.png" width="280" height="103" data-image-large="//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-185543/large_logo.png" data-image-medium="//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-185543/medium_logo.png" data-image-small="//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-185543/small_logo.png" data-image-xsmall="//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-185543/xsmall_logo.png" data-image-thumb="//cdn.traveltripper.io/site-assets/32_655_5565/media/2017-07-27-185543/thumb_logo.png"/></div></div></div></div>
+      </div>
+    </div>
+    <div class="col-sm-6 no-padding v-center"><div class='tt-region' data-region='en/index.html/paradisefound-image.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img src="/images/two-col-1.jpg" alt="楽園はここに"/></div></div></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid no-padding home-rooms-wrap">
+    <div class="home-rooms">
+      <div class="container">
+
+
+          <div class="home-rooms-holder">
+          <div class="home-rooms-holder-inner">
+          <data-owl-carousel class="owl-carousel" data-options="{navigation : false,                                                                                      slideSpeed : 500,                                                                                      paginationSpeed : 400,                                                                                      singleItem:true,                                                                            		  paginationNumbers: false,                                                                            		  autoPlay: false,                                                                            		  pagination: false,                                                                            		  navigation: true,                                                                            		  navigationText : false}">
+            <div class="item" owl-carousel-item="" ng-repeat="room in browser.roomsList">
+            <div>
+              <h2>客室およびスイート</h2>
+              <h3><span class="block-element">[[room.name]]</span></h3>
+              <p></p>
+              <div class="btn-holder extra padding"><a href="/ja/rooms/" class="button-common btn-blue">客室を見る<i class="fa fa-play"></i></a></div>
+            </div>
+			       </div>
+          </data-owl-carousel>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section rt3-special-rates="offers">
+	<div class="container-fluid no-padding home-specials-wrap">
+    	<div class="container">
+       	  <div class='tt-region' data-region='en/index.html/special-offer-head.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><h2 class='heading-large'>特別キャンペーン</h2></div></div>
+          <data-owl-carousel class="owl-carousel" id="home-carousel-2" data-options="{navigation : false,                                                                              slideSpeed : 500,                                                                              paginationSpeed : 400,                                                                              items : 2,                                                                              paginationNumbers: false,                                                                               pagination: false,                                                                               autoPlay: false,                                                                               navigation: true,                                                                               navigationText : false,                                                                               itemsDesktop : [1199,2],                                                                              itemsDesktopSmall : [980,2],                                                                              itemsTablet: [768,2],                                                                              itemsTabletSmall: false,                                                                              itemsMobile : [767,1]}">
+	  <div class="item" owl-carousel-item="" ng-repeat="offer in offers.special_rates">
+      <div class="home-specials-item">
+          <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""/>
+          <div class="car-content">
+              <h3><a ng-href="/ja/special/#[[offer.rate_plan_code | formatNameForLink ]]" style="text-decoration:none;">[[offer.rate_plan_name]]</a></h3>
+              <p>[[offer.short_description | limitTo: 90]][[offer.short_description.length > 90 ? '...' : '']]</p>
+          </div>
+          <a ng-href="/ja/special/#[[offer.rate_plan_code| formatNameForLink ]]" class="button-common btn-top">スペシャルを見る</a>
+      </div>
+    </div>
+</data-owl-carousel>
+
+         
+
+          <div class="btn-holder-with-padding"><a href="/ja/specials/" class="button-common btn-blue">スペシャルをすべて見る<i class="fa fa-play"></i></a></div>
+
+
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="container-fluid aloha">
+      <div class="row">
+        <div class="col-sm-12 no-padding  top-pic"><img src="/images/aloha-1.jpg" alt=""></div>
+           <div class="col-sm-12 no-padding" style=""><img src="/images/aloha-2.jpg" alt=""> 
+
+            <div class="welcome">オアフへようこそ</div>
+            <h3>アロハ</h3>
+            <div class="waikiki">Waikiki</div>
+           </div>
+          <!-- <div class="col-sm-12 no-padding" style="background:url(/images/aloha-2.jpg);"></div>
+      </div> -->
+  </div>
+</section>
+
+
+
+
+<section class="hlw">
+	<div class="hlw-inner">
+	<div class="container">
+
+   	  <div class="home-location-wrap">
+
+      <h2>ロケーション</h2>
+            <h3>オアフを探検する</h3>
+            <div class="map-wrap"><img src="/images/map.jpg" alt="ロケーション"/></div>
+            <div class="map-label"><img src="/images/logo-footer.png" alt=""/></div>
+
+
+<!--h2>a few sites in driving distance</h2>
+            <p><span class="cap">A</span> International Market Place 3 mins <span class="cap">B </span>Ala Moana Center 12 min <span class="cap">C</span>  Diamond Head State Monument 14 min <span class="cap">D</span> Snorkeling at Hanauma Bay 25 min <span class="cap">E</span> Honolulu Zoo 6 min <span class="cap">F</span> Waikiki Aquarium 9 min  <span class="cap">G</span> Manoa Falls 17 min <span class="cap">H</span> Magic Island 10 min <span class="cap">I</span> Pearl Harbor 42 min <span class="cap">J</span> Iolani Palace 14 min <span class="cap">K</span> Bishop Museum 12 min </p-->
+
+            <div class='tt-region' data-region='en/index.html/driving-distance.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><h2>車で行けるスポット</h2><p><span class="cap">A</span> インターナショナルマーケットプレイスまで3分 <span class="cap">B </span>アラモアナセンターまで12分 <span class="cap">C</span> ダイヤモンドヘッドまで14分 <span class="cap">D</span> シュノーケリングスポットのハナウマ湾まで25分 <span class="cap">E</span> ホノルル動物園まで6分 <span class="cap">F</span> ワイキキ水族館まで9分 <span class="cap">G</span> マノアの滝まで17分 <span class="cap">H</span> マジックアイランドまで10分 <span class="cap">I</span> パールハーバーまで42分 <span class="cap">J</span> イオラニ宮殿まで14分 <span class="cap">K</span> ビショップミュージアムまで12分 </p></div></div>
+			
+
+           <div><a href="/ja/location/" class="button-common btn-blue">ホテルへのアクセス<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+    </div>
+   
+</section>
+
+
+<section>
+	<div class="container-fluid show-case">
+    	<div class="row">
+    	<div class="col-sm-4 no-padding"><div class='tt-region' data-region='en/index.html/showcase-img-1.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img src='/images/show-case-1.jpg' alt=''/></div></div></div></div>
+        <div class="col-sm-4 no-padding"><div class='tt-region' data-region='en/index.html/showcase-img-2.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img src='/images/shuttle.jpg' alt=''/></div></div></div></div>
+        <div class="col-sm-4 no-padding"><div class='tt-region' data-region='en/index.html/showcase-img-3.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img src='/images/show-case-3.jpg' alt=''/></div></div></div></div>
+        <div class="col-sm-12 no-padding pattran"><div class='tt-region' data-region='en/index.html/showcase-flower-bg.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img src='/images/flowe-bg-bottom.jpg' alt=''/></div></div></div></div>
+        </div>
+    </div>
+</section>
+<section class="bt">
+    <div class="container-fluid no-padding">
+        
+        <div class="cta-theme cta-theme-aloha">
+            <div class="pf-wrap">
+                <h2>一目で恋するハワイ</h2>
+                <div><a class="button-common btn-white" href="https://pearlwaikiki.reztrip.com/?locale=ja" target="_blank">滞在を予約<i class='fa fa-play'></i></a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="container-fluid show-case">
+      <div class="row">
+      <div class="col-sm-4 no-padding"><div class='tt-region' data-region='en/index.html/showcase-img-4.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img src='/images/show-case-4.jpg' alt=''/></div></div></div></div>
+        <div class="col-sm-4 no-padding"><div class='tt-region' data-region='en/index.html/showcase-img-5.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img src='/images/show-case-5.jpg' alt=''/></div></div></div></div>
+        <div class="col-sm-4 no-padding"><div class='tt-region' data-region='en/index.html/showcase-img-6.json' data-region-type='html' data-region-classes=''><div class='tt-region_ped' data-ped-index='0' data-ped-type='html'><div><img src='/images/show-case-6.jpg' alt=''/></div></div></div></div>
+      
+        </div>
+    </div>
+</section>
+
+{% include save-the-children-ja.html %}
+{% include footer-ja.html %}
+{% include scripts.html %}
+
+	</body>
+</html>
