@@ -81,3 +81,40 @@
 			} 
 		}
 	}
+.lg-sub-html{
+    padding: 20px 10px;
+     width: 400px;
+     min-height: 200px;
+     max-width: 100%;
+     margin: 0px auto !important;
+     bottom: calc(50% - 50px) !important;
+   
+     background-color: rgba(255,255,255,0.8) !important;
+     color: #000;
+     z-index: 1070;
+     h4{
+        padding-top: 10px;
+        font-weight: 300;
+        font-family: $black;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+     }
+     h3{
+         font-family: $light;
+         font-size: 24px;
+         padding: 0;
+         letter-spacing: 2px;
+     }
+     p{
+     	font-family: $base-font-family;
+        margin-top: 10px;
+        color: black;
+        font-size: 14px !important;
+     }
+     a{
+        margin-top:10px;
+        padding: 4px 16px 4px 16px;
+     }
+
+}
