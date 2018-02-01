@@ -16,17 +16,15 @@ layout: default
     	<div class="rooms-holder ">
           <div class="col-md-4 col-sm-6" ng-repeat ="room in browser.roomsList">
             	<div class="rooms-item">
-                    <figure>
-                        <a href="/room/#[[room.name | formatNameForLink]]">
-                            <img ng-src="[[room.photos[0].yankee_large]]" alt=""/>
-                        </a>
-                    </figure>
+                    <figure><img ng-src="[[room.photos[0].yankee_large]]" alt=""/></figure>
                     <h2>[[room.name]]</h2>
                     <div class="room-price">Tonight’s Rate <a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[room.category]]&selected_room=[[room.code]]" target="_blank"><span>[[ room.todayRate ]]</span></a></div>
                     <p>[[room.short_description | limitTo: 150]][[room.short_description.length > 150 ? '...' : '']]</p>
                     <div class="extra-padding"><a ng-href="/room/#[[room.name | formatNameForLink]]"  class="button-common btn-blue">View this room<i class="fa fa-play"></i></a></div>
             	</div>
             </div>
+
+
 
         </div>
     </div>
