@@ -82,6 +82,16 @@ $(".campaign-item").height(maxHeight);
 		 
 
 	 $(document).ready(function() {
+
+        // get rt3 offers in gallery
+ $('#lightgallery').rezGallery({
+           hotelID : 'HAWPRL',
+           portalID : 'pearlwaikiki',
+           buttonClass :'button-common btn-blue',
+           pageLink : true,
+           description : true,
+           offerdetailPage : '/special/'
+ });
 		 
      setTimeout(function(){
 
