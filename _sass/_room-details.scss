@@ -81,7 +81,7 @@
 			span{ padding:0 15px;}
 		}
 		.lst{
-			li{ list-style:none; font-family: $light; font-size: 18px; line-height: 24px;position: relative;padding-left: 32px;
+			li{ list-style:none; font-family: $light; font-size: 18px; line-height: 24px;position: relative;padding-left: 32px; margin-bottom: 15px;
 				&:before{content: '\2022'; padding-right:30px; text-align:right;width:10px;width: 10px;position: absolute;left: 0;top: -0.2em;}
 			}
 
