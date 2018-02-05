@@ -48,6 +48,9 @@
   {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
 {% endif %}
 
+{% if page.meta_tags %}
+<meta name="robots" content="{{ page.meta_tags.robots }}">
+{% endif %}
 
 <meta property="og:locale" content="{{ site.active_lang | replace: "-", "_" | default: "en_US" }}">
 <meta property="og:site_name" content="{{ page.site_name | default: site.title}}">
