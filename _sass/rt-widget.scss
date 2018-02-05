@@ -2,11 +2,12 @@ body{
 	background-color: #fff;
 }
 
-$primary_color: #fd4f00;
-$secondary_color: #717073;
+$primary_color: #004f67;
+$secondary_color: #009ddd;
 $overlay_text_color: #ffffff;
 $white: #eeeeee; 
 $black: #000000; 
+$font-fam: "Lato-Light",Helvetica,Arial,sans-serif;
 
 .rt-guest-widget{
 	&.pop_offer{
@@ -34,6 +35,7 @@ $black: #000000;
 				margin: 0px;
 				text-transform: uppercase;
         font-size: 16px;
+        font-family: $font-fam;
 			}
 		}
 		.popup-detail-offer{
@@ -72,6 +74,7 @@ $black: #000000;
                	    a{
                	    	text-decoration: none;
                	    	color: $white;
+                      font-family: $font-fam;
                	    }
                 } 
 			}
