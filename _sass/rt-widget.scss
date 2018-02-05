@@ -8,6 +8,7 @@ $overlay_text_color: #ffffff;
 $white: #eeeeee; 
 $black: #000000; 
 $font-fam: "Lato-Light",Helvetica,Arial,sans-serif;
+$font-reg: "Lato-Regular";
 
 .rt-guest-widget{
 	&.pop_offer{
@@ -36,6 +37,8 @@ $font-fam: "Lato-Light",Helvetica,Arial,sans-serif;
 				text-transform: uppercase;
         font-size: 16px;
         font-family: $font-fam;
+        font-weight: bold;
+        letter-spacing: 1px;
 			}
 		}
 		.popup-detail-offer{
@@ -86,10 +89,12 @@ $font-fam: "Lato-Light",Helvetica,Arial,sans-serif;
 			text-transform: uppercase;
 			padding: 12px 20px;
 			text-align: center;
-      letter-spacing: 0.1rem;
+      letter-spacing: 4px;
 			display: block;
 			text-decoration: none;
 			transition: all 0.3s ease;
+      font-family: $font-reg;
+      font-size: 13px;
 			&:hover{
                background-color: $secondary_color;
 			}

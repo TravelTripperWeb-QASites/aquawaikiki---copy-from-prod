@@ -91,7 +91,7 @@ var css = __webpack_require__(2);
 			currency: 'USD',
 			offer_popup_widget: {
 				show: true,
-				header_title: 'Exclusive Offer',
+				header_title: 'LIMITED TIME OFFER',
 				primary_color: '#33a1cc',
 				secondary_color: '#616161',
 				overlay_text_color: '#ffffff',
