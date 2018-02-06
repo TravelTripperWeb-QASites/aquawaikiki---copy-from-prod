@@ -7,7 +7,20 @@
 	background-size: cover;
 	text-align:center;
 	
-
+	&.overlay {
+		position: relative;
+		&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.4);
+		opacity: 1;
+		z-index: 1;
+		}
+	}
 
 
 	.page-title
@@ -19,8 +32,9 @@
 		text-transform:uppercase;
 		color:#fff;
 		padding: 114px 0;
-/*		position: relative;
-    	top: 50%; 
+		position: relative;
+		z-index: 2;
+/*    	top: 50%; 
     	transform: translateY(-50%);
     	-webkit-transform: translateY(-50%);
     	-ie-transform: translateY(-50%);
