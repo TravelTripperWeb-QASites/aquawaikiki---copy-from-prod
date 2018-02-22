@@ -73,6 +73,35 @@
 	}
 	.white-bg{ position:relative;
 		.about-wrap{
+			&.amenities-charge{
+				&.grey-bg{
+					background-color: #f8f7f7;
+				}
+				margin: 50px auto;
+				h2{
+					padding-bottom: 20px;
+				}
+				h3{
+					padding: 20px 0;
+				}
+				p{
+					padding: 0;
+					max-width: 65%;
+				}
+				.btn-holder{
+					margin-top: 25px;
+				}
+				ul{
+					text-align: left;
+					max-width: 550px;
+					margin: 0 auto;
+					li{
+						font-family: $light;
+						font-size: 18px;
+						line-height: 30px;
+					}
+				}
+			}
 			text-align: center;
 			padding: 15px 15px;
 			color: #333333;	
@@ -153,6 +182,26 @@
 
 		.blue-bg{
 			.two-col-content{
+				.amenities{
+					ul{
+						margin: 0 auto;
+						padding-left: 20px;
+						padding-top: 15px;
+						max-width: 80%;
+						li{
+							font-family:$light;
+							font-size: 18px;
+							line-height: 28px;
+							list-style-type: disc;
+							text-align: left;
+						}
+					}
+					p{
+						padding: 0;
+						text-align: left;
+						width: 80%;
+					}
+				}
 				@media (max-width: 1024px){ padding:30px 15px;}
 				h3{color:#fff;}
 				p{color:#fff; width:62%;
@@ -217,6 +266,7 @@
 }
 
 .group-banner{background: url(/images/groups-banner.jpg) no-repeat center center;background-size: cover;}
+.amenities-banner{background: url('//cdn.traveltripper.io/site-assets/192_655_12459/media/2018-02-22-024217/amenities-banner.jpg') no-repeat center center;background-size: cover;}
 
 .meetings-addresses{
 	color:#fff;
@@ -240,4 +290,7 @@
 	a{
 		letter-spacing:1px;
 	}
+}
+.m-t-100{
+	margin-top: 100px;
 }
