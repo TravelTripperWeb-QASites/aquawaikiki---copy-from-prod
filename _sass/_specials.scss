@@ -7,7 +7,20 @@
 	background-size: cover;
 	text-align:center;
 	
-
+	&.overlay {
+		position: relative;
+		&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: rgba(0,0,0,0.4);
+		opacity: 1;
+		z-index: 1;
+		}
+	}
 
 
 	.page-title
@@ -19,8 +32,9 @@
 		text-transform:uppercase;
 		color:#fff;
 		padding: 114px 0;
-/*		position: relative;
-    	top: 50%; 
+		position: relative;
+		z-index: 2;
+/*    	top: 50%; 
     	transform: translateY(-50%);
     	-webkit-transform: translateY(-50%);
     	-ie-transform: translateY(-50%);
@@ -76,7 +90,9 @@ section.models
 
 		.sp-img
 		{
-
+			a{
+				display: block;
+			}
 			padding:0;
 			margin:0;
 
@@ -142,6 +158,14 @@ section.models
 
 		.sp-content
 		{
+			.extra-mg{
+				a{
+					margin: 0 5px;
+					@media(max-width:$screen-sm-min){
+						margin: 5px;
+					}
+				}
+			}
 
 			padding: 55px 55px 48px 55px;
 			text-align:center;
@@ -613,4 +637,8 @@ h2{
 			z-index: 9;
 
 			  }
-        }
+		}
+
+.specials-banner-exclusive {
+	background: url("/images/specials-banner.jpg") no-repeat center center;
+}
