@@ -29,7 +29,13 @@
 			'subitems': [
 				{'title':'Request for Proposal','name': 'events','url': '/meetings-and-events/request-for-proposal/'}
 			] 
-		}, 
+		},
+		{
+			'title':'Amenities',
+			'name': 'amenities',
+			'url': '/amenities/' ,
+			'submenu': 'false'
+		},
 		{
 			'title':'Gallery',
 			'name': 'gallery',

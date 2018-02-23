@@ -7,7 +7,9 @@ layout: default
   <section>
       <div class="container no-padding">
         <div class="page-banner amenities-banner">
+          {% regionblock amenities_heading1, type:header %}
             <h1 class="page-title">Amenities</h1>
+          {% endregionblock %}
         </div>
       </div>
     </section>
@@ -17,7 +19,10 @@ layout: default
     <div class="col-md-5 no-padding v-center blue-bg">
       <div class="two-col-content">
         <div class="meetings-addresses amenities">
+          {% regionblock amenities_heading2, type:header %}
         <h3>HOTEL AMENITIES</h3>
+        {% endregionblock %}
+        {% regionblock amenities_content1, type:text %}
         <ul>
         <li>High-speed WiFi throughout the hotel*</li>
         <li>Self-Parking (limited spaces, 30 USD per day)</li>
@@ -37,29 +42,45 @@ layout: default
         <li>Wake up service</li>
         <li>Smoke-free property</li>
     </ul>
+    {% endregionblock %}
         </div>
       </div>
     </div>
-    <div class="col-md-7 no-padding v-center"><img src="/images/meetings/meetings-1.jpg" alt="Paradise Found" ></div>
+    <div class="col-md-7 no-padding v-center">
+      {% regionblock amenities_image1, type:image %}
+      <img src="/images/meetings/meetings-1.jpg" alt="Paradise Found" >
+      {% endregionblock %}
+    </div>
   </div>
 </section>
 
 <section>
   <div class="container-fluid white-bg">
     <div class="about-wrap amenities-charge">
+      {% regionblock amenities_heading3, type:header %}
       <h3>Pet policy:</h3>
+      {% endregionblock %}
+      {% regionblock amenities_content2, type:text %}
       <p>$35 USD per pet per night, maximum of 2 pets under 40 lbs are permitted per room. Please contact the property in advance for pet charges and restrictions. A refundable security deposit and taxable nightly fee applies. Subject to change at any time.</p>
+      {% endregionblock %}
     </div>
   </div>
 </section>
 
 <section>
   <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-md-7 no-padding v-center"><img src="/images/meetings/meetings-1.jpg" alt="Paradise Found" ></div>
+    <div class="col-md-7 no-padding v-center">
+      {% regionblock amenities_image2, type:image %}
+      <img src="/images/meetings/meetings-1.jpg" alt="Paradise Found" >
+      {% endregionblock %}
+    </div>
     <div class="col-md-5 no-padding v-center blue-bg">
       <div class="two-col-content">
         <div class="meetings-addresses amenities">
+          {% regionblock amenities_heading4, type:header %}
         <h3>ROOM AMENITIES</h3>
+        {% endregionblock %}
+        {% regionblock amenities_content3, type:text %}
         <ul>
           <li>Air conditioning</li>
           <li>All non-smoking rooms</li>
@@ -81,7 +102,10 @@ layout: default
           <li>Balcony (Suites only)</li>
           <li>Accessible guestrooms available</li>
         </ul>
+        {% endregionblock %}
+        {% regionblock amenities_content4, type:text %}
         <p>*Included in Amenity Charge</p>
+        {% endregionblock %}
         </div>
       </div>
     </div>
@@ -91,11 +115,18 @@ layout: default
 <section>
   <div class="container-fluid white-bg">
     <div class="about-wrap amenities-charge grey-bg">
+      {% regionblock amenities_heading5, type:header %}
       <h2>AMENITY CHARGE</h2>
+      {% endregionblock %}
+      {% regionblock amenities_content5, type:text %}
       <p>$20 USD plus tax per room per night.</p>
       <p>Charge and inclusions are subject to change at any time without notice.</p>
       <p>Provides guests the use of multiple services and activities in one convenient nightly charge.</p>
+      {% endregionblock %}
+      {% regionblock amenities_heading6, type:header %}
       <h3>Inclusions:</h3>
+      {% endregionblock %}
+      {% regionblock amenities_content6, type:text %}
       <ul>
         <li>High-speed WiFi throughout the hotel</li>
         <li>Blu-ray/DVD player & Playstation®3 console</li>
@@ -106,9 +137,14 @@ layout: default
         <li>Local & toll-free telephone calls</li>
         <li>Local newspaper in lobby</li>
       </ul>
+      {% endregionblock %}
+      {% regionblock amenities_content7, type:text %}
       <p>Charge and inclusions are subject to change at any time without notice.</p>
+      {% endregionblock %}
       <div class="btn-holder">
+        {% regionblock amenities_content8, type:text %}
         <a class="button-common btn-blue" href="https://pearlwaikiki.reztrip.com/" target="_blank">Book Now</a>
+        {% endregionblock %}
     </div>
   </div>
 </section>
