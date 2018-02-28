@@ -25,7 +25,7 @@ layout: default
         {% regionblock amenities_content1, type:text %}
         <ul>
         <li>High-speed WiFi throughout the hotel*</li>
-        <li>Self-Parking (limited spaces, 30 USD per day)</li>
+        <li>Self-Parking (limited spaces, $30 USD per day)</li>
         <li>Pet friendly (see pet policy)</li>
         <li>Coffee & tea in the lobby (7am - 9am)*</li>
         <li>DVD rental kiosk available in lobby*</li>
@@ -38,10 +38,13 @@ layout: default
         <li>ATM</li>
         <li>24-hour front desk</li>
         <li>Convenience store</li>
-        <li>Extra Beds and Cribs available upon request, 25 USD plus tax per night (maximum 1 request per room)</li>
+        <li>Extra Beds and Cribs available upon request, $25 USD plus tax per night (maximum 1 request per room)</li>
         <li>Wake up service</li>
         <li>Smoke-free property</li>
     </ul>
+    {% endregionblock %}
+    {% regionblock amenities_content9, type:text %}
+    <p>*Included in Amenity Charge</p>
     {% endregionblock %}
         </div>
       </div>
@@ -119,9 +122,8 @@ layout: default
       <h2>AMENITY CHARGE</h2>
       {% endregionblock %}
       {% regionblock amenities_content5, type:text %}
-      <p>$20 USD plus tax per room per night.</p>
-      <p>Charge and inclusions are subject to change at any time without notice.</p>
       <p>Provides guests the use of multiple services and activities in one convenient nightly charge.</p>
+      <p>$20* USD plus tax per room per night.</p>
       {% endregionblock %}
       {% regionblock amenities_heading6, type:header %}
       <h3>Inclusions:</h3>
@@ -139,7 +141,7 @@ layout: default
       </ul>
       {% endregionblock %}
       {% regionblock amenities_content7, type:text %}
-      <p>Charge and inclusions are subject to change at any time without notice.</p>
+      <p>*Charge and inclusions are subject to change at any time without notice.</p>
       {% endregionblock %}
       <div class="btn-holder">
         {% regionblock amenities_content8, type:text %}
