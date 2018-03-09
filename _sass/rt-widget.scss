@@ -16,8 +16,8 @@ $font-reg: "Lato-Regular";
 		left: 20px;
 		right: auto;
 		top: auto;
-		bottom: 30px;
-		max-width: 240px;
+		bottom: 200px;
+		max-width: 250px;
 		width: 100%;
 		background-color: $white;
 		border-radius: 5px 5px 0px 0px;
@@ -36,7 +36,7 @@ $font-reg: "Lato-Regular";
 				margin: 0px;
 				text-transform: uppercase;
         font-size: 16px;
-        font-family: $font-fam;
+        font-family: $font-reg;
         letter-spacing: 1px;
 			}
 		}
@@ -51,7 +51,7 @@ $font-reg: "Lato-Regular";
 			background-position: center center;
 			background-size: cover;
 			position: relative;
-			min-height: 170px;
+			min-height: 240px;
 
 			.rt-overlay_widget{
                position: absolute;
@@ -76,7 +76,7 @@ $font-reg: "Lato-Regular";
                	    a{
                	    	text-decoration: none;
                	    	color: $white;
-                      font-family: $font-fam;
+                      font-family: $font-reg;
                	    }
                 } 
 			}
@@ -116,7 +116,7 @@ $font-reg: "Lato-Regular";
     	color: $white;
     	position: fixed;
     	left: -60px;
-    	bottom: 40px;
+    	bottom: 210px;
     	transition: all 0.5s ease;
     	cursor: pointer;
     	border-radius: 0px 5px 5px 0px;
