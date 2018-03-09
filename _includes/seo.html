@@ -132,4 +132,22 @@
 {% if site.data.verification.yandex_site_verification %}
   <meta name="yandex-verification" content="{{ site.data.verification..yandex_site_verification }}">
 {% endif %}
+
+<meta http-equiv="Content-Language" content="{{ active_lang }}">
+{% if page.url == '/' or page.url == '/ja/' or page.url == '/ko/' or page.url contains '/gallery/' or page.url contains '/location' or page.url contains '/specials/' or page.url contains '/special/' or page.url contains '/sitemap/' or page.url contains '/rooms/' or page.url contains '/room/' %}
+  {% if page.url contains '/ja/' %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url | remove: '/ja' }}">
+    <link rel="alternate" hreflang="ja" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="ko" href="{{ site.url }}{{ page.url | remove: '/ja' | prepend: '/ko' }}">
+  {% elsif page.url contains '/ko/' %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url | remove: '/ko' }}">
+    <link rel="alternate" hreflang="ko" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="ja" href="{{ site.url }}{{ page.url | remove: '/ko' | prepend: '/ja' }}">
+  {% else %}
+    <link rel="alternate" hreflang="{{ site.default_lang }}" href="{{ site.url }}{{ page.url }}">
+    <link rel="alternate" hreflang="ja" href="{{ site.url }}{{ page.url | prepend: '/ja' }}">
+    <link rel="alternate" hreflang="ko" href="{{ site.url }}{{ page.url | prepend: '/ko' }}">
+  {% endif %}
+{% endif %}
+
 <!-- end SEO -->
