@@ -288,3 +288,20 @@ a:hover,a:focus {
 			padding-top: 52px;
 		}
 }
+
+.newsletter-btn {
+    padding: 5px 10px 8px 20px;
+    position: fixed;
+    background-color: #004f67;
+    z-index: 99;
+    top: 100px;
+    left: -8px;
+    border-radius: 0 10px 10px 0;
+    i {
+        color: #eee;
+    }
+    &:hover {
+        left: 0px;
+    }
+    
+}
