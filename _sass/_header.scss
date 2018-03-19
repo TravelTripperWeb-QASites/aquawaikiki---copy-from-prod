@@ -321,6 +321,10 @@ a:hover,a:focus {
     }
     @media (max-width:767px){
         margin: 0px;
+        .intro {
+            text-align: left;
+            padding-left: 0;
+        }
     }
     .close-btn {
         position: absolute;
