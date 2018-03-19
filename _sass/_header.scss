@@ -289,6 +289,40 @@ a:hover,a:focus {
 		}
 }
 
+.signup {
+    background-color: #58a6b5;
+    margin: 0 55px;
+    padding: 5px;
+    color: #fff;
+    vertical-align: middle;
+    .intro {
+        padding: 7px 10px;
+        text-align: right;
+    }
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+        input[type=email], button {
+            border:0px;
+            border-radius: 0px;
+        }
+        .btn {
+            padding: 8px 12px;
+            background-color: #004f67;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #fff;
+            margin-left: 0px;
+            
+        }
+    }
+    @media (max-width:767px){
+        margin: 0px;
+    }
+}
+
 .newsletter-btn {
     padding: 5px 10px 8px 20px;
     position: fixed;
