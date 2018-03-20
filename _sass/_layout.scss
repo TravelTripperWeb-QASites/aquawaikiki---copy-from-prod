@@ -161,7 +161,7 @@
 	}
 
 	p{
-		font-size: 72px;
+		font-size: 62px;
 		letter-spacing: 20px;
 
 
@@ -1981,4 +1981,42 @@ font-size:16px;
 		}
 	}
 
+}
+
+
+
+#reviewsCarousel{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 300px;
+    max-width: 85%;
+    margin: 0 auto;
+    .carousel-inner{
+    	text-align: center;
+    	p{
+    		color: white;
+    		font-family: $thin;
+    		font-size: 35px;
+    	}
+    }
+    .review-icon{
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-color: $bg-blue-2;
+	    height: 30px;
+	    width: 30px;
+	    position: absolute;
+	    &.left{
+	    	background-image: url(../images/left-arrow.png);
+	    }
+	    &.right{
+	    	background-image: url(../images/right-arrow.png);
+	    	margin-left: 35px;
+	    }
+    }
+}
+.controls-lr{
+	    width: 54px;
+    margin: 0 auto;
 }

@@ -2,188 +2,174 @@
 layout: default
 
 ---
-
 <section>
-  <div class="home-banner-wrap">
-    <div id="homeCarousel" class="carousel slide">
-
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#homeCarousel" data-slide-to="1"></li>
-        <li data-target="#homeCarousel" data-slide-to="2"></li>
-        <li data-target="#homeCarousel" data-slide-to="3"></li>
-        <li data-target="#homeCarousel" data-slide-to="4"></li>
-      </ol>
-
-
-      <!-- Wrapper for Slides -->
-      <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
-
-            {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
-            {% for slilderimages in slilder_images %}
-            {% if forloop.first == true %}
-            <div class="item active" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
-            {% else %}
-            <div class="item" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
-            {% endif %}
-            <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
-          <div class="carousel-caption transparent-bg">
-            <div class="caption-inner">
-               {{ slilderimages.carousel_caption }}
-            </div>
-          </div>
-
-          <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
-          <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
-                       <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
-             <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
-                <div class="boxes">
-                  <div class="tonight-rate ">
-                  <p>Best Price Available</p>
-                  <h4>Tonight's Rate <a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
-                  </div>
-                  <div class="ota-list" >
-                    <ul>
-                    <li ng-repeat = "(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
-                    </ul>
-                  </div>
+    <div class="home-banner-wrap">
+        <div id="homeCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                <li data-target="#homeCarousel" data-slide-to="2"></li>
+                <li data-target="#homeCarousel" data-slide-to="3"></li>
+                <li data-target="#homeCarousel" data-slide-to="4"></li>
+            </ol>
+            <!-- Wrapper for Slides -->
+            <div class="carousel-inner" rt3-recent-bookings="recentBookings"  ng-cloak>
+                {% assign slilder_images = site.data._models.homepage_slider  | sort : "sort_order" %}
+                {% for slilderimages in slilder_images %}                
+                <div class="item {% if forloop.first == true %} active {% endif %}" style="background-image:url({{ slilderimages.slider_image.url }}); background-size: cover; background-position: center;">
+                    <!-- <img src="{{ slilderimages.slider_image.url }}" alt=""/>-->
+                    <div class="carousel-caption transparent-bg">
+                        <div class="caption-inner">
+                            {{ slilderimages.carousel_caption }}
+                        </div>
+                    </div>
+                    <div class="caption-price"> <span class="price-holder"><span>[[ recentBookings.totalBookings ]]</span>People booked our hotel in the last 2 days</span> <span class="price-holder tonight" ng-show="!browser.otaRates.brgFound && browser.isRate"><a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate" ><span>[[ browser.toNightsRate ]]</span></a>Tonight’s Rate</span></div>
+                    <div class="price-wrap1" ng-show="browser.isRate" style="display:none">
+                        <!--<div class="people"> <span>345</span>People booked our hotel in the last 2 days </div>-->
+                        <div class="best-rate-ota" ng-show ="browser.otaRates.brgFound" >
+                            <div class="boxes">
+                                <div class="tonight-rate ">
+                                    <p>Best Price Available</p>
+                                    <h4>Tonight's Rate <a href="https://pearlwaikiki.reztrip.com/search?" target="_blank" class="homeTonightRate" ><span class="price">[[browser.otaRates.reztripRate]]</span></a></h4>
+                                </div>
+                                <div class="ota-list" >
+                                    <ul>
+                                        <li ng-repeat = "(key, value) in browser.otaRates.brg">[[key]] <span>$[[value]]</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
+                {% endfor %}
             </div>
         </div>
- {% endfor %}
 
-
-
-
-      </div>
-    </div>
-    <!--<div class="theme-left-panel">
-      <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
-    </div>-->
-    <div class="theme-right-panel">
-      <!-- <div class="social-right"></div>-->
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container-fluid blue-bg mo" style="background-image:url(/images/floewr-bg.jpg);">
-    <div class="about-wrap">
-      {% region aqua-waikiki-pearl %}
-
-    </div>
-  </div>
-</section>
-<section>
-  <div class="container-fluid no-padding two-col-wrap">
-    <div class="col-sm-6 no-padding v-center">
-      <div class="two-col-content">
-        {% region paradise-found %}
-        <div class="logo-icon">{% region logoAqua-image %}</div>
-      </div>
-    </div>
-    <div class="col-sm-6 no-padding v-center">{% region paradisefound-image %}</div>
-  </div>
-</section>
-
-<section>
-  <div class="container-fluid no-padding home-rooms-wrap">
-    <div class="home-rooms">
-      <div class="container">
-
-
-          <div class="home-rooms-holder">
-          <div class="home-rooms-holder-inner">
-          <data-owl-carousel  class="owl-carousel" data-options="{navigation : false,
-                                                                                      slideSpeed : 500,
-                                                                                      paginationSpeed : 400,
-                                                                                      singleItem:true,
-                                                                            		  paginationNumbers: false,
-                                                                            		  autoPlay: false,
-                                                                            		  pagination: false,
-                                                                            		  navigation: true,
-                                                                            		  navigationText : false}">
-            <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList">
-            <div>
-              <h2>Rooms & Suites</h2>
-              <h3><span class="block-element">[[room.name]]</span></h3>
-              <p></p>
-              <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue">View Rooms<i class="fa fa-play"></i></a></div>
+        <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <p> “Good Value Excellent Location!” - j0elww - Hilo, Hawaii</p>
+                </div>
+                <div class="item">
+                    <p> “Great stay in Waikiki” - 436mariehelenet - French Polynesia</p>
+                </div>
+                <div class="item">
+                    <p>“Best value, best staff, best staycation ever!” - rlkelly59</p>
+                </div>
             </div>
-			       </div>
-          </data-owl-carousel >
+            <!-- Left and right controls -->
+            <div class="controls-lr">
+            
+            <a class="review-icon left" href="#reviewsCarousel" data-slide="prev">
+            </a>
+            <a class="review-icon right" href="#reviewsCarousel" data-slide="next">
+            </a>
+            </div>
+        </div>
 
+        <!--<div class="theme-left-panel">
+            <div class="languages"><a href="#">English</a><a href="#">Español</a><a href="#">Deutsch</a></div>
+            </div>-->
+        <div class="theme-right-panel">
+            <!-- <div class="social-right"></div>-->
         </div>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
-
-
+<section>
+    <div class="container-fluid blue-bg mo" style="background-image:url(/images/floewr-bg.jpg);">
+        <div class="about-wrap">
+            {% region aqua-waikiki-pearl %}
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid no-padding two-col-wrap">
+        <div class="col-sm-6 no-padding v-center">
+            <div class="two-col-content">
+                {% region paradise-found %}
+                <div class="logo-icon">{% region logoAqua-image %}</div>
+            </div>
+        </div>
+        <div class="col-sm-6 no-padding v-center">{% region paradisefound-image %}</div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid no-padding home-rooms-wrap">
+        <div class="home-rooms">
+            <div class="container">
+                <div class="home-rooms-holder">
+                    <div class="home-rooms-holder-inner">
+                        <data-owl-carousel  class="owl-carousel" data-options="{navigation : false,
+                            slideSpeed : 500,
+                            paginationSpeed : 400,
+                            singleItem:true,
+                            paginationNumbers: false,
+                            autoPlay: false,
+                            pagination: false,
+                            navigation: true,
+                            navigationText : false}">
+                            <div class="item" owl-carousel-item="" ng-repeat ="room in browser.roomsList">
+                                <div>
+                                    <h2>Rooms & Suites</h2>
+                                    <h3><span class="block-element">[[room.name]]</span></h3>
+                                    <p></p>
+                                    <div class="btn-holder extra padding"><a href="/rooms/" class="button-common btn-blue">View Rooms<i class="fa fa-play"></i></a></div>
+                                </div>
+                            </div>
+                        </data-owl-carousel >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <section rt3-special-rates= "offers">
-	<div class="container-fluid no-padding home-specials-wrap">
-    	<div class="container">
-       	  {% region special-offer-head %}
-          {%  include special-offers.html %}
-         
-
-          <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
-
-
+    <div class="container-fluid no-padding home-specials-wrap">
+        <div class="container">
+            {% region special-offer-head %}
+            {%  include special-offers.html %}
+            <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
         </div>
     </div>
 </section>
-
 <section>
-  <div class="container-fluid aloha">
-      <div class="row">
+    <div class="container-fluid aloha">
+    <div class="row">
         <div class="col-sm-12 no-padding  top-pic" ><img src="/images/aloha-1.jpg" alt=""></div>
-           <div class="col-sm-12 no-padding" style=""><img src="/images/aloha-2.jpg" alt=""> 
-
+        <div class="col-sm-12 no-padding" style="">
+            <img src="/images/aloha-2.jpg" alt=""> 
             <div class="welcome">Welcome to o’ahu</div>
             <h3>Aloha</h3>
             <div class="waikiki">Waikiki</div>
-           </div>
-          <!-- <div class="col-sm-12 no-padding" style="background:url(/images/aloha-2.jpg);"></div>
-      </div> -->
-  </div>
+        </div>
+        <!-- <div class="col-sm-12 no-padding" style="background:url(/images/aloha-2.jpg);"></div>
+            </div> -->
+    </div>
 </section>
-
-
-
-
 <section class="hlw">
-	<div class="hlw-inner">
-	<div class="container">
-
-   	  <div class="home-location-wrap">
-
-      {% include location.html %}
-
-           <div><a href="/location/" class="button-common btn-blue">get hotel directions<i class="fa fa-play"></i></a></div>
-      </div>
+    <div class="hlw-inner">
+        <div class="container">
+            <div class="home-location-wrap">
+                {% include location.html %}
+                <div><a href="/location/" class="button-common btn-blue">get hotel directions<i class="fa fa-play"></i></a></div>
+            </div>
+        </div>
     </div>
-    </div>
-   
 </section>
-
-
 <section>
-	<div class="container-fluid show-case">
-    	<div class="row">
-    	<div class="col-sm-4 no-padding">{% region showcase-img-1 %}</div>
-        <div class="col-sm-4 no-padding">{% region showcase-img-2 %}</div>
-        <div class="col-sm-4 no-padding">{% region showcase-img-3 %}</div>
-        <div class="col-sm-12 no-padding pattran">{% region showcase-flower-bg %}</div>
+    <div class="container-fluid show-case">
+        <div class="row">
+            <div class="col-sm-4 no-padding">{% region showcase-img-1 %}</div>
+            <div class="col-sm-4 no-padding">{% region showcase-img-2 %}</div>
+            <div class="col-sm-4 no-padding">{% region showcase-img-3 %}</div>
+            <div class="col-sm-12 no-padding pattran">{% region showcase-flower-bg %}</div>
         </div>
     </div>
 </section>
 <section class="bt">
     <div class="container-fluid no-padding">
-        
         <div class="cta-theme cta-theme-aloha">
             <div class="pf-wrap">
                 <h2>you had me at aloha</h2>
@@ -192,14 +178,12 @@ layout: default
         </div>
     </div>
 </section>
-
 <section>
-  <div class="container-fluid show-case">
-      <div class="row">
-      <div class="col-sm-4 no-padding">{% region showcase-img-4 %}</div>
-        <div class="col-sm-4 no-padding">{% region showcase-img-5 %}</div>
-        <div class="col-sm-4 no-padding">{% region showcase-img-6 %}</div>
-      
+    <div class="container-fluid show-case">
+        <div class="row">
+            <div class="col-sm-4 no-padding">{% region showcase-img-4 %}</div>
+            <div class="col-sm-4 no-padding">{% region showcase-img-5 %}</div>
+            <div class="col-sm-4 no-padding">{% region showcase-img-6 %}</div>
         </div>
     </div>
 </section>
