@@ -36,6 +36,24 @@
     "git_file_name": "_assets/image_data/australia-offer.json"
   },
   {
+    "name": "bluehawaiian-oahu",
+    "file_name": "bluehawaiian-oahu.jpg",
+    "file_type": "image/jpeg",
+    "url": "//cdn.traveltripper.io/site-assets/192_655_13902/media/2018-03-26-071056/bluehawaiian-oahu.jpg",
+    "tags": "",
+    "file_size": 28825.0,
+    "width": 370,
+    "height": 260,
+    "description": "",
+    "date_added": "2018-03-26-071056",
+    "url_large": "//cdn.traveltripper.io/site-assets/192_655_13902/media/2018-03-26-071056/large_bluehawaiian-oahu.jpg",
+    "url_medium": "//cdn.traveltripper.io/site-assets/192_655_13902/media/2018-03-26-071056/medium_bluehawaiian-oahu.jpg",
+    "url_small": "//cdn.traveltripper.io/site-assets/192_655_13902/media/2018-03-26-071056/small_bluehawaiian-oahu.jpg",
+    "url_xsmall": "//cdn.traveltripper.io/site-assets/192_655_13902/media/2018-03-26-071056/xsmall_bluehawaiian-oahu.jpg",
+    "url_thumb": "//cdn.traveltripper.io/site-assets/192_655_13902/media/2018-03-26-071056/thumb_bluehawaiian-oahu.jpg",
+    "git_file_name": "_assets/image_data/bluehawaiian-oahu.json"
+  },
+  {
     "name": "pearl-hotel-waikiki-fact-sheet",
     "file_name": "pearl-hotel-waikiki-fact-sheet.pdf",
     "file_type": "application/pdf",
