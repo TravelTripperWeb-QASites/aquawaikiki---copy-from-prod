@@ -1986,17 +1986,16 @@ font-size:16px;
 
 
 #reviewsCarousel{
-	position: absolute;
     left: 0;
-    right: 0;
-    bottom: 300px;
+    right: 0; 
     max-width: 85%;
     margin: 0 auto;
+    padding: 20px 0 35px 0;
     .carousel-inner{
     	text-align: center;
     	p{
-    		color: white;
-    		font-family: $thin;
+    		color: $tc-black;
+    		font-family: $base-font-family;
     		font-size: 35px;
     	}
     }
@@ -2006,7 +2005,7 @@ font-size:16px;
 	    background-color: $bg-blue-2;
 	    height: 30px;
 	    width: 30px;
-	    position: absolute;
+	   position: absolute;
 	    &.left{
 	    	background-image: url(../images/left-arrow.png);
 	    }
@@ -2019,4 +2018,5 @@ font-size:16px;
 .controls-lr{
 	    width: 54px;
     margin: 0 auto;
+    padding-top: 15px;
 }
