@@ -34,7 +34,11 @@
 			'title':'Amenities',
 			'name': 'amenities',
 			'url': '/amenities/' ,
-			'submenu': 'false'
+			'submenu': 'true',
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Hotel Reviews','name': 'reviews','url': '/hotel-reviews/'}
+			] 
 		},
 		{
 			'title':'Gallery',
