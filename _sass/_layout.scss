@@ -161,7 +161,7 @@
 	}
 
 	p{
-		font-size: 72px;
+		font-size: 62px;
 		letter-spacing: 20px;
 
 
@@ -1837,7 +1837,7 @@ h2{
 @media(max-width:768px){
 	.blue-bg{
 		&.mo{
-			margin-top:0px;
+			margin-top:40px;
 		}
 	}
 }
@@ -1982,6 +1982,47 @@ font-size:16px;
 	}
 
 }
+
+#reviewsCarousel{
+    left: 0;
+    right: 0; 
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 30px 0 0px 0;
+    .carousel-inner{
+    	text-align: center;
+    	p{
+    		color: $bg-ash-4;
+    		font-family: $base-font-family;
+    		font-size: 25px;
+    	}
+    }
+    .review-icon{
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-color: $bg-blue-2;
+	    height: 30px;
+	    width: 30px;
+	   position: absolute;
+	    &.left{
+	    	background-image: url(../images/left-arrow.png);
+	    }
+	    &.right{
+	    	background-image: url(../images/right-arrow.png);
+	    	margin-left: 35px;
+	    }
+    }
+}
+.controls-lr{
+	    width: 54px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.review-btn{
+	text-align: center;
+	margin-top: 45px;
+}
+
 .attractions-info{
 	text-align:center;
 	p{
