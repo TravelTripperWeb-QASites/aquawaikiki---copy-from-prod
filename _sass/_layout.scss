@@ -1983,14 +1983,12 @@ font-size:16px;
 
 }
 
-
-
 #reviewsCarousel{
     left: 0;
     right: 0; 
     max-width: 85%;
     margin: 0 auto;
-    padding: 20px 0 0px 0;
+    padding: 30px 0 0px 0;
     .carousel-inner{
     	text-align: center;
     	p{
@@ -2019,4 +2017,15 @@ font-size:16px;
 	    width: 54px;
     margin: 0 auto;
     padding-top: 15px;
+}
+.review-btn{
+	text-align: center;
+	margin-top: 45px;
+}
+
+.attractions-info{
+	text-align:center;
+	p{
+		padding-bottom:10px;
+	}
 }

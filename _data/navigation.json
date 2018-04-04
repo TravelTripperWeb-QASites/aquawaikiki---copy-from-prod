@@ -6,7 +6,10 @@
 			'title':'Rooms',
 			'name': 'rooms',
 			'url': '/rooms/',
-			'submenu': 'false'
+			'submenu': 'true' ,
+			'subitems': [
+				{'title':'Hotel Reviews','name': 'reviews','url': '/hotel-reviews/'}
+			] 
 		},
 		{
 			'title':'Specials',
@@ -55,6 +58,12 @@
 		 
 	],
 	'footernav':[
+		{
+			'title':'Hotel Reviews',
+			'name': 'reviews',
+			'url': '/hotel-reviews/',
+			'submenu': 'false' 
+		},
 		{
 			'title':'Terms & Conditions',
 			'name': 'Terms & Conditions',
