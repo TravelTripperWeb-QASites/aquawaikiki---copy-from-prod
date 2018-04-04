@@ -1,0 +1,22 @@
+.hotel-reviews {
+    .intro {
+        max-width: 900px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .review {
+        padding: 3.413rem 1.25rem 2.625rem 1.5rem;
+         @media(min-width: $screen-md-min){
+        	 padding: 3.413rem 2.25rem 2.625rem 2.5rem;	
+        }
+        @media(min-width: $screen-lg-min){
+        	 padding: 5.413rem 6.25rem 2.625rem 7.5rem;	
+        }
+    }
+
+    p {
+        padding: 20px 0 50px 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
