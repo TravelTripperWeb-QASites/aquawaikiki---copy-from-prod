@@ -68,12 +68,14 @@
 			'title':'Terms & Conditions',
 			'name': 'Terms & Conditions',
 			'url': '/terms/',
-			'submenu': 'false' 
+			'rel': 'nofollow',
+			'submenu': 'false'
 		},
 		{
 			'title':'Privacy Policy',
 			'name': 'Privacy Policy',
 			'url': '/privacy-policy/',
+			'rel': 'nofollow',
 			'submenu': 'false'
 		},
 		{

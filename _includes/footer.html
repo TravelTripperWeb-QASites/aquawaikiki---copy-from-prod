@@ -16,9 +16,9 @@
                     <h2>Links</h2>
                     <ul>
                         {% for items in site.data.navigation.footernav %}
-                        <li><a href="{{ items.url }}" rel="nofollow">{{ items.title }}</a></li>
+                        <li><a href="{{ items.url }}" {% if items.rel %}rel="{{ items.rel }}"{% endif %}>{{ items.title }}</a></li>
                         {% endfor %}       
-                        <li><a href="//cdn.traveltripper.io/site-assets/192_655_10420/media/2017-12-20-054318/pearl-hotel-waikiki-fact-sheet.pdf" target="_blank" title="Fact Sheet">Fact Sheet</a></li>               
+                        <li><a href="//cdn.traveltripper.io/site-assets/192_655_10420/media/2017-12-20-054318/pearl-hotel-waikiki-fact-sheet.pdf" rel="nofollow" target="_blank" title="Fact Sheet">Fact Sheet</a></li>               
                     </ul>
                 </div>
             </div>
