@@ -81,7 +81,7 @@
 		{
 			'title':'Sitemap',
 			'name': 'Sitemap',
-			'url': '/Sitemap/',
+			'url': '/sitemap/',
 			'submenu': 'false' 
 		} 
 	],
