@@ -78,8 +78,8 @@
 		},
 		{
 			'title':'Sitemap',
-			'name': 'Sitemap',
-			'url': '/sitemap/',
+			'name': 'Pearl Hotel Waikiki Reviews',
+			'url': '/hotel-reviews/',
 			'submenu': 'false' 
 		} 
 	],
