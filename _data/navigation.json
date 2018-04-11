@@ -68,18 +68,20 @@
 			'title':'Terms & Conditions',
 			'name': 'Terms & Conditions',
 			'url': '/terms/',
-			'submenu': 'false' 
+			'rel': 'nofollow',
+			'submenu': 'false'
 		},
 		{
 			'title':'Privacy Policy',
 			'name': 'Privacy Policy',
 			'url': '/privacy-policy/',
+			'rel': 'nofollow',
 			'submenu': 'false'
 		},
 		{
 			'title':'Sitemap',
-			'name': 'Pearl Hotel Waikiki Reviews',
-			'url': '/hotel-reviews/',
+			'name': 'Sitemap',
+			'url': '/Sitemap/',
 			'submenu': 'false' 
 		} 
 	],
