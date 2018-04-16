@@ -24,7 +24,7 @@
 	.p-t-35{ padding-top:35px;}
 	.p-l-0{ padding-left:0px !important;}
 	.rooms-banner{background: url(/images/rooms/room-details/room-details-banner.jpg) no-repeat center center;background-size: cover;}
-	
+
 	.home-rooms-holder{ width:420px;position: absolute;z-index: 19;bottom: 70px;left: 70px;
 		@media (min-width: 768px) and (max-width:1024px){
 				bottom:20px; left:40px; width:320px;
@@ -40,7 +40,7 @@
 				color:$bg-blue-2;
 
 				&:hover{
-					color:$bg-blue-3;	
+					color:$bg-blue-3;
 				}
 			}
 			}
@@ -70,7 +70,7 @@
 				padding:85px 40px;
 
 			}
-			
+
 		img{
 				@media (max-width: 767px){
 					 width:90%; height:90%;
@@ -137,8 +137,8 @@
 							font-size: 20px;
 							line-height: 55px;
 					}
-			
-	}	
+
+	}
 	}
 	.details-intro{
 				&.style2{
@@ -181,7 +181,28 @@
 
 		.home-rooms-holder{ position:relative; bottom:inherit; left:inherit;}
 		.specials-banner{background: url(/images/specials/special-details/special-details-banner.jpg) no-repeat center -20px; background-size: cover;}
-		.spcl-lstng{ text-align:center;
+		.spcl-lstng {
+      text-align:center;
+      &.list {
+        ul {
+          padding: 20px 0;
+          font-family: $light;
+          font-size: 18px;
+          line-height: 24px;
+          text-align: left;
+          li {
+            padding: 10px 0 5px 10px;
+            list-style-position: inside;
+            span {
+              &.highlight {
+                font-size: 24px;
+              }
+              font-weight: bold;
+              color: $tc-red;
+            }
+          }
+        }
+      }
 				h2 {
 					font-size: 14px;
 					text-transform: uppercase;
@@ -189,7 +210,7 @@
 					letter-spacing: 5px;
 					padding-top:25px;
 				}
-				
+
 				p{
 					color: #333333;
 					font-family: $light; font-size: 18px; line-height: 24px;
@@ -225,7 +246,7 @@
 					}
 				}
 			}
-		
+
 		.lifestyle{ padding-bottom:50px;
 			background: #f8f8f8;
 			h3{
@@ -274,7 +295,7 @@
 					 padding-top:30px;
 					}
 				}
-				
+
 				.btn-blue{ color:#fff; border-color:#fff;}
 				p{ color:#fff;}
 			}

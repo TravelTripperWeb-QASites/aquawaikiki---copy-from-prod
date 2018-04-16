@@ -67,6 +67,7 @@ $tc-light-blue-1: #3a9dc4;
 $tc-dark-blue: 	#1f4552;
 $tc-black: 		#000000;
 $tc-light-blue: #1086b4;
+$tc-red: #ff0000;
 
 
 
@@ -113,8 +114,8 @@ $phone-max: 479px;
 @import
 		"bootstrap",
 		"fonts",
-		"jquery-ui", 
-		"datepicker", 
+		"jquery-ui",
+		"datepicker",
 		"layout",
 		"header",
 		"footer",
@@ -131,7 +132,7 @@ $phone-max: 479px;
 		"exit-modal",
 		"rt-widget",
 		"hotel-reviews"
-		
+
 ;
 
 
