@@ -185,14 +185,15 @@
       text-align:center;
       &.list {
         ul {
+          margin-left: 30px;
           padding: 20px 0;
           font-family: $light;
-          font-size: 18px;
+          font-size: 17px;
           line-height: 24px;
           text-align: left;
           li {
             padding: 10px 0 5px 10px;
-            list-style-position: inside;
+            list-style-position: outside;
             span {
               &.highlight {
                 font-size: 24px;
