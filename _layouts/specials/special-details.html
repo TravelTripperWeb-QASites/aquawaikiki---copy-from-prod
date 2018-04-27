@@ -14,7 +14,7 @@ layout: default
   <div class="container">
     <ul class="gallery-nav">
 
-      <li ng-repeat="o in offers.special_rates"><a ng-href="/special/#[[o.rate_plan_name | formatNameForLink]]" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}" >[[o.rate_plan_name]]</a></li>
+      <li ng-repeat="o in offers.special_rates"><a ng-href="/special/#[[o.rate_plan_name | formatNameForLink]]" ng-class="{active: offers.sRdetail.rate_plan_code == o.rate_plan_code}" title="[[o.rate_plan_name]]" >[[o.rate_plan_name]]</a></li>
 
     </ul>
   </div>
@@ -31,10 +31,10 @@ layout: default
                     <span ng-show="[[offers.sRdetail.booking_end_date]]">until<br> [[offers.sRdetail.booking_end_date | date:"MM-dd-yyyy"]]</span>
                </strong>-->
             </p>
-            
+
             <div class="booknow"> <a ng-href="[[offers.sRdetail.promo_url]]" target="_blank">Book Now</a> </div>
             <div class="btn-holder extra padding"><a href="mailto:reservations@pearlhotelwaikiki.com" class="button-common btn-blue">Contact Us</i></a></div>
-            
+
           </div>
       </div>
       <div class="col-sm-9 col-xs-12">
@@ -73,16 +73,16 @@ layout: default
       	<div class="holds">
         <div class="col-md-5">
         <h2>enjoy the following privileges</h2>
-        </div>  
+        </div>
          <div class="col-md-7">
          <ul>
             <li ng-repeat ="addon in offers.sRdetail.addons" >[[addon]]</li>
          </ul>
 
-        </div>  
-        
-        
-       
+        </div>
+
+
+
       </div>
       </div>
     </div>
@@ -113,7 +113,7 @@ layout: default
 
         {%  include special-offers.html %}
 
-        
+
         <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
       </div>
     </div>

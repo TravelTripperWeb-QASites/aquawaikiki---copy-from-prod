@@ -17,8 +17,8 @@
                     <ul>
                         {% for items in site.data.navigation.footernav %}
                         <li><a href="{{ items.url }}" {% if items.rel %}rel="{{ items.rel }}"{% endif %}>{{ items.title }}</a></li>
-                        {% endfor %}       
-                        <li><a href="//cdn.traveltripper.io/site-assets/192_655_10420/media/2017-12-20-054318/pearl-hotel-waikiki-fact-sheet.pdf" rel="nofollow" target="_blank" title="Fact Sheet">Fact Sheet</a></li>               
+                        {% endfor %}
+                        <li><a href="//cdn.traveltripper.io/site-assets/192_655_10420/media/2017-12-20-054318/pearl-hotel-waikiki-fact-sheet.pdf" rel="nofollow" target="_blank" title="Fact Sheet">Fact Sheet</a></li>
                     </ul>
                 </div>
             </div>
@@ -28,7 +28,7 @@
                     <form class="jotform-form" action="https://web2.cendynhub.com/FormPost/FormPost.ashx" method="post" name="form_7069F855-4AC2-4ADC-9D27-C962B947A3C3" id="7069F855-4AC2-4ADC-9D27-C962B947A3C3" accept-charset="utf-8">
                         <input type="hidden" name="formID" value="7069F855-4AC2-4ADC-9D27-C962B947A3C3" />
                         <div class="form-holder">
-                            <input type="email" class=" form-textbox validate[required] input-text" data-type="input-textbox"  id="subscribe" name="emailAddress" size="21" value="" placeholder="Enter Your Email..." required="required" /> 
+                            <input type="email" class=" form-textbox validate[required] input-text" data-type="input-textbox"  id="subscribe" name="emailAddress" size="21" value="" placeholder="Enter Your Email..." title="Enter Your Email" aria-label="Enter Your Email" required="required" />
                             <button id="input_2" type="submit" type="submit" class="form-submit-button form-btn">Send</button>
                         </div>
                     </form>
@@ -38,8 +38,8 @@
                 <div class="footer-grid no-padding-right">
                     <a href="/"><img src="/images/logo-footer.png" alt="logo"/></a>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/pearlhotelwaikiki/" rel="nofollow" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-                        <a href="https://www.instagram.com/pearlhotelwaikiki/" rel="nofollow" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="https://www.facebook.com/pearlhotelwaikiki/" rel="nofollow" target="_blank" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
+                        <a href="https://www.instagram.com/pearlhotelwaikiki/" rel="nofollow" target="_blank" title="instagram"><i class="fa fa-instagram fa-2x"></i></a>
                         <a id="snapChatIcon" href="#" data-toggle="modal" data-target="#snapchatModal" rel="nofollow" title="Scan Snapchat"><i class="fa fa-snapchat fa-2x" src="/images/Pearl-Hotel-Waikiki-snapcode.png"></i></a>
                         <!-- <img id="myImg" src="/images/Pearl-Hotel-Waikiki-snapcode.png" alt="" width="30" height="30"> -->
                     </div>
@@ -70,12 +70,12 @@
 
 <div id="snapchatModal" class="modal fade" role="dialog">
   <!-- <span class="close">&times;</span>  -->
-  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
   <div class="modal-dialog">
     <!-- Modal content-->
     <div class="modal-content snapmodel" >
         <h3 class="text-center">Scan Snapchat</h3>
-        <img class="img-responsive" id="modalSnapChat">
+        <img class="img-responsive" id="modalSnapChat" alt="modalSnapChat">
         <div id="caption"></div>
     </div>
   </div>

@@ -14,12 +14,12 @@ layout: default
     <div class=" two-col-wrap">
       <div class="row no-gutters">
         <div class="col-sm-6 sp-img v-center">
-          <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink ]]">
+          <a ng-href="/special/#[[offer.rate_plan_name | formatNameForLink ]]" title="[[offer.rate_plan_name]]">
             <div class="special-image" style="background-image: url([[offer.lead_photo_url.yankee_large]])">
             </div>
           </a>
-          <!-- <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""> --> 
-          <!-- <a ng-href="{{site.data.config.reztripUrl}}en/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank"  class="rate-btn">Check Rate<i class="fa fa-play"></i></a> --> 
+          <!-- <img ng-src="[[offer.lead_photo_url.yankee_large]]" alt=""> -->
+          <!-- <a ng-href="{{site.data.config.reztripUrl}}en/special_offer?rate_code=[[offer.rate_plan_code]]&offer_code=[[offer.offer_code]]" target="_blank"  class="rate-btn">Check Rate<i class="fa fa-play"></i></a> -->
         </div>
         <div class="col-sm-6 sp-content v-center">
           <p class="title">[[offer.rate_plan_name]]</p>
