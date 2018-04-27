@@ -5,82 +5,70 @@ layout: default
 <section>
   <div class="container no-padding">
     <div class="page-banner gallery-banner">
-    	
+
       {% region gallery-banner-text %}
     </div>
   </div>
 </section>
 
-<section> 
-  <!-- gallery wrap --> 
+<section>
+  <!-- gallery wrap -->
   <div class="gallery-wrapper">
     <div class="gallery-listing">
       <div class="container">
         <ul class="gallery-nav">
           <li><a href="javascript:;" class="filter active"  data-filter="all" data-rel="all" >All</a></li>
           <li><a href="javascript:;"  class="filter" data-rel="hotel">The Hotel</a></li>
-          <!-- <li><a href="javascript:;"  class="filter" data-rel="restaurant">Restaurant & Bar</a></li> -->
           <li><a href="javascript:;"  class="filter" data-rel="rooms">Rooms & Suites</a></li>
           <li><a href="javascript:;"  class="filter" data-rel="attractions">Attractions</a></li>
-         
+
         </ul>
       </div>
       <div class="container gallery-wrap" id="lightgallery">
         <ul class="row">
           {% assign hotel_images = site.data._models.gallery_hotel_images  | sort : "sort_order" %}
-          {% for hotelimages in hotel_images %} 
-           {% assign mod = forloop.index | modulo: 3 %}  
+          {% for hotelimages in hotel_images %}
+           {% assign mod = forloop.index | modulo: 3 %}
                   <li class="col-md-4 col-sm-4  fancybox" data-filter="hotel">
-                    <div class="item" data-src="{{ hotelimages.slider_image.url }}"> <img src="{{ hotelimages.thumb_image.url }}" class="img-responsive"/> </div> 
+                    <div class="item" data-src="{{ hotelimages.slider_image.url }}"> <img src="{{ hotelimages.thumb_image.url }}" class="img-responsive" alt="Hotel"> </div>
                   </li>
-          {% if mod == 2 %}  
+          {% if mod == 2 %}
              <li class="col-md-4 col-sm-4 fancybox hidden" data-filter="interior" >
-          <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
+          <div class="item rez-offer" data-sub-html="" data-src=""> </div>
         </li>
          {% endif %}
           {% endfor %}
 
-          <!-- {% assign restaurantbar_images = site.data._models.gallery_restaurantbar_images  | sort : "sort_order" %}
-          {% for restaurantbarimages in restaurantbar_images %} 
-                  <li class="col-md-4 col-sm-4  fancybox" data-filter="restaurant">
-                    <div class="item" data-src="{{ restaurantbarimages.slider_image.url }}"> <img src="{{ restaurantbarimages.thumb_image.url }}" class="img-responsive"/> </div> 
-                  </li>
-          {% endfor %}            -->
 
-     
       {% assign rooms_images = site.data._models.gallery_rooms_images  | sort : "sort_order" %}
-      {% for roomsimages in rooms_images %}  
-        {% assign mod = forloop.index | modulo: 3 %}         
+      {% for roomsimages in rooms_images %}
+        {% assign mod = forloop.index | modulo: 3 %}
                 <li class="col-md-4 col-sm-4 fancybox" data-filter="rooms">
-                  <div class="item" data-src="{{ roomsimages.slider_image.url }}"> <img src="{{ roomsimages.thumb_image.url }}" class="img-responsive"/> </div>
+                  <div class="item" data-src="{{ roomsimages.slider_image.url }}"> <img src="{{ roomsimages.thumb_image.url }}" class="img-responsive" alt="Rooms"> </div>
                 </li>
-                 {% if mod == 2 %}  
+                 {% if mod == 2 %}
              <li class="col-md-4 col-sm-4 fancybox hidden" data-filter="interior" >
-          <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
+          <div class="item rez-offer" data-sub-html="" data-src=""> </div>
         </li>
          {% endif %}
       {% endfor %}
 
        {% assign attractions_images = site.data._models.gallery_attractions_images  | sort : "sort_order" %}
-      {% for attractionsimages in attractions_images %}    
-        {% assign mod = forloop.index | modulo: 3 %}       
+      {% for attractionsimages in attractions_images %}
+        {% assign mod = forloop.index | modulo: 3 %}
                 <li class="col-md-4 col-sm-4 fancybox" data-filter="attractions">
-                  <div class="item" data-src="{{ attractionsimages.slider_image.url }}"> <img src="{{ attractionsimages.thumb_image.url }}" class="img-responsive"/> </div>
+                  <div class="item" data-src="{{ attractionsimages.slider_image.url }}"> <img src="{{ attractionsimages.thumb_image.url }}" class="img-responsive" alt="Attraction"> </div>
                 </li>
-                 {% if mod == 2 %}  
+                 {% if mod == 2 %}
              <li class="col-md-4 col-sm-4 fancybox hidden" data-filter="interior" >
-          <div class="item rez-offer" data-sub-html="" data-src=""> </div> 
+          <div class="item rez-offer" data-sub-html="" data-src=""> </div>
         </li>
          {% endif %}
-      {% endfor %}  
+      {% endfor %}
 
-   
+
         </ul>
       </div>
     </div>
-    
-    
-    <!--<div class="btn-holder text-center"><a href="#" class="button-common btn-blue">load more images</a></div> -->
   </div>
-  <!--/gallery wrap --> 
 </section>
