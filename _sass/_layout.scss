@@ -276,7 +276,7 @@
 	letter-spacing: 1px;
 	display:inline-block;
 	margin-right: -2px;
-	
+
 	@media (max-width: 1023px){
 		    padding: 6px 10px;
 			font-size: 16px;
@@ -582,7 +582,7 @@
     		&:hover{
     		background-color:$bg-ash-4;
     		border-color: $bg-ash-4;
-    		color:#fff;	
+    		color:#fff;
     		}
 
 
@@ -603,7 +603,7 @@
 		padding-top: 60px;
 		@media (max-width: 1023px){
 			font-size: 24px;
-			
+
 			line-height: 30px;
     		padding-top: 30px;
 		}
@@ -629,7 +629,7 @@
 			line-height: 24px;
 			padding: 20px 0 20px 0;
 			}
-			
+
 			a{
 			    	color:$bg-blue-2;
 
@@ -890,7 +890,7 @@
 	background-size: cover;
 	padding: 130px 0 120px 0;
 	text-align: center;
-
+  background-color: #000;
 
 	@media (max-width: 1023px){
 			padding: 70px 0 60px 0;
@@ -1151,7 +1151,7 @@ h2{
 	margin:25px 0px;
 	img{
 	width:100%;
-	 } 
+	 }
 	 .top-pic{
 	 	margin:0px 0px 25px 0px;
 	 }
@@ -1259,7 +1259,7 @@ h2{
 		.cap {
 			font-family: $light;
 			text-transform: uppercase;
-			color: $tc-light-blue-1;
+			color: $brand-color;
 			padding: 0 3px;
 		}
 		.ita{
@@ -1381,7 +1381,7 @@ h2{
 
 		span{
 			font-family: $semi-bold;
-			color: $bg-blue-2;
+			color: $brand-color;
 			padding-left: 18px;
 		}
 
@@ -1475,20 +1475,20 @@ h2{
 		color: $tc-light-blue-1;
 		letter-spacing: 6px;
 		line-height: 40px;
-		
+
 		@media (max-width: 1023px){
 			font-size: 24px;
 			letter-spacing: 4px;
 			line-height: 30px;
-    		
+
 		}
 		@media (max-width: 767px){
 		font-size: 16px;
 		line-height: 28px;
-		
+
 		}
 		}
-	}	
+	}
 
 	    .caption-message {
 	    	max-width:980px;
@@ -1515,7 +1515,7 @@ h2{
 			bottom:inherit;
 			top:10px;
 		}
-		
+
 
 		li {
 			display:block;
@@ -1537,7 +1537,7 @@ h2{
 			}
 		}
 
-	}    
+	}
 
 
     }
@@ -1753,7 +1753,7 @@ h2{
          width: 100%;
          bottom: 0px;
         }
-         
+
 
 
         .boxes{
@@ -1828,7 +1828,7 @@ h2{
 			@media(max-width:768px){
 				width:inherit;
 			}
-            }	
+            }
           }
         }
       }
@@ -1912,7 +1912,7 @@ h2{
 
 			font-size:	40px;
 			letter-spacing: 12px;
-			
+
 		}
 
 		@media(min-width:$screen-xs-min) and (max-width: $screen-xs-max)
@@ -1920,7 +1920,7 @@ h2{
 
 			font-size:	58px;
 			letter-spacing: 14px
-			
+
 		}
 	}
 	h4{
@@ -1963,12 +1963,12 @@ h2{
 	 line-height:22px;
 	 letter-spacing:1px;
 	}
-	
+
 }
 
 .sitemap{
 padding:50px 0px;
-font-size:16px; 
+font-size:16px;
  letter-spacing:1px;
 	ul {
 	list-style:none;
@@ -1985,7 +1985,7 @@ font-size:16px;
 
 #reviewsCarousel{
     left: 0;
-    right: 0; 
+    right: 0;
     max-width: 85%;
     margin: 0 auto;
     padding: 30px 0 0px 0;
@@ -2028,4 +2028,7 @@ font-size:16px;
 	p{
 		padding-bottom:10px;
 	}
+}
+.bg-black {
+  background-color: #000;
 }

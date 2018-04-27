@@ -5,8 +5,8 @@ body{
 $primary_color: #004f67;
 $secondary_color: #009ddd;
 $overlay_text_color: #ffffff;
-$white: #eeeeee; 
-$black: #000000; 
+$white: #eeeeee;
+$black: #000000;
 $font-fam: "Lato-Light",Helvetica,Arial,sans-serif;
 $font-reg: "Lato-Regular";
 
@@ -62,8 +62,8 @@ $font-reg: "Lato-Regular";
                width: 100%;
                height: 100%;
                background-color: rgba($black, 0.5);
-               color: $overlay_text_color;  
-                .popup_detail{ 
+               color: $overlay_text_color;
+                .popup_detail{
                    	position: absolute;
                    	width: 100%;
                	    top: 50%;
@@ -78,11 +78,11 @@ $font-reg: "Lato-Regular";
                	    	color: $white;
                       font-family: $font-reg;
                	    }
-                } 
+                }
 			}
-            
+
 		}
-		.widget-booknow-link{ 
+		.widget-booknow-link{
 			background-color: $primary_color;
 			color: $overlay_text_color;
 			text-transform: uppercase;
@@ -103,12 +103,12 @@ $font-reg: "Lato-Regular";
             right: -5px;
             top: 10px;
             width: 30px;
-            height: 30px; 
-            color: $black; 
+            height: 30px;
+            color: $white; 
             cursor: pointer;
             font-size: 20px;
 		}
-	}  
+	}
     &.open-offer-popup{
     	width: 50px;
     	height: 40px;
@@ -133,7 +133,7 @@ $font-reg: "Lato-Regular";
     		left: -10px;
     	}
     }
-    //wwidget notification bars 
+    //wwidget notification bars
     &.rt-notificatins-widget{
          position: absolute;
          right: 20px;
@@ -142,13 +142,13 @@ $font-reg: "Lato-Regular";
          z-index: 999;
          .notify{
             background-color: $primary_color;
-            color: $white; 
+            color: $white;
             padding: 5px;
-            position: relative; 
+            position: relative;
             .notify-icon{
               width: 30px;
               display: inline-block;
-              line-height: 30px; 
+              line-height: 30px;
               text-align: center;
               vertical-align: top;
             }
@@ -162,33 +162,32 @@ $font-reg: "Lato-Regular";
               top: 6px;
               right:10px;
             }
-            
-            &.animate{ 
+
+            &.animate{
                   transition: all .5s ease;
                   opacity: 0;
             }
-            &.animateready{ 
+            &.animateready{
                         -webkit-animation: move .5s ease-in;
-                        animation: move .5s ease-in;  
+                        animation: move .5s ease-in;
             }
-           
-            &._left{ 
+
+            &._left{
                       padding: 5px;
                       margin-top:10px;
                       height: 40px;
-                      display: block; 
-                      position: relative; 
-                      
+                      display: block;
+                      position: relative;
+
             }
          }
-        
-         
+
+
     }
 }
 
- 
+
 @-webkit-keyframes move {
-   0% {margin-bottom: 35px} 
-   100% {margin-bottom: 10px} 
+   0% {margin-bottom: 35px}
+   100% {margin-bottom: 10px}
 }
- 
