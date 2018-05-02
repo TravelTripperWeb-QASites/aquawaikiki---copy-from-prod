@@ -12,6 +12,9 @@ $font-reg: "Lato-Regular";
 
 .rt-guest-widget{
 	&.pop_offer{
+    @media (max-width: 767px) {
+      bottom: 20px;
+    }
 		position: fixed;
 		left: 20px;
 		right: auto;
@@ -110,6 +113,9 @@ $font-reg: "Lato-Regular";
 		}
 	}  
     &.open-offer-popup{
+      @media (max-width: 767px) {
+        bottom: 30px;
+      }
     	width: 50px;
     	height: 40px;
     	background-color: $primary_color;
