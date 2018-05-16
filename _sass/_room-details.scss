@@ -118,27 +118,26 @@
 		@media (max-width: 767px){
 				margin-bottom:20px;
 		}
-	.offername{
-					font-family:$light;
-					padding: 35px 0 56px;
-					color: #fff;
-					font-size: 42px;
-					text-transform: uppercase;
-					letter-spacing: 6px;
-					line-height: 50px;
-					 position: absolute;
-					 z-index: 10;
-					  top: 50%;
-					  left:50%;
-					  transform: translate(-50%,-50%);
-					      text-align: center;
-					@media (max-width: 767px){
-							padding: 25px 0;
-							font-size: 20px;
-							line-height: 55px;
-					}
+    .offername {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+      padding: 35px 0 56px;
+      font-family: $light;
+      font-size: 42px;
+      line-height: 50px;
+      color: $tc-white;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      transform: translate(-50%,-50%);
+      @media (max-width: 767px) {
+        font-size: 20px;
+        line-height: 24px;
+  }
+}
 
-	}
 	}
 	.details-intro{
 				&.style2{
