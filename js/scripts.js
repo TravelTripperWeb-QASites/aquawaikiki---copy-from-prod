@@ -225,10 +225,10 @@ $(document).ready(function () {
     })
 });
 
-$('#homeCarousel,#specialsCarousel').carousel({
-    interval: 7000,
-    cycle: true
-});
+// $('#homeCarousel,#specialsCarousel').carousel({
+//     interval: 7000,
+//     cycle: true
+// });
 
 $('#roomDetailsCarousel11').carousel({
     interval: 3000,
