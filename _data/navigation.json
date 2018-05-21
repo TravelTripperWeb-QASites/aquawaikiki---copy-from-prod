@@ -1,7 +1,7 @@
 {
-	 'mainnav':[ 
-	 	
-		
+	 'mainnav':[
+
+
 		{
 			'title':'Rooms',
 			'name': 'rooms',
@@ -9,20 +9,20 @@
 			'submenu': 'true' ,
 			'subitems': [
 				{'title':'Hotel Reviews','name': 'reviews','url': '/hotel-reviews/'}
-			] 
+			]
 		},
 		{
 			'title':'Specials',
 			'name': 'specials',
 			'url': '/specials/',
-			'submenu': 'false' 
+			'submenu': 'false'
 		},
 		{
 			'title':'Attractions',
 			'name': 'attractions',
 			'url': '/attractions/',
-			'submenu': 'flase' 
-			
+			'submenu': 'flase'
+
 		},
 		{
 			'title':'Groups',
@@ -31,7 +31,7 @@
 			'submenu': 'true' ,
 			'subitems': [
 				{'title':'Request for Proposal','name': 'events','url': '/meetings-and-events/request-for-proposal/'}
-			] 
+			]
 		},
 		{
 			'title':'Amenities',
@@ -45,28 +45,28 @@
 			'url': '/gallery/' ,
 			'submenu': 'false'
 		},
-		
-		
+
+
 		{
 			'title':'Location',
 			'name': 'location',
 			'url': '/location/',
-			'submenu': 'false' 
-			
+			'submenu': 'false'
+
 		}
-		
-		 
+
+
 	],
 	'footernav':[
 		{
 			'title':'Hotel Reviews',
 			'name': 'reviews',
 			'url': '/hotel-reviews/',
-			'submenu': 'false' 
+			'submenu': 'false'
 		},
 		{
-			'title':'Terms & Conditions',
-			'name': 'Terms & Conditions',
+			'title':'Terms Of Use',
+			'name': 'Terms Of Use',
 			'url': '/terms/',
 			'rel': 'nofollow',
 			'submenu': 'false'
@@ -82,8 +82,8 @@
 			'title':'Sitemap',
 			'name': 'Sitemap',
 			'url': '/sitemap/',
-			'submenu': 'false' 
-		} 
+			'submenu': 'false'
+		}
 	],
 	'social':[
 		{
