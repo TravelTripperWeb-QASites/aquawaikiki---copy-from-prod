@@ -123,18 +123,18 @@
 	}
 }
 .home-banner-wrap .transparent-bg {
-	background-color: rgba(31,69,82,0.7);
+	background-color: rgba(31,69,82,0.4);
 	bottom:0;
 	top:0;
 	right:0;
 	left:0;
-	display: none;
+	display: block !important;
 }
-@media (max-width: 1024px){
-	.home-banner-wrap .transparent-bg {
-		display: block !important;
-	}
-}
+// @media (max-width: 1024px){
+// 	.home-banner-wrap .transparent-bg {
+// 		display: block !important;
+// 	}
+// }
 @media(max-width: 1024px){
 	.home-banner-wrap .transparent-bg .caption-inner p{
 		font-weight: bold;
@@ -162,6 +162,7 @@
 
 	p{
 		font-size: 62px;
+    font-weight: bold;
 		letter-spacing: 20px;
 
 
@@ -185,6 +186,7 @@
 	}
 	h1{
 		font-size: 24px;
+    font-weight: bold;
 		padding: 30px 0 70px 0;
 		letter-spacing: 6px;
 
@@ -276,7 +278,7 @@
 	letter-spacing: 1px;
 	display:inline-block;
 	margin-right: -2px;
-	
+
 	@media (max-width: 1023px){
 		    padding: 6px 10px;
 			font-size: 16px;
@@ -582,7 +584,7 @@
     		&:hover{
     		background-color:$bg-ash-4;
     		border-color: $bg-ash-4;
-    		color:#fff;	
+    		color:#fff;
     		}
 
 
@@ -603,7 +605,7 @@
 		padding-top: 60px;
 		@media (max-width: 1023px){
 			font-size: 24px;
-			
+
 			line-height: 30px;
     		padding-top: 30px;
 		}
@@ -629,7 +631,7 @@
 			line-height: 24px;
 			padding: 20px 0 20px 0;
 			}
-			
+
 			a{
 			    	color:$bg-blue-2;
 
@@ -1151,7 +1153,7 @@ h2{
 	margin:25px 0px;
 	img{
 	width:100%;
-	 } 
+	 }
 	 .top-pic{
 	 	margin:0px 0px 25px 0px;
 	 }
@@ -1475,20 +1477,20 @@ h2{
 		color: $tc-light-blue-1;
 		letter-spacing: 6px;
 		line-height: 40px;
-		
+
 		@media (max-width: 1023px){
 			font-size: 24px;
 			letter-spacing: 4px;
 			line-height: 30px;
-    		
+
 		}
 		@media (max-width: 767px){
 		font-size: 16px;
 		line-height: 28px;
-		
+
 		}
 		}
-	}	
+	}
 
 	    .caption-message {
 	    	max-width:980px;
@@ -1515,7 +1517,7 @@ h2{
 			bottom:inherit;
 			top:10px;
 		}
-		
+
 
 		li {
 			display:block;
@@ -1537,7 +1539,7 @@ h2{
 			}
 		}
 
-	}    
+	}
 
 
     }
@@ -1753,7 +1755,7 @@ h2{
          width: 100%;
          bottom: 0px;
         }
-         
+
 
 
         .boxes{
@@ -1828,7 +1830,7 @@ h2{
 			@media(max-width:768px){
 				width:inherit;
 			}
-            }	
+            }
           }
         }
       }
@@ -1912,7 +1914,7 @@ h2{
 
 			font-size:	40px;
 			letter-spacing: 12px;
-			
+
 		}
 
 		@media(min-width:$screen-xs-min) and (max-width: $screen-xs-max)
@@ -1920,7 +1922,7 @@ h2{
 
 			font-size:	58px;
 			letter-spacing: 14px
-			
+
 		}
 	}
 	h4{
@@ -1963,12 +1965,12 @@ h2{
 	 line-height:22px;
 	 letter-spacing:1px;
 	}
-	
+
 }
 
 .sitemap{
 padding:50px 0px;
-font-size:16px; 
+font-size:16px;
  letter-spacing:1px;
 	ul {
 	list-style:none;
@@ -1985,7 +1987,7 @@ font-size:16px;
 
 #reviewsCarousel{
     left: 0;
-    right: 0; 
+    right: 0;
     max-width: 85%;
     margin: 0 auto;
     padding: 30px 0 0px 0;
