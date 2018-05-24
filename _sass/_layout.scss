@@ -2031,3 +2031,13 @@ font-size:16px;
 		padding-bottom:10px;
 	}
 }
+.privacy {
+	ul {
+		padding-left: 25px;
+	}
+	li {
+			font-family: $base-font-family;
+			font-size: 16px;
+			line-height: 28px;
+	}
+}
