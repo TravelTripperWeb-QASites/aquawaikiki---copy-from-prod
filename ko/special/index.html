@@ -1,7 +1,7 @@
---- 
-language: ko 
+---
+language: ko
 title: 와이키키 호텔 상품 및 특별 행사 | 펄 호텔 와이키키
-seo_description: 펄 호텔 와이키키 공식 웹 사이트에서 예약하는 경우에만 만날 수 있는 전용 와이키키 특별 행사 및 상품을 이용해 보세요!  
+seo_description: 펄 호텔 와이키키 공식 웹 사이트에서 예약하는 경우에만 만날 수 있는 전용 와이키키 특별 행사 및 상품을 이용해 보세요!
 site_name: 펄 호텔 와이키키
 ---
 <!DOCTYPE html>
@@ -10,6 +10,7 @@ site_name: 펄 호텔 와이키키
     {% include head.html %}
 
 	<body id="top" ng-app="rezTrip" rt3-hotel-info="hotelInfo" rt3-rooms-browser="browser" ng-cloak>
+     <div class="loading" style="display:block">Loading&#8230;</div>
       <input type="hidden" id="siteLang" value="ko">
 
       {% include google-tag-manager.html %}
@@ -21,7 +22,7 @@ site_name: 펄 호텔 와이키키
   <section>
     <div class="container no-padding">
       <div class="page-banner specials-banner">
-      
+
         <h1 class="page-title">특별 행사</h1>
       </div>
     </div>
@@ -46,10 +47,10 @@ site_name: 펄 호텔 와이키키
                     <span ng-show="[[offers.sRdetail.booking_end_date]]">until<br> [[offers.sRdetail.booking_end_date | date:"MM-dd-yyyy"]]</span>
                </strong>-->
             </p>
-            
+
             <div class="booknow"> <a ng-href="[[offers.sRdetail.promo_url]]" target="_blank">지금 예약</a> </div>
             <div class="btn-holder extra padding"><a href="mailto:reservations@pearlhotelwaikiki.com" class="button-common btn-blue">연락처</i></a></div>
-            
+
           </div>
       </div>
       <div class="col-sm-9 col-xs-12">
@@ -77,8 +78,15 @@ site_name: 펄 호텔 와이키키
   </section>
   <section class="lifestyle">
   	<div class="container-fluid">
-    	<h3>행사 소개</h3>
-        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+      <div class="row">
+        <div class="col-md-8">
+      	   <h3>행사 소개</h3>
+           <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+        </div>
+        <div class="col-md-4">
+          <div class="offer-calendar"></div>
+        </div>
+      </div>
     </div>
   </section>
   <section ng-show="offers.sRdetail.addons.length > 0">
@@ -88,16 +96,16 @@ site_name: 펄 호텔 와이키키
       	<div class="holds">
         <div class="col-md-5">
         <h2>다음 특전 제공</h2>
-        </div>  
+        </div>
          <div class="col-md-7">
          <ul>
             <li ng-repeat="addon in offers.sRdetail.addons">[[addon]]</li>
          </ul>
 
-        </div>  
-        
-        
-       
+        </div>
+
+
+
       </div>
       </div>
     </div>
@@ -139,7 +147,7 @@ site_name: 펄 호텔 와이키키
 </data-owl-carousel>
 
 
-        
+
         <div class="btn-holder-with-padding"><a href="/ko/specials/" class="button-common btn-blue">모든 특별 행사 보기<i class="fa fa-play"></i></a></div>
       </div>
     </div>
