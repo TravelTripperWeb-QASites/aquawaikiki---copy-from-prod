@@ -5,7 +5,7 @@
       $interpolateProvider.endSymbol(']]');
     })
     .value('rt3api', new Rt3Api({
-      portalId: 'pearlwaikiki', 
+      portalId: 'pearlwaikiki',
       hotelId: 'HAWPRL',
       defaultLocale: $("#siteLang").val() || 'en',
       defaultCurrency: 'USD'
@@ -168,11 +168,38 @@
 
         }
       }
-    }]).controller('offerDetail', ['$scope', 'rt3Search', 'rt3Browser','$timeout','$filter', function($scope, rt3Search, rt3Browser,$timeout,$filter) {
-        window.onhashchange = function() {
-          window.location.reload();
-        }
+    }])
+    .controller('offerDetail', ['$scope', 'rt3SpecialRates', 'rt3Browser','$timeout','$filter','$q', function($scope, rt3SpecialRates, rt3Browser,$timeout,$filter,$q) {
+      window.onhashchange = function() {
+        $(window).scrollTop(200);
+        window.location.reload();
+      }
         $scope.reloadPage = function(){$window.location.reload();}
+         //$(".loading").css("display","block");
+         $q.when(rt3SpecialRates.ready).then(function(response){
+           var oList = rt3SpecialRates.special_rates;;
+           var oName = window.location.hash.substr(1); //$("#offerId").val();
+           var tmpName;
+           $scope.offers = {};
+           for(var j= 0 ; j < oList.length ; j++){
+                oName = $filter ('formatNameForLink')(oName);
+                tmpName = $filter ('formatNameForLink')(oList[j].rate_plan_name);
+                tmpCode = $filter ('formatNameForLink')(oList[j].rate_plan_code);
+               if(tmpName == oName || tmpCode == oName){
+                  // find previous and next rooms name
+                  $scope.offers['sRdetail'] = oList[j];
+                  var offerCalendar = new TTWeb.OfferRateCalendar({
+                    showRateCalendar: true,
+                    rateCode: oList[j].rate_plan_code, //'AMEX50',
+                    widgetParentSelector: '.offer-calendar'
+                  });
+                  offerCalendar.showWidget();
+                  break;
+               }
+           }
+           $(".loading").fadeOut('slow');
+
+        });
 
 
 
