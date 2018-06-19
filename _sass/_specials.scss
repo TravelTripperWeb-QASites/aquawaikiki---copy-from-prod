@@ -645,3 +645,34 @@ h2{
 .specials-banner-exclusive {
 	background: url("/images/specials-banner.jpg") no-repeat center center;
 }
+
+.special-details .offer-calendar {
+  padding: 66px 0 35px;
+  @media (min-width: 768px) {
+    margin-right: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .ttweb-offercalendar-widget__submit {
+      font-size: 14px ;
+      letter-spacing: 2px ;
+      padding: 21px 78px 21px 53px ;
+      background-position: 83% center ;
+  }
+}
+
+.ttweb-offercalendar-widget {
+  margin: 0 auto;
+}
+.ttweb-offercalendar-widget button.ttweb-offercalendar-widget__submit {
+  @extend .btn-blue;
+  @extend .button-common;
+}
+.calendar-month__grid .calendar-month__grid__date--in-selection {
+  background-color: $brand-color!important;
+
+}
+
+.offers-details-carousel {
+  background-color: #000;
+}

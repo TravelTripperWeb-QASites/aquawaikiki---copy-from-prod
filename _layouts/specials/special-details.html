@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
-<div  class="room-details special-details" rt3-special-rates= "offers" ng-controller="offerDetail" >
+<div class="loading" style="display:block">Loading&#8230;</div>
+<div  class="room-details special-details" ng-controller="offerDetail" >
 
   <section>
     <div class="container no-padding">
@@ -47,8 +47,8 @@ layout: default
             </ol>
 
             <!-- Wrapper for Slides -->
-            <div class="carousel-inner">
-              <div class="item overlay"  ng-repeat ="photo in offers.sRdetail.images" ng-class="{'active': $index == 0}">
+            <div class="carousel-inner ">
+              <div class="item overlay offers-details-carousel"  ng-repeat ="photo in offers.sRdetail.images" ng-class="{'active': $index == 0}">
                 <img ng-src="[[photo.yankee_large]]" alt=""/>
                 <h3 class="offername"><span class="block-element ">[[offers.sRdetail.rate_plan_name]]</h3>
               </div>
@@ -62,8 +62,15 @@ layout: default
   </section>
   <section class="lifestyle">
   	<div class="container-fluid">
-    	<h3>ABOUT THE OFFER</h3>
-        <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+      <div class="row">
+        <div class="col-md-8">
+      	   <h3>ABOUT THE OFFER</h3>
+           <p ng-bind-html="offers.sRdetail.long_description | renderHTMLCorrectly"></p>
+        </div>
+        <div class="col-md-4 ">
+          <div class="offer-calendar"></div>
+        </div>
+      </div>
     </div>
   </section>
   <section ng-show="offers.sRdetail.addons.length > 0">

@@ -40,7 +40,7 @@ $(document).on("click", "a", function () {
 });
 
 $(document).ready(function () {
-    
+
     //Owl Carousel
     $("#carousel-bottom").owlCarousel({
 
@@ -187,29 +187,29 @@ function validateEmail(email) {
 
 
 $(document).ready(function () {
-    //For Newsletter Signup 
+    //For Newsletter Signup
     $(".close-btn").click(function () {
         $("#signup-bar").hide();
-    }); 
+    });
     if (!Cookies.get('popup')) {
       $('#signup-bar').show();
     }else{
         $('#signup-bar').hide();
     }
-    
+
     $('#submit').click(function(){
         var emailinput = $('.email-signup').val();
         console.log(emailinput);
         if(validateEmail(emailinput)){
             Cookies.set('popup', '1', {
              expires: 1000
-            }); 
+            });
             return true;
         }else{
             alert("Please enter a valid email address");
             return false;
         }
-        
+
     });
 });
 
@@ -225,10 +225,10 @@ $(document).ready(function () {
     })
 });
 
-$('#homeCarousel,#specialsCarousel').carousel({
-    interval: 7000,
-    cycle: true
-});
+// $('#homeCarousel,#specialsCarousel').carousel({
+//     interval: 7000,
+//     cycle: true
+// });
 
 $('#roomDetailsCarousel11').carousel({
     interval: 3000,
@@ -381,7 +381,7 @@ $(document).ready(function () {
 });
 
 $(window).load(function () {
-    if ($(window).width() > 768) {
+    //if ($(window).width() > 768) {
 
         jQuery('ul.nav li.dropdown a').attr('data-toggle', 'disable');
         //Add Hover effect to menus
@@ -390,7 +390,7 @@ $(window).load(function () {
         }, function () {
             jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
         });
-    } else {
+    //} else {
         //jQuery('ul.nav li.dropdown a.dropdown-toggle').removeAttr('data-toggle');
-    }
+  //}
 });
