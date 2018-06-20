@@ -74,11 +74,11 @@
 				&:hover, &.active{
 					text-decoration:none;
 
-					color: $bg-blue-2;
+					color: $brand-color;
 
 
 				}
-			} 
+			}
 		}
 	}
 .lg-sub-html{
@@ -88,7 +88,7 @@
      max-width: 100%;
      margin: 0px auto !important;
      bottom: calc(50% - 50px) !important;
-   
+
      background-color: rgba(255,255,255,0.8) !important;
      color: #000;
      z-index: 1070;

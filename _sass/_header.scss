@@ -36,7 +36,6 @@ a:focus {
 
 
 /* Scrollable header */
-
 .header-wrapper {
   background-color: $bg-white;
   font-family: $regular;
@@ -141,7 +140,7 @@ a:focus {
               background: none;
             }
             &.active {
-              color: #3a9dc4;
+              color: #004f67;
             }
             @media (max-width: 1240px) {
               padding: 10px 10px;
@@ -301,7 +300,8 @@ a:focus {
   background-color: #58a6b5;
   margin: 0 auto 1px;
   padding: 5px;
-  color: #fff;
+  //color: #fff;
+  color: #000;
   vertical-align: middle;
   .intro {
     padding: 7px 10px;

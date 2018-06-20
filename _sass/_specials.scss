@@ -34,6 +34,7 @@
 		padding: 114px 0;
 		position: relative;
 		z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6) !important;
 /*    	top: 50%;
     	transform: translateY(-50%);
     	-webkit-transform: translateY(-50%);
@@ -215,7 +216,9 @@ section.models
 					padding-bottom:20px;
 				}
 
-
+        a {
+          color: $brand-color;
+        }
 
 
 
@@ -668,4 +671,8 @@ h2{
 .calendar-month__grid .calendar-month__grid__date--in-selection {
   background-color: $brand-color!important;
 
+}
+
+.offers-details-carousel {
+  background-color: #000;
 }

@@ -123,7 +123,7 @@
 	}
 }
 .home-banner-wrap .transparent-bg {
-	background-color: rgba(31,69,82,0.4);
+	background-color: rgba(31,69,82,0.8);
 	bottom:0;
 	top:0;
 	right:0;
@@ -285,7 +285,7 @@
 	}
 
 	span{
-		color: $tc-light-blue-1;
+		color: #004f67;
 		font-size: 30px;
 		vertical-align:middle;
 		padding-right: 18px;
@@ -892,7 +892,7 @@
 	background-size: cover;
 	padding: 130px 0 120px 0;
 	text-align: center;
-
+  background-color: #000;
 
 	@media (max-width: 1023px){
 			padding: 70px 0 60px 0;
@@ -1261,7 +1261,7 @@ h2{
 		.cap {
 			font-family: $light;
 			text-transform: uppercase;
-			color: $tc-light-blue-1;
+			color: $brand-color;
 			padding: 0 3px;
 		}
 		.ita{
@@ -1383,7 +1383,7 @@ h2{
 
 		span{
 			font-family: $semi-bold;
-			color: $bg-blue-2;
+			color: $brand-color;
 			padding-left: 18px;
 		}
 
@@ -1769,7 +1769,7 @@ h2{
           float: left;
 
           p{
-            font-size: 12px; color: #777777;
+            font-size: 12px; color: #545454;
             line-height: 16px;
             margin: 0px;
             padding: 0px;
@@ -1786,7 +1786,7 @@ h2{
             text-align: left;
 			color: #000;
              .price{
-                color:#3a9dc4;
+                color:#004f67;
                 font-size: 30px;
                 float: right;
 				 @media(max-width:350px){
@@ -1819,7 +1819,7 @@ h2{
               border-bottom: 1px solid #ccc;
               color: #000;
               span{
-                text-decoration:line-through; color: #3a9dc4; padding-left :4px;
+                text-decoration:line-through; color: #004f67; padding-left :4px;
               }
               &:nth-child(even){
                margin-left: 20px;
@@ -2030,6 +2030,9 @@ font-size:16px;
 	p{
 		padding-bottom:10px;
 	}
+}
+.bg-black {
+  background-color: #000;
 }
 .privacy {
 	ul {
