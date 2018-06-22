@@ -6,12 +6,12 @@
 	font-size: 14px;
 	color: $tc-white;
 	letter-spacing: 2px;
-	
+
 	@media (max-width: 767px){
 			padding: 20px 0px;
 			text-align: center;
 		}
-		
+
 	.container {
 		/*@media (min-width: 1300px){
 			width: 1270px;
@@ -29,21 +29,21 @@
 	}
 	p{
 		line-height: 22px;
-		
+
 	}
 }
 .footer-grid {
-	
+
 	padding: 5px 46px;
-	
+
 	&.no-padding-left {
 		padding-left: 0;
 	}
-	
+
 	&.no-padding-right {
 		padding-right: 0;
 	}
-	
+
 	a{
 		color: $tc-white;
 		&:hover {
@@ -105,7 +105,7 @@
 		@media (max-width: 767px){
 			width: 100%;
 		}
-	
+
 	&hover {
 	}
 }
@@ -134,13 +134,13 @@
 
 .footer-bottom-wrapper{
 	color: $tc-ash-1;
-	
+
 .footer-copyright {
 	font-family: $regular;
 	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 45px;
-	
+
 	@media (max-width: 767px){
 			text-align: center;
 			line-height: 35px;
@@ -152,9 +152,9 @@
 	text-align: center;
 	font-size: 11px;
 	color: $tc-ash-1;
-	
-	
-	
+
+
+
 	a{
 		font-size: 11px;
 		font-family: $main-font-light;
@@ -163,7 +163,7 @@
 		color: $tc-ash-1;
 		display: inline-block;
 		padding: 15px 10px;
-		
+
 		@media (max-width: 1023px){
 			letter-spacing: 1px;
 			padding: 15px 8px;
@@ -171,35 +171,35 @@
 		@media (max-width: 767px){
 			padding: 2px 8px;
 		}
-		
+
 		&.active {
 			font-family: $main-font-medium;
 		}
 	}
-	
+
 }
 .footer-social {
 	/*text-align:right;*/
 	text-align: left;
 	line-height: 45px;
-	
+
 	@media (max-width: 767px){
 			text-align:center;
 			line-height: 35px;
 		}
-	
+
 	.fa {
 		/*color: $tc-ash-1;
 		padding: 0 0 0 30px;*/
 		padding: 0 20px 0 0;
 		vertical-align: middle;
-		
+
 		@media (max-width: 767px){
 			padding: 0 15px 0 15px;
-			
+
 		}
 	}
-	
+
 }
 
 /* The Close Button */
@@ -248,4 +248,20 @@
 }
 .pet-align{
 	text-align: left !important;
+}
+
+.tnc {
+  margin-top: 14px;
+  font-family: "Lato-Light";
+  font-weight: normal;
+  display: block;
+  a {
+    text-decoration: underline;
+  }
+}
+
+#signUpBtn, #contactBtn {
+  &:disabled {
+    opacity: .5;
+  }
 }
