@@ -191,19 +191,16 @@
 						max-width: 80%;
 						li{
 							font-family:$light;
-							font-size: 16px;
-							line-height: 26px;
+							font-size: 18px;
+							line-height: 28px;
 							list-style-type: disc;
 							text-align: left;
 						}
 					}
 					p {
-            font-size: 16px;
-            line-height: 26px;
 						padding: 0;
 						text-align: left;
 						width: 80%;
-            margin-top: 5px;
 					}
 				}
 				@media (max-width: 1024px){ padding:30px 15px;}
