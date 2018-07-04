@@ -2,8 +2,8 @@
 	.meetings-wrap{
 		.owl-controls{ margin-top:0px; position:relative;
 			.owl-buttons{ position:absolute; bottom:0px; right:0px;
-				.owl-prev{ position:relative; left:15px; top:inherit; bottom:-6px;transform:translateY(0);}	
-				.owl-next{position:relative; right:0px; top:inherit; bottom:-6px;transform:translateY(0);}	
+				.owl-prev{ position:relative; left:15px; top:inherit; bottom:-6px;transform:translateY(0);}
+				.owl-next{position:relative; right:0px; top:inherit; bottom:-6px;transform:translateY(0);}
 			}
 		}
 		.owl-item{ margin-bottom:2px;
@@ -22,7 +22,7 @@
 							@media (max-width: 480px){ padding:0px 0 10px; font-size:10px;}
 							@media (min-width: 481px) and (max-width:1024px){ font-size:12px; padding:0px 0 20px;}
 						}
-					} 
+					}
 					@media (max-width: 480px){
 						 bottom:0px; left:20px;
 					}
@@ -33,14 +33,14 @@
 			}
 		}
 		#sync2{
-			.owl-item{ 
+			.owl-item{
 				opacity:1;
-				
+
 				.item{
 					background:#1f4552;
-					cursor: pointer; 
+					cursor: pointer;
 					margin-right:2px;
-					&:hover{ 
+					&:hover{
 						img{opacity:0.7;}
 					}
 				}
@@ -69,7 +69,7 @@
 		 	@media (max-width: 767px){
 				 font-size:18px;
 			}
-		 }	
+		 }
 	}
 	.white-bg{ position:relative;
 		.about-wrap{
@@ -105,7 +105,7 @@
 			}
 			text-align: center;
 			padding: 15px 15px;
-			color: #333333;	
+			color: #333333;
 			@media (max-width: 480px){
 				padding:10px 10px;
 			}
@@ -125,14 +125,14 @@
 					color:#fff;
 				}
 			}
-			
+
 		}
 		.graphic-1{
 				position: absolute;
 				bottom: 20px;
 				right: 0;
 				width: 150px;
-				
+
 				@media(min-width: $screen-sm-min){
 					width: 150px;
 					bottom: 20px;
@@ -145,7 +145,7 @@
 					width: 270px;
 					bottom: 53px;
 				}
-				
+
 				img {
 					width: 100%;
 				}
@@ -155,7 +155,7 @@
 				bottom: -40px;
 				left: 0;
 				width: 150px; z-index:2;
-				
+
 				@media(min-width: $screen-sm-min){
 					width: 210px;
 					bottom: 0px;
@@ -176,7 +176,7 @@
 	.two-col-wrap{
 		&.boxed{ margin:60px auto;
 			@media (max-width: 767px){
-				margin:20px auto;	
+				margin:20px auto;
 			}
 		}
 		a{ color:#fff;}
@@ -197,7 +197,7 @@
 							text-align: left;
 						}
 					}
-					p{
+					p {
 						padding: 0;
 						text-align: left;
 						width: 80%;
@@ -213,9 +213,9 @@
 				 	p{color:#fff; width:80%;
 						&.wide{ width:80%;}
 					}
-				}	
-			}	
-		}	
+				}
+			}
+		}
 	}
 	.lifestyle{ background:#fff; padding:30px 0 90px; position:relative;
 		@media (max-width: 767px){ padding:30px 0 60px;}
@@ -250,19 +250,19 @@
 
 
 .rfp-callus{
-	color: #333333; 
-	font-family: $light; 
-	font-size: 20px; 
-	letter-spacing: normal; 
+	color: #333333;
+	font-family: $light;
+	font-size: 20px;
+	letter-spacing: normal;
 	text-transform: none;
 	line-height: 40px;
 }
 
 .rfp-phone{
-	background-color: #ffffff; 
-	font-family: $light; 
-	font-size: 20px; 
-	letter-spacing: normal; 
+	background-color: #ffffff;
+	font-family: $light;
+	font-size: 20px;
+	letter-spacing: normal;
 	text-transform: none;
 }
 
@@ -271,7 +271,7 @@
 
 .meetings-addresses{
 	color:#fff;
-	
+
 	.title-add{
 
 			font-family:$medium;
@@ -279,7 +279,7 @@
 			line-height:20px;
 			letter-spacing:1px;
 			padding: 20px 0px 10px 0px;
-			
+
 		}
 	.dash{
 			    width: 46px;
@@ -287,7 +287,7 @@
 			    padding-top: 16px;
 			    margin: 0 auto;
 
-	}	
+	}
 	a{
 		letter-spacing:1px;
 	}
