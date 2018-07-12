@@ -20,27 +20,27 @@ layout: default
                   <div class="two-fields-holder">
                     <div class="col-sm-6 no-padding">
                       <div class="form-group right-space">
-                        <input type="text" class="form-control validate[required, Alphabetic]" id="input_3" name="q3_first-name" placeholder="Name" title="Name" aria-label="Name" required>
+                        <input type="text" class="form-control validate[required, Alphabetic]" id="input_3" name="q3_first-name" placeholder="Name *" title="Name" aria-label="Name" required>
                       </div>
                     </div>
                     <div class="col-sm-6 no-padding">
                       <div class="form-group left-space">
-                        <input type="text" class="form-control validate[required, Alphabetic]" id="input_37" name="q37_company37" placeholder="Company Name" title="Company Name" aria-label="Company Name" required>
+                        <input type="text" class="form-control validate[required, Alphabetic]" id="input_37" name="q37_company37" placeholder="Company Name *" title="Company Name" aria-label="Company Name" required>
                       </div>
                     </div>
                   </div>
              	  <div class="form-group">
-                    <textarea id="input_36" class="form-control validate[required] m-textarea" name="q36_address36" style="width:100%" rows="5" placeholder="Address Details" title="Address Details" aria-label="Address Details"></textarea>
+                    <textarea id="input_36" class="form-control validate[required] m-textarea" name="q36_address36" style="width:100%" rows="5" placeholder="Address Details *" title="Address Details" aria-label="Address Details"></textarea>
                   </div>
                   <div class="two-fields-holder">
                     <div class="col-sm-6 no-padding">
                       <div class="form-group">
-                        <input type="text" class="form-control validate[required, Numeric]"  id="input_26" name="q26_cell-phone"  placeholder="Phone Number" title="Phone Number" aria-label="Phone Number" required>
+                        <input type="text" class="form-control validate[required, Numeric]"  id="input_26" name="q26_cell-phone"  placeholder="Phone Number *" title="Phone Number" aria-label="Phone Number" required>
                       </div>
                     </div>
                     <div class="col-sm-6 no-padding">
                       <div class="form-group left-space">
-                        <input type="email" class="form-control validate[required, Email]" id="input_4" name="q4_email"  placeholder="Email" title="Enter Your Email" aria-label="Enter Your Email" required>
+                        <input type="email" class="form-control validate[required, Email]" id="input_4" name="q4_email"  placeholder="Email *" title="Enter Your Email" aria-label="Enter Your Email" required>
                       </div>
                     </div>
                   </div>
@@ -89,7 +89,13 @@ layout: default
                   <div class="form-group">
                     <textarea class="form-control m-textarea" rows="5" id="input_35" name="q35_others" placeholder="Comments" title="Comments" aria-label="Comments"></textarea>
                   </div>
-                  <button type="submit" id="input_2" class="btn-lt-blue">Submit</button>
+                  <div class="form-group">
+                    <label for="input_38_0" class="tnc">
+                     <input type="checkbox" id="input_38_0" name="q38_acceptTerms[]" value="I agree to the Terms of Service and Privacy Policy" title="I agree to the Terms of Service and Privacy Policy" aria-label="I agree to the Terms of Service and Privacy Policy" required="">
+                     <span>* I agree to the <a href="/terms/" target="_blank">Terms of Service</a> and <a href="/privacy-policy/" target="_blank">Privacy Policy</a></span>
+                   </label>
+                  </div>
+                  <button type="submit" id="contactBtn" class="btn-lt-blue" disabled>Submit</button>
                   <input type="hidden" id="simple_spc" name="simple_spc" value="71012079104443" />
                   <script type="text/javascript">document.getElementById("si" + "mple" + "_spc").value = "71012079104443-71012079104443";
                 </script>
