@@ -262,6 +262,7 @@
 
 #signUpBtn, #contactBtn {
   &:disabled {
+    cursor: not-allowed;
     opacity: .5;
   }
 }
