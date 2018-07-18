@@ -1,0 +1,125 @@
+---
+layout: default
+title:  Waikiki Hotels | Room & Suites at Pearl Hotel Waikiki
+name: room-details
+excerpt: Whether you're planning a romantic getaway for two or a vacation with the whole family, we have a guest room or suite for you. Compare room options online now.
+---
+
+<input type="hidden" id="roomId"  value="{{page.code}}" />
+<input type="hidden" id="roomList" value="[[ browser.roomsList | filter: { category: 'ADA Accessible' } ]]"   />
+<div class="room-details" ng-controller ="roomDetail" >
+
+  <section>
+    <div class="container no-padding">
+      <div class="page-banner rooms-banner" >
+          <h1 class="page-title">Rooms & Suites</h1>
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <ul class="gallery-nav">
+
+      <li ng-show="prevRoomName"><a ng-href="/room/ada-room/#[[prevRoomName | formatNameForLink ]]"  >Previous Room</a></li>
+      <li><a href="#" class="active">[[selectedRoom.name]]</a></li>
+      <li ng-show="nextRoomName"><a ng-href="/room/ada-room/#[[nextRoomName | formatNameForLink ]]"   >Next Room</a></li>
+    </ul>
+  </div>
+  <section>
+    <div class="container room-details-carousel"  ng-cloak>
+
+      <div class="home-rooms-holder">
+        <div class="home-rooms-holder-inner">
+          <div id="carousel-bottom">
+            <div class="item">
+              <div>
+                <h2>Premium</h2>
+
+                <h3><span class="block-element">[[selectedRoom.name]]</h3>
+                <p><a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" >[[ selectedRoom.todayRate ]]</a></p>
+                <div class="btn-holder extra padding"><a ng-href="{{site.data.config.reztripUrl}}search?selected_room_category=[[selectedRoom.category]]&selected_room=[[selectedRoom.code]]" target="_blank" class="button-common btn-blue">Book Now</a></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="roomDetailsCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" ng-show="selectedRoom.photos.length > 1">
+          <li data-target="#roomDetailsCarousel" ng-repeat ="photo in selectedRoom.photos" data-slide-to="[[$index]]"  ng-class="{'active': $index == 0}"></li>
+
+
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+          <div class="item" ng-repeat ="photo in selectedRoom.photos" ng-class="{'active': $index == 0}" style="background-image: url();">
+          	<img ng-src="[[photo.yankee_large]]" alt=""/>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section ng-show="selectedRoom.amenities.length > 0">
+    <div class="container-fluid">
+      <div class="row details-intro style2">
+
+        <div class="holds">
+             <h2>enjoy the following privileges</h2>
+            <ul>
+                <li ng-repeat="amenity in selectedRoom.amenities">[[amenity]] </li>
+              </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row information">
+        <div class="col-md-5 align-center"><img src="../../images/rooms/room-details/bed-photo.jpg" width="296" height="297" alt=""/></div>
+        <div class="col-md-7 p-l-0">
+          <p class="highlight">Information:</p>
+
+          <p class="p-b-25"><span>[[selectedRoom.room_size_sqm]]</span> <span>[[selectedRoom.room_size_sqft]]</span></p>
+          <p class="p-b-25">[[selectedRoom.description]]</p>
+
+          <p class="highlight">Need assistance? Our dedicated reservations team is available around the clock:</p>
+          <p class="p-b-25"><a href="tel:1.855.518.3455" >1.855.518.3455</a>  or
+            e-mail <a href="mailto:reservations@pearlhotelwaikiki.com">reservations@pearlhotelwaikiki.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>{% include more-rooms.html %}</section>
+  <section class="bt">
+    <div class="container">
+     <div class="cta-theme">
+        <div class="pf-wrap">
+          <h2>Paradise Found</h2>
+          <div><a href="https://pearlwaikiki.reztrip.com" class="button-common btn-white">Book Now<i class="fa fa-play"></i></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="more-spls" rt3-special-rates= "offers">
+
+
+    <div class="container-fluid no-padding home-specials-wrap">
+      <div class="container">
+        <h2 class="heading-large">Special Offers</h2>
+
+        {%  include special-offers.html %}
+
+
+        <div class="btn-holder-with-padding"><a href="/specials/" class="button-common btn-blue">View all Specials<i class="fa fa-play"></i></a></div>
+      </div>
+    </div>
+  </section>
+</div>

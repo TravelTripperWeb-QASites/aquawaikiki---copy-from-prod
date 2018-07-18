@@ -62,12 +62,6 @@
 			"submenu": "false"
 		},
 		{
-			"title":"Accessibility",
-			"name": "accessibility",
-			"url": "/accessibility/",
-			"submenu": "false"
-		},
-		{
 			"title":"Terms Of Use",
 			"name": "Terms Of Use",
 			"url": "/terms/",
@@ -85,6 +79,12 @@
 			"title":"Sitemap",
 			"name": "Sitemap",
 			"url": "/sitemap/",
+			"submenu": "false"
+		},
+		{
+			"title":"Accessibility",
+			"name": "accessibility",
+			"url": "/accessibility/",
 			"submenu": "false"
 		}
 	],
