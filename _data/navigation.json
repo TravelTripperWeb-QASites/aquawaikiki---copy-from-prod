@@ -1,105 +1,108 @@
 {
-	 'mainnav':[
-
-
+	"mainnav":[
 		{
-			'title':'Rooms',
-			'name': 'rooms',
-			'url': '/rooms/',
-			'submenu': 'true' ,
-			'subitems': [
-				{'title':'Hotel Reviews','name': 'reviews','url': '/hotel-reviews/'}
+			"title":"Rooms",
+			"name": "rooms",
+			"url": "/rooms/",
+			"submenu": "true",
+			"subitems": [
+				
+				{"title":"Hotel Reviews","name": "reviews","url": "/hotel-reviews/"}
 			]
 		},
 		{
-			'title':'Specials',
-			'name': 'specials',
-			'url': '/specials/',
-			'submenu': 'false'
+			"title":"Specials",
+			"name": "specials",
+			"url": "/specials/",
+			"submenu": "false"
 		},
 		{
-			'title':'Attractions',
-			'name': 'attractions',
-			'url': '/attractions/',
-			'submenu': 'flase'
+			"title":"Attractions",
+			"name": "attractions",
+			"url": "/attractions/",
+			"submenu": "flase"
 
 		},
 		{
-			'title':'Groups',
-			'name': 'meetings-and-events',
-			'url': '/meetings-and-events/',
-			'submenu': 'true' ,
-			'subitems': [
-				{'title':'Request for Proposal','name': 'events','url': '/meetings-and-events/request-for-proposal/'}
+			"title":"Groups",
+			"name": "meetings-and-events",
+			"url": "/meetings-and-events/",
+			"submenu": "true" ,
+			"subitems": [
+				{"title":"Request for Proposal","name": "events","url": "/meetings-and-events/request-for-proposal/"}
 			]
 		},
 		{
-			'title':'Amenities',
-			'name': 'amenities',
-			'url': '/amenities/' ,
-			'submenu': 'false'
+			"title":"Amenities",
+			"name": "amenities",
+			"url": "/amenities/" ,
+			"submenu": "false"
 		},
 		{
-			'title':'Gallery',
-			'name': 'gallery',
-			'url': '/gallery/' ,
-			'submenu': 'false'
+			"title":"Gallery",
+			"name": "gallery",
+			"url": "/gallery/" ,
+			"submenu": "false"
 		},
 
 
 		{
-			'title':'Location',
-			'name': 'location',
-			'url': '/location/',
-			'submenu': 'false'
+			"title":"Location",
+			"name": "location",
+			"url": "/location/",
+			"submenu": "false"
 
 		}
-
-
 	],
-	'footernav':[
+	"footernav":[
 		{
-			'title':'Hotel Reviews',
-			'name': 'reviews',
-			'url': '/hotel-reviews/',
-			'submenu': 'false'
+			"title":"Hotel Reviews",
+			"name": "reviews",
+			"url": "/hotel-reviews/",
+			"submenu": "false"
 		},
 		{
-			'title':'Terms Of Use',
-			'name': 'Terms Of Use',
-			'url': '/terms/',
-			'rel': 'nofollow',
-			'submenu': 'false'
+			"title":"Terms Of Use",
+			"name": "Terms Of Use",
+			"url": "/terms/",
+			"rel": "nofollow",
+			"submenu": "false"
 		},
 		{
-			'title':'Privacy Policy',
-			'name': 'Privacy Policy',
-			'url': '/privacy-policy/',
-			'rel': 'nofollow',
-			'submenu': 'false'
+			"title":"Privacy Policy",
+			"name": "Privacy Policy",
+			"url": "/privacy-policy/",
+			"rel": "nofollow",
+			"submenu": "false"
 		},
 		{
-			'title':'Sitemap',
-			'name': 'Sitemap',
-			'url': '/sitemap/',
-			'submenu': 'false'
+			"title":"Sitemap",
+			"name": "Sitemap",
+			"url": "/sitemap/",
+			"submenu": "false"
+		},
+		{
+			"title":"Accessibility",
+			"name": "accessibility",
+			"url": "/accessibility/",
+			"submenu": "false"
 		}
 	],
-	'social':[
+	"social":[
 		{
-			'title':'Linkedin',
-			'url':'https://www.linkedin.com/company/travel-trippe',
-			'class':'fa-linkedin'
+			"title":"Linkedin",
+			"url":"https://www.linkedin.com/company/travel-trippe",
+			"class":"fa-linkedin"
 		},
 		{
-			'title':'Facebook',
-			'url':'https://www.facebook.com/traveltripper',
-			'class':'fa-facebook-square'
+			"title":"Facebook",
+			"url":"https://www.facebook.com/traveltripper",
+			"class":"fa-facebook-square"
 		},
 		{
-			'title':'Twitter',
-			'url':'https://twitter.com/Travel_Tripper',
+			"title":"Twitter",
+			"url":"https://twitter.com/Travel_Tripper",
 			"class":"fa-twitter"
-		},
+		}
 	]
 }

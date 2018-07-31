@@ -328,3 +328,23 @@
 		}
 	}
 }
+.accessible-link {
+	font-size: 16px;
+	color: $bg-blue-4 !important;
+}
+.accessibility-list {
+	margin-top: 30px;
+	li {
+		list-style-type: none;
+		margin-bottom: 15px;
+		padding-left: 20px;
+		font-size: 16px;
+		line-height: 25px;
+		position: relative;
+		&:before {
+			content: '\2022';
+			position: absolute;
+			left: 0;
+		}
+	}
+}
