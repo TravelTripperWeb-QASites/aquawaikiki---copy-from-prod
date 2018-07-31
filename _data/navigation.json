@@ -6,7 +6,7 @@
 			"url": "/rooms/",
 			"submenu": "true",
 			"subitems": [
-				{"title":"ADA Rooms","name": "ADA Rooms","url": "/rooms/ada-rooms/"},
+				
 				{"title":"Hotel Reviews","name": "reviews","url": "/hotel-reviews/"}
 			]
 		},
