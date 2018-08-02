@@ -1,5 +1,6 @@
 <!--Special Banner Bar-->
 <section class="special-banner-bar">
-  <h2><strong>SPECIAL OFFER</strong> - SUMMER SUN, PLAN YOUR FUN - SAVE 15%</h2>
-  <a href="https://www.pearlhotelwaikiki.com/special/?utm_source=Top-Web-Banner&utm_medium=Top-Web-Banner&utm_campaign=Summer_Offer#summer-sun-plan-your-fun" title="Book & Save" target="_blank" class="button-common">BOOK & SAVE</a>
+  {% assign special = site.data.special-banner-bar %}
+  <h2><strong>{{ special.title }} :</strong> {{ special.body }}</h2>
+  <a href="{{ special.booknow_link }}" title="{{ special.booknow_text }}" target="_blank" class="button-common">{{ special.booknow_text }}</a>
 </section>
