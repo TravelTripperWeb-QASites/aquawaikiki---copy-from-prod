@@ -1,5 +1,6 @@
 <!--Special Banner Bar-->
 <section class="special-banner-bar">
-  <h2><strong>SPECIAL OFFER</strong> - FALLING LEAVES?  NO, WE HAVE FALLING RATES - SAVE 20%</h2>
-  <a href="https://www.pearlhotelwaikiki.com/special/#falling-leaves-no-we-have-falling-rates" title="Book & Save" target="_blank" class="button-common">BOOK & SAVE</a>
+  {% assign special = site.data.special-banner-bar %}
+  <h2><strong>{{ special.title }} :</strong> {{ special.body }}</h2>
+  <a href="{{ special.booknow_link }}" title="{{ special.booknow_text }}" target="_blank" class="button-common">{{ special.booknow_text }}</a>
 </section>
