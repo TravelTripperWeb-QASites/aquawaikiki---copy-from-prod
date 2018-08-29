@@ -291,6 +291,16 @@
 	a{
 		letter-spacing:1px;
 	}
+	ul{
+		li{
+			.airport-wrap{
+
+				&:hover{
+					color:black;
+				}
+			}
+		}
+	}
 }
 .m-t-100{
 	margin-top: 100px;
