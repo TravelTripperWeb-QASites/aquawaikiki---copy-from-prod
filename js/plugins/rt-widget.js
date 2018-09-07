@@ -83,7 +83,7 @@ var css = __webpack_require__(2);
 	//plugin setup
 
 	$.fn.RTwidgets = function (options) {
-		//default options 
+		//default options
 		var defaults = {
 			hotel_id: 'NYCROY',
 			portal_id: 'royaltonhotel',
@@ -108,7 +108,7 @@ var css = __webpack_require__(2);
 
 		var popup_widget = new _rt_offer_popup_widget2.default(widget_settings);
 		if (widget_settings.offer_popup_widget.show) {
-			//if popup offer widget true 
+			//if popup offer widget true
 			popup_widget.show_widget();
 		} else {
 			popup_widget.show_widget();
@@ -116,7 +116,7 @@ var css = __webpack_require__(2);
 	};
 })(jQuery);
 
- 
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -133,7 +133,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /**
- * Offer Popup will show based on session 
+ * Offer Popup will show based on session
  */
 var rt_offer_popup_widget = function () {
   function rt_offer_popup_widget(options) {
@@ -183,7 +183,7 @@ var rt_offer_popup_widget = function () {
                 if (_this.settings.offer_popup_widget.show_detail) {
                   detail_offer = '<div class="popup-detail-offer">' + item.short_description + '</div>';
                 }
-                var view_template = '<div class="rt-guest-widget pop_offer">\n\t\t\t\t\t\t\t\t\t\t\t\t    <div class="rt-widget-header">\n\t\t\t\t\t\t\t\t\t\t\t\t    \t<h3>' + _this.settings.offer_popup_widget.header_title + '</h3>\n\t\t\t\t\t\t\t\t\t\t\t\t    \t<span class="widget_popup_close" id="rt_pop_close">&times;</span>\n\t\t\t\t\t\t\t\t\t\t\t\t    </div> \n\t\t\t\t\t\t\t\t\t\t\t\t    ' + detail_offer + '\n\t\t\t\t\t\t\t\t\t\t\t\t    <div class="body_content" style="background-image: url(\'' + item.lead_photo_url.yankee_large + '\');"><div class="rt-overlay_widget"><div class="popup_detail"><a href="' + item.promo_url + '" target="_blank">' + item.rate_plan_name + '</a></div></div></div><a href="' + item.promo_url + '" class="widget-booknow-link" target="_blank">' + _this.settings.offer_popup_widget.btn_label + '</a></div><div class="rt-guest-widget open-offer-popup"><span>&rarr;</span></div>';
+                var view_template = '<div class="rt-guest-widget pop_offer" style="display:none;">\n\t\t\t\t\t\t\t\t\t\t\t\t    <div class="rt-widget-header">\n\t\t\t\t\t\t\t\t\t\t\t\t    \t<h3>' + _this.settings.offer_popup_widget.header_title + '</h3>\n\t\t\t\t\t\t\t\t\t\t\t\t    \t<span class="widget_popup_close" id="rt_pop_close">&times;</span>\n\t\t\t\t\t\t\t\t\t\t\t\t    </div> \n\t\t\t\t\t\t\t\t\t\t\t\t    ' + detail_offer + '\n\t\t\t\t\t\t\t\t\t\t\t\t    <div class="body_content" style="background-image: url(\'' + item.lead_photo_url.yankee_large + '\');"><div class="rt-overlay_widget"></div><div class="popup_detail"><a href="' + item.promo_url + '" target="_blank">' + item.rate_plan_name + '</a></div></div><a href="' + item.promo_url + '" class="widget-booknow-link" target="_blank">' + _this.settings.offer_popup_widget.btn_label + '</a></div><div class="rt-guest-widget open-offer-popup active-open"><span>&rarr;</span></div>';
 
                 setTimeout(function () {
                   return $('body').append(view_template);
