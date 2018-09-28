@@ -181,6 +181,7 @@
            var oName = window.location.hash.substr(1); //$("#offerId").val();
            var tmpName;
            $scope.offers = {};
+           $scope.offers['special_rates'] = oList;
            for(var j= 0 ; j < oList.length ; j++){
                 oName = $filter ('formatNameForLink')(oName);
                 tmpName = $filter ('formatNameForLink')(oList[j].rate_plan_name);
