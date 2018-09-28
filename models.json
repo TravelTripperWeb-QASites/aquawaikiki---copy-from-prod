@@ -1,94 +1,9 @@
 {
-  "gallery_restaurantbar_images": [
-    {
-      "file": "gallery_restaurantbar_image1.json"
-    }
-  ],
-  "gallery_hotel_images": [
-    {
-      "file": "gallery_hotel_image3.json"
-    },
-    {
-      "file": "gallery_hotel_image1.json"
-    },
-    {
-      "file": "gallery_hotel_image2.json"
-    }
-  ],
-  "attractions_category": [
-    {
-      "name": "Outdoor Activities",
-      "title": "Outdoor Activities",
-      "file": "attractions_category3.json"
-    },
-    {
-      "name": "Culture And History",
-      "title": "Culture And History",
-      "file": "attractions_category5.json"
-    },
-    {
-      "name": "Nature",
-      "title": "Nature",
-      "file": "attractions_category4.json"
-    },
-    {
-      "name": "Shopping",
-      "title": "Shopping",
-      "file": "attractions_category1.json"
-    },
-    {
-      "name": "Dining",
-      "title": "Dining",
-      "file": "attractions_category2.json"
-    }
-  ],
-  "groups_slider_images": [
-    {
-      "file": "groups_slider_image1.json"
-    }
-  ],
-  "gallery_rooms_images": [
-    {
-      "file": "gallery_rooms_image8.json"
-    },
-    {
-      "file": "gallery_rooms_image4.json"
-    },
-    {
-      "file": "gallery_rooms_image1.json"
-    },
-    {
-      "file": "gallery_rooms_image7.json"
-    },
-    {
-      "file": "gallery_rooms_image3.json"
-    },
-    {
-      "file": "gallery_rooms_image2.json"
-    }
-  ],
-  "homepage_slider": [
-    {
-      "file": "homepage_slider1.json"
-    },
-    {
-      "file": "homepage_slider3.json"
-    },
-    {
-      "file": "homepage_slider5.json"
-    },
-    {
-      "file": "homepage_slider2.json"
-    },
-    {
-      "file": "homepage_slider4.json"
-    }
-  ],
   "attractions": [
     {
-      "name": "Polynesian Cultural Center",
-      "title": "Polynesian Cultural Center",
-      "file": "attraction14.json"
+      "name": "Waikiki Aquarium",
+      "title": "Waikiki Aquarium",
+      "file": "attraction1.json"
     },
     {
       "name": "Ward Village Shops",
@@ -96,19 +11,24 @@
       "file": "attraction10.json"
     },
     {
+      "name": "Pearl Harbor / USS Arizona Memorial",
+      "title": "Pearl Harbor / USS Arizona Memorial",
+      "file": "attraction11.json"
+    },
+    {
       "name": "Waimea Valley",
       "title": "Waimea Valley",
       "file": "attraction12.json"
     },
     {
-      "name": "International Market Place",
-      "title": "International Market Place",
-      "file": "attractions1.json"
+      "name": "Bishop Museum",
+      "title": "Bishop Museum",
+      "file": "attraction13.json"
     },
     {
-      "name": "Catamaran Cruise",
-      "title": "Catamaran Cruise",
-      "file": "attraction6.json"
+      "name": "Polynesian Cultural Center",
+      "title": "Polynesian Cultural Center",
+      "file": "attraction14.json"
     },
     {
       "name": "Kahala Mall",
@@ -116,9 +36,19 @@
       "file": "attraction15.json"
     },
     {
-      "name": "Honolulu Zoo",
-      "title": "Honolulu Zoo",
-      "file": "attractions4.json"
+      "name": "Manoa Falls",
+      "title": "Manoa Falls",
+      "file": "attraction2.json"
+    },
+    {
+      "name": "Magic Island at Ala Moana Beach Park",
+      "title": "Magic Island at Ala Moana Beach Park",
+      "file": "attraction3.json"
+    },
+    {
+      "name": "Snorkeling at Hanauma Bay",
+      "title": "Snorkeling at Hanauma Bay",
+      "file": "attraction4.json"
     },
     {
       "name": "surf and paddleboard lessons",
@@ -126,19 +56,9 @@
       "file": "attraction5.json"
     },
     {
-      "name": "Pearl Harbor / USS Arizona Memorial",
-      "title": "Pearl Harbor / USS Arizona Memorial",
-      "file": "attraction11.json"
-    },
-    {
-      "name": "Diamond Head State Monument",
-      "title": "Diamond Head State Monument",
-      "file": "attractions3.json"
-    },
-    {
-      "name": "Snorkeling at Hanauma Bay",
-      "title": "Snorkeling at Hanauma Bay",
-      "file": "attraction4.json"
+      "name": "Catamaran Cruise",
+      "title": "Catamaran Cruise",
+      "file": "attraction6.json"
     },
     {
       "name": "Rainbow Drive-In",
@@ -151,44 +71,78 @@
       "file": "attraction8.json"
     },
     {
-      "name": "Iolani Palace",
-      "title": "Iolani Palace",
-      "file": "attractions5.json"
-    },
-    {
       "name": "Ala Moana Center",
       "title": "Ala Moana Center",
       "file": "attraction9.json"
     },
     {
-      "name": "Magic Island at Ala Moana Beach Park",
-      "title": "Magic Island at Ala Moana Beach Park",
-      "file": "attraction3.json"
-    },
-    {
-      "name": "Bishop Museum",
-      "title": "Bishop Museum",
-      "file": "attraction13.json"
-    },
-    {
-      "name": "Manoa Falls",
-      "title": "Manoa Falls",
-      "file": "attraction2.json"
-    },
-    {
-      "name": "Waikiki Aquarium",
-      "title": "Waikiki Aquarium",
-      "file": "attraction1.json"
+      "name": "International Market Place",
+      "title": "International Market Place",
+      "file": "attractions1.json"
     },
     {
       "name": "Paina Lanai Food Court",
       "title": "Paina Lanai Food Court",
       "file": "attractions2.json"
+    },
+    {
+      "name": "Diamond Head State Monument",
+      "title": "Diamond Head State Monument",
+      "file": "attractions3.json"
+    },
+    {
+      "name": "Honolulu Zoo",
+      "title": "Honolulu Zoo",
+      "file": "attractions4.json"
+    },
+    {
+      "name": "Iolani Palace",
+      "title": "Iolani Palace",
+      "file": "attractions5.json"
+    }
+  ],
+  "attractions_category": [
+    {
+      "name": "Shopping",
+      "title": "Shopping",
+      "file": "attractions_category1.json"
+    },
+    {
+      "name": "Dining",
+      "title": "Dining",
+      "file": "attractions_category2.json"
+    },
+    {
+      "name": "Outdoor Activities",
+      "title": "Outdoor Activities",
+      "file": "attractions_category3.json"
+    },
+    {
+      "name": "Nature",
+      "title": "Nature",
+      "file": "attractions_category4.json"
+    },
+    {
+      "name": "Culture And History",
+      "title": "Culture And History",
+      "file": "attractions_category5.json"
     }
   ],
   "gallery_attractions_images": [
     {
-      "file": "gallery_attractions_images2.json"
+      "file": "gallery_attractions_image1.json"
+    },
+    {
+      "file": "gallery_attractions_image2.json"
+    },
+    {
+      "file": "gallery_attractions_image3.json"
+    },
+    {
+      "file": "gallery_attractions_image4.json"
+    },
+    {
+      "file": "gallery_attractions_image5.json"
     },
     {
       "file": "gallery_attractions_image6.json"
@@ -197,30 +151,76 @@
       "file": "gallery_attractions_image7.json"
     },
     {
-      "file": "gallery_attractions_image2.json"
-    },
-    {
-      "file": "gallery_attractions_image5.json"
-    },
-    {
       "file": "gallery_attractions_images1.json"
     },
     {
-      "file": "gallery_attractions_image3.json"
+      "file": "gallery_attractions_images2.json"
+    }
+  ],
+  "gallery_hotel_images": [
+    {
+      "file": "gallery_hotel_image1.json"
     },
     {
-      "file": "gallery_attractions_image1.json"
+      "file": "gallery_hotel_image2.json"
     },
     {
-      "file": "gallery_attractions_image4.json"
+      "file": "gallery_hotel_image3.json"
+    }
+  ],
+  "gallery_restaurantbar_images": [
+    {
+      "file": "gallery_restaurantbar_image1.json"
+    }
+  ],
+  "gallery_rooms_images": [
+    {
+      "file": "gallery_rooms_image1.json"
+    },
+    {
+      "file": "gallery_rooms_image2.json"
+    },
+    {
+      "file": "gallery_rooms_image3.json"
+    },
+    {
+      "file": "gallery_rooms_image4.json"
+    },
+    {
+      "file": "gallery_rooms_image7.json"
+    },
+    {
+      "file": "gallery_rooms_image8.json"
+    }
+  ],
+  "groups_slider_images": [
+    {
+      "file": "groups_slider_image1.json"
     }
   ],
   "guest_reviews": [
     {
-      "file": "guest_reviews1.json"
+      "file": "guest_review1.json"
     },
     {
-      "file": "guest_review1.json"
+      "file": "guest_reviews1.json"
+    }
+  ],
+  "homepage_slider": [
+    {
+      "file": "homepage_slider1.json"
+    },
+    {
+      "file": "homepage_slider2.json"
+    },
+    {
+      "file": "homepage_slider3.json"
+    },
+    {
+      "file": "homepage_slider4.json"
+    },
+    {
+      "file": "homepage_slider5.json"
     }
   ],
   "simple": [
