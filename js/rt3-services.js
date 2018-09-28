@@ -180,12 +180,12 @@ angular.module('rezTrip')
             {
                 var roomRate;
                 var todayRate ={};
-                this.isRate = false;
+                self.isRate = false;
                 angular.forEach(self.roomsList, function(room, key ){
                     roomRate= room.min_discounted_average_price[0] || room.min_average_price[0];
-                    if(room.min_average_price[0] != null && !this.isRate){
+                    if(room.min_average_price[0] != null && !self.isRate){
 
-                       this.isRate = true;
+                       self.isRate = true;
                        self.toNightsRate = "$"+Math.round(roomRate);
 
                     }
